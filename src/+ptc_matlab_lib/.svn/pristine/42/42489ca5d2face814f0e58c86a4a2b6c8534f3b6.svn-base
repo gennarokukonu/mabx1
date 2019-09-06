@@ -1,0 +1,31 @@
+function [iMatch] = strcmpw(array, expStr)
+%% STRCMPW
+%   Wild card selection from cell array of strings. It allows the use of 
+%   wildcards '*' and '?' and returns a logical array with a value of 1 for
+%   elements of ARRAY that match EXPSTR
+%
+%   The '*' wildcard stands for any number (including zero) of characters.
+%   The '?' wildcard stands for a single character.
+%
+%   Usage:
+%       IDX = STRCMPW(ARRAY, EXPSTR) logical array, IDX, containing a
+%       logical comparison of each element of ARRAY to EXPSTR.
+%
+%   Example:
+%       A = {'Hello world!'; 'Goodbye world!'; 'Goodbye everyone'};
+%       idx = strcmpw(A, '*world!');
+%
+%    ans = [1;1;0]
+%
+%   Adapted for command line use from the WILDSEL GUI developed by
+%   Richard Stephens (ristephens@theiet.org) v1.2 2007/03/01
+%
+% Revision History
+%   1.01.[EO]2010.08.09 Fixed typo in help.
+%   1.00.[EO]2009.06.24 Converted to non-gui function from WILDSEL
+
+regStr = ['^',strrep(strrep(expStr,'?','.'),'*','.{0,}'),'$'];
+starts = regexpi(array, regStr);
+iMatch = ~cellfun(@isempty, starts);
+
+

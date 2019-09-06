@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Differe4nceLimiter table</title>
+
+<link href="../../../Help/HowToDo_CSS.css" rel="stylesheet" type="text/css" />
+<!-- $Log: DifferenceLimiter_table.html  $ --><!-- Revision 1.2 2014/10/10 15:59:12MESZ Semmelrodt, Sven (uid60719) --><!-- Updated to MBDS V5.0 --><!-- Revision 2.4 2014/04/09 13:22:53CEST Nitzsche Tilo (uid03085) (uid03085) --><!-- RO-942497-41: Help adaptations for SDA 8.1 -->
+<!-- Revision 1.3 2015/05/18 08:33:48CEST Semmelrodt, Sven (uid60719)  --><!-- Revision 1.2 2014/10/10 15:59:12MESZ Semmelrodt, Sven (uid60719) --><!-- Updated to MBDS V5.0 --><!-- Revision 2.4 2014/04/09 13:22:53CEST Nitzsche Tilo (uid03085) (uid03085) --><!-- RO-942497-41: Help adaptations for SDA 8.1 -->
+<!-- Description for data type support updated --><!-- Revision 1.2 2014/10/10 15:59:12MESZ Semmelrodt, Sven (uid60719) --><!-- Updated to MBDS V5.0 --><!-- Revision 2.4 2014/04/09 13:22:53CEST Nitzsche Tilo (uid03085) (uid03085) --><!-- RO-942497-41: Help adaptations for SDA 8.1 -->
+<link href="../../../Help/HowToDo_CSS.css" rel="stylesheet" type="text/css" />
+<!-- Revision 1.2 2015/02/06 09:49:23MEZ Semmelrodt, Sven (uid60719) --><!-- Revision 1.2 2014/10/10 15:59:12MESZ Semmelrodt, Sven (uid60719) --><!-- Updated to MBDS V5.0 --><!-- Revision 2.4 2014/04/09 13:22:53CEST Nitzsche Tilo (uid03085) (uid03085) --><!-- RO-942497-41: Help adaptations for SDA 8.1 -->
+<link href="../../../Help/HowToDo_CSS.css" rel="stylesheet" type="text/css" />
+<!-- Help images updated --><!-- Revision 1.2 2014/10/10 15:59:12MESZ Semmelrodt, Sven (uid60719) --><!-- Updated to MBDS V5.0 --><!-- Revision 2.4 2014/04/09 13:22:53CEST Nitzsche Tilo (uid03085) (uid03085) --><!-- RO-942497-41: Help adaptations for SDA 8.1 -->
+</head>
+<body>
+<table style="border-collapse: collapse; width: 721px;" border="1" bordercolor="#111111" cellpadding="4" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td style="width: 183px;" align="middle" height="180">
+<blockquote>
+<p style="width: 103px;"> <img style="width: 109px; height: 99px;" alt="" src="../Images/PTC_MBDS_DifferenceLimiter.png" />&nbsp;</p>
+</blockquote>
+</td>
+<td style="width: 170px;" height="180" valign="top">
+<b>Inputs:</b><br />
+&nbsp; E: logic<br />
+&nbsp; R: logic<br />
+&nbsp; IV: numeric<br />
+&nbsp; u: numeric<br />
+&nbsp; LU: numeric<br />
+&nbsp; LD: numeric
+<span style="font-weight: bold;"><br />Outputs:</span><br />
+&nbsp; y: numeric<br />
+&nbsp; B_max: logic<br />
+&nbsp; B_min: logic<br /><span style="font-weight: bold;">States:</span><br />
+&nbsp;&nbsp;x: numeric
+</td>
+<td style="width: 153px;" height="180" valign="top"><b>Init-Code:</b><br />
+&nbsp; x = 0.0; </td>
+<td style="width: 177px;" height="180" valign="top"><b>Run-Code:</b><br />
+if (R) {<br />
+&nbsp; x = IV;<br />
+}<br />
+else if (E) {<br />
+&nbsp; if ( (u - x) &gt; LU ) {<br />
+&nbsp; &nbsp; x = x + LU;<br />
+&nbsp; &nbsp; B min = 0;<br />
+&nbsp; &nbsp; B max = 1;<br />
+&nbsp; }<br />
+&nbsp; else if ( (u - x) &lt; LD ) {<br />
+&nbsp; &nbsp; x = x + LD;<br />
+&nbsp; &nbsp; B min = 1;<br />
+&nbsp;&nbsp; &nbsp;B max = 0;<br />
+&nbsp; }<br />
+&nbsp; else {<br />
+&nbsp; &nbsp; x = u;<br />
+&nbsp; &nbsp; B min = 0;<br />
+&nbsp; &nbsp; B max = 0;<br />
+&nbsp; }<br />
+}<br />
+y = x;</td>
+</tr>
+</tbody>
+</table>
+</body></html>

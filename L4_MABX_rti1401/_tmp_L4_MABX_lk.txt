@@ -1,0 +1,1 @@
+-- call "C:\ProgramData\dSPACE\071346EA-BFFA-4465-9551-2E48EDF35320\Compiler\PPCTools\BIN\lnkppc.exe"  -K0 -QmsA0314 -QmsA0407 -QmeA0307 -QmeA0329 -m..\L4_MABX.map -o ..\L4_MABX.ppc -c _tmp_L4_MABX.lk 

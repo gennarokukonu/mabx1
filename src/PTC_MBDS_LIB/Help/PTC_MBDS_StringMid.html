@@ -1,0 +1,152 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>String Mid</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta content="Matthias Hog" name="Author">
+<meta content="Microsoft FrontPage 6.0" name="GENERATOR"></head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td bgcolor="#ffe4b0" valign="baseline"><b>MBDS
+Environment</b></td>
+<td bgcolor="#ffe4b0">
+<div align="right"><b><font color="#0000ee">&nbsp;</font></b></div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td>
+<h1><span style="">String Mid</span></h1>
+</td>
+<td align="right"> &nbsp;<a href="matlab:doc">MATLAB
+Helpdesk</a>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- INFO -->
+<p><b><font color="#990000" size="+1">General</font></b></p>
+<blockquote>
+<p>Get a specified number of characters from a specified position&nbsp;of a string.</p>
+</blockquote>
+<p><font color="#990000" size="+1"><b>Library</b></font>
+</p>
+<blockquote>
+<p>MBDS Blockset </p>
+</blockquote>
+<font color="#990000" size="+1"><b>Description</b></font>
+<blockquote>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; <img style="border: 0px solid ; width: 114px; height: 57px;" alt="" src="Images/PTC_MBDS_StringMid.png"></p>
+<p>A substring is extracted&nbsp;from the string connected to
+input
+In.&nbsp;Beginning at
+the position specified by input P the number of characters specified by
+input L are taken from the input string and provided as output. The first character is specified by position 1.<span style=""><o:p></o:p></span>
+</p><p>The block has an ENO (Error Number Output) output port to indicate
+an error. The ENO output is
+set to false&nbsp;in case of an error, otherwise it is set to true. The
+ENO output port can be hidden/shown via the parameter&nbsp;<span style="font-weight: bold;">Show ENO port</span> in the block mask.</p><p>For special values of L and/or P the block behaves as follows:</p><ul><li class="MsoNormal" style=""><span style="">If
+P is zero or negative the specified position is invalid and hence the
+ENO output is set to false. <o:p></o:p></span></li><li class="MsoNormal" style=""><span style="">If L is zero an empty string is output and the ENO
+     output is set to true.<o:p></o:p></span></li><li class="MsoNormal" style=""><span style="">If L is negative then P = P + L and L = L * -1.</span></li></ul><p><span style="font-weight: bold;">Remark:</span> All valid&nbsp;characters (positive position value) within the limits of
+the string In can be extracted. But if any operation exceeds the string
+limits
+an error occours&nbsp;and the ENO output is
+set to false.<br></p>
+
+</blockquote>
+<p><font color="#990000" size="+1"><b>Inputs
+and
+Outputs</b></font></p>
+<blockquote>
+<table style="width: 569px; height: 84px;" border="2">
+<tbody>
+<tr>
+<th width="117"><b>Port </b></th>
+<th><b>I/O </b></th>
+<td style="white-space: nowrap;"><span style="font-weight: bold;">Data
+Type</span></td>
+<th width="254"><b>Description </b></th>
+</tr>
+<tr>
+<td width="117">In<br>
+</td>
+<td style="text-align: center;">In<br>
+</td>
+<td style="text-align: center;">uint8 (N)</td>
+<td width="254">Input string</td>
+</tr>
+<tr>
+<td style="width: 117px;">L<br>
+</td>
+<td style="text-align: center;">In</td>
+<td style="white-space: nowrap; text-align: center;">Any integer</td>
+<td width="254">Number of characters of the substring<br>
+</td>
+</tr>
+<tr>
+<td>P</td>
+<td style="text-align: center;">In</td>
+<td style="text-align: center;">Any integer</td>
+<td>Position of the substring</td>
+</tr>
+<tr>
+<td>Out</td>
+<td style="text-align: center;">Out</td>
+<td style="text-align: center;">uint8 (N)</td>
+<td>Resulting output string</td>
+</tr>
+<tr>
+<td>ENO</td>
+<td style="text-align: center;">Out</td>
+<td style="text-align: center;">boolean</td>
+<td>ENO&nbsp;is <span style="font-style: italic;">false</span> if an error has been 
+occurred. If the block has been processed correctly the ENO Output is set to 
+<span style="font-style: italic;">true</span>.</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<font color="#990000" size="+1"><b>Example</b></font>
+<blockquote>
+<p>To illustrate the behavior of the block some examples shall be
+discussed. Suppose the string 'abcdefg' is connected to input In.<br>
+&nbsp;<br>
+<span style="font-weight: bold;">Example 1:</span><br></p><ul><li>
+L = 3 : 3 characters are taken.</li><li>
+P = 3 : The characters are taken from positions 3 ('c') to 5 ('e').</li><li>
+Result: 'cde'</li></ul><p>
+&nbsp;<span style="font-weight: bold;">Example 2:</span><br></p><ul><li>
+L = 6 : 6 characters are to be taken.</li><li>
+P = -3 : The negative input defines a position&nbsp;left of the string (see
+above): characters are taken from positions &ndash;3 to 2.</li><li>
+Result: 'ab'</li><li>
+Detailed explanation: Positions -3 to 0 are not within the valid
+range. ab represents positions 1 and 2 (remaining part of&nbsp;the 6 characters).</li></ul><p>
+&nbsp;<span style="font-weight: bold;">Example 3:</span><br></p><ul><li>
+L =&nbsp;-3</li><li>
+P =&nbsp;5</li><li>
+As L is negative, the start position is recalculated according to the
+above formula as follows:</li><ul><li>
+P = 5 + (-3) = 2</li><li>
+L = -3 * -1 = 3</li><li>
+That means: 3 characters are taken, beginning at position 2.</li></ul><li>
+Result: 'bcd'</li></ul><p>
+&nbsp;<span style="font-weight: bold;">Example 4:</span><br></p><ul><li>
+L: -3</li><li>
+P: 2</li><li>
+As L is negative, the start position is recalculated according to the
+above formula as follows:</li><ul><li>
+P = 2 + (-3) = -1</li><li>
+L = -3 * -1 = 3</li><li>
+That means: 3 characters are to be taken, beginning at position -1.</li></ul><li>
+Result: 'a'</li><li>
+Detailed explanation: Positions -1 to 0 are not within the valid
+range. Character 'a' represents position 1 (remaining part&nbsp;of
+the 3 characters).</li></ul><p>For more information refer to the <a href="matlab:open(fullfile(fileparts(which('PTC_MBDS_LIB')), 'Examples', 'PTC_MBDS_StringMid_Sample.slx'));">example</a>.</p>
+</blockquote>
+<br>
+</body></html>

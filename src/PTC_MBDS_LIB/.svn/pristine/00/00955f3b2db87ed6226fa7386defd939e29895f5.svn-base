@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>String Compare</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta content="Matthias Hog" name="Author">
+<meta content="Microsoft FrontPage 6.0" name="GENERATOR"></head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td bgcolor="#ffe4b0" valign="baseline"><b>MBDS
+Environment</b></td>
+<td bgcolor="#ffe4b0">
+<div align="right"><b><font color="#0000ee">&nbsp;</font></b></div>
+</td>
+</tr>
+</tbody>
+</table>
+<span style=""><span style="font-weight: bold;"></span></span>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td>
+<h1>String Compare</h1>
+</td>
+<td align="right"> &nbsp;<a href="matlab:doc">MATLAB
+Helpdesk</a>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- INFO -->
+<p><b><font color="#990000" size="+1">General</font></b></p>
+<blockquote>
+<p>Compare two Strings. </p>
+</blockquote>
+<p><font color="#990000" size="+1"><b>Library</b></font>
+</p>
+<blockquote>
+<p>MBDS Blockset </p>
+</blockquote>
+<font color="#990000" size="+1"><b>Description</b></font>
+<blockquote>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img style="width: 111px; height: 41px;" alt="" src="Images/PTC_MBDS_StringCompare.png"><br>
+</p>
+<p>This block compares two strings. If
+the two strings are equal the output is set true, otherwise it is set to false.<br>
+</p>
+</blockquote>
+<p><font color="#990000" size="+1"><b>Inputs
+and
+Outputs</b></font><br>
+</p>
+<blockquote>
+<table style="width: 499px; height: 149px;" border="2">
+<tbody>
+<tr>
+<th style="width: 117px;"><b>Port </b></th>
+<th><b>I/O </b></th>
+<td style="text-align: left;"><span style="font-weight: bold;">Data Type</span></td>
+<th width="254"><b>Description </b></th>
+</tr>
+<tr>
+<td width="117">In1<br>
+</td>
+<td style="text-align: center;">In<br>
+</td>
+<td style="text-align: center;">uint8 (N)</td>
+<td width="254">First string</td>
+</tr>
+<tr>
+<td style="width: 117px;">In2</td>
+<td style="text-align: center;">In</td>
+<td style="text-align: center;">uint8 (N)</td>
+<td width="254">Second string </td>
+</tr>
+<tr>
+<td>Out</td>
+<td style="text-align: center;">Out</td>
+<td style="text-align: center;">boolean</td>
+<td>Outputs <span style="font-style: italic;">true</span> if the strings are&nbsp;equal, otherwise
+the output is set to <span style="font-style: italic;">false</span></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<font color="#990000" size="+1"><b>Example</b></font>
+<blockquote>
+<p>Refer to the <a href="matlab:open(fullfile(fileparts(which('PTC_MBDS_LIB')), 'Examples', 'PTC_MBDS_StringCompare_Sample.slx'));">example</a>.</p>
+</blockquote>
+<br>
+</body></html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" /><title>Delay_RE table</title>
+
+<link type="text/css" rel="stylesheet" href="../../../Help/HowToDo_CSS.css" />
+<!-- $Log: Delay_RE_table.html  $ --><!-- Revision 1.2 2014/10/10 15:58:25MESZ Semmelrodt, Sven (uid60719) --><!-- Updated to MBDS V5.0 --><!-- Revision 1.2 2014/04/09 13:22:52CEST Nitzsche Tilo (uid03085) (uid03085) --><!-- RO-942497-41: Help adaptations for SDA 8.1 -->
+<!-- Revision 1.3 2015/05/18 08:33:39CEST Semmelrodt, Sven (uid60719)  --><!-- Revision 1.2 2014/10/10 15:58:25MESZ Semmelrodt, Sven (uid60719) --><!-- Updated to MBDS V5.0 --><!-- Revision 1.2 2014/04/09 13:22:52CEST Nitzsche Tilo (uid03085) (uid03085) --><!-- RO-942497-41: Help adaptations for SDA 8.1 -->
+<!-- Description for data type support updated --><!-- Revision 1.2 2014/10/10 15:58:25MESZ Semmelrodt, Sven (uid60719) --><!-- Updated to MBDS V5.0 --><!-- Revision 1.2 2014/04/09 13:22:52CEST Nitzsche Tilo (uid03085) (uid03085) --><!-- RO-942497-41: Help adaptations for SDA 8.1 -->
+<link type="text/css" rel="stylesheet" href="../../../Help/HowToDo_CSS.css" />
+<!-- Revision 1.2 2015/02/06 09:49:23MEZ Semmelrodt, Sven (uid60719) --><!-- Revision 1.2 2014/10/10 15:58:25MESZ Semmelrodt, Sven (uid60719) --><!-- Updated to MBDS V5.0 --><!-- Revision 1.2 2014/04/09 13:22:52CEST Nitzsche Tilo (uid03085) (uid03085) --><!-- RO-942497-41: Help adaptations for SDA 8.1 -->
+<link type="text/css" rel="stylesheet" href="../../../Help/HowToDo_CSS.css" />
+<!-- Help images updated --><!-- Revision 1.2 2014/10/10 15:58:25MESZ Semmelrodt, Sven (uid60719) --><!-- Updated to MBDS V5.0 --><!-- Revision 1.2 2014/04/09 13:22:52CEST Nitzsche Tilo (uid03085) (uid03085) --><!-- RO-942497-41: Help adaptations for SDA 8.1 -->
+</head>
+<body>
+<table style="border-collapse: collapse; width: 560px;" border="1" bordercolor="#000000" cellpadding="4" cellspacing="0">
+<tbody>
+<tr>
+<td style="width: 180px;" align="middle" height="180">
+<blockquote>
+<p style="margin-left: 3px; width: 94px;"> <img style="width: 111px; height: 70px;" alt="" src="../Images/PTC_MBDS_Delay_RE.png" />&nbsp;</p>
+</blockquote>
+</td>
+<td style="width: 181px;" height="180" valign="top"><b>Inputs:</b><br />
+&nbsp; u: numeric, logic<br />
+&nbsp; E: logic<br />
+&nbsp; R: logic<br />
+&nbsp; IV: numeric, logic<br />
+<b>Outputs:</b><br />
+&nbsp; y: numericl, logic<br />
+<b>States:</b><br />
+&nbsp; x: numeric, logic<br />
+</td>
+<td style="vertical-align: top;"><b>Init-Code:</b><br />
+&nbsp; x = 0;</td>
+<td style="width: 186px;" height="180" valign="top"><b>Pseudo-code:</b><br />
+&nbsp;if (R) {<br />
+&nbsp;&nbsp;y = IV;<br />
+&nbsp;&nbsp;x = IV;<br />
+&nbsp;}<br />
+&nbsp;else if (E) {<br />
+&nbsp;&nbsp;y = x;<br />
+&nbsp;&nbsp;x = u;<br />
+&nbsp;}<br />
+&nbsp;else {<br />
+&nbsp;&nbsp;y = x;<br />
+&nbsp;}<br />
+</td>
+</tr>
+</tbody>
+</table>
+<br />
+</body></html>

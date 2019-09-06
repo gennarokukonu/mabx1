@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Probe-Marker</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta content="Dr. Sven Semmelrodt" name="Author">
+<meta content="Microsoft FrontPage 6.0" name="GENERATOR"></head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td bgcolor="#ffe4b0" valign="baseline"><b>MBDS
+Environment</b></td>
+<td bgcolor="#ffe4b0">
+<div align="right"><b><font color="#0000ee">&nbsp;</font></b></div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td>
+<h1><span style="">Probe-Marker</span></h1>
+</td>
+<td align="right">&nbsp;<a href="matlab:doc">MATLAB
+Helpdesk</a>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- INFO -->
+<p><b><font color="#990000" size="+1">General</font></b></p>
+<blockquote>
+<p>Probe-Marker (PM) blocks are used&nbsp;to access signal
+values of an MBDS model while running the generated SW on the target
+HW.&nbsp;Especially for the Online-Test the PM blocks can
+be used
+for reading process values from model internal
+signals&nbsp;while
+the SW is running on the target. </p>
+</blockquote>
+<p><font color="#990000" size="+1"><b>Library</b></font>
+</p>
+<blockquote>
+<p>MBDS Blockset </p>
+</blockquote>
+<font color="#990000" size="+1"><b>Description</b></font>
+&nbsp;<br>
+<blockquote>
+<table style="text-align: left;" border="1" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td style="font-weight: bold;" width="145">Feed-Through
+Mode</td>
+<td style="font-weight: bold;" width="145">Disabled</td>
+<td style="font-weight: bold;" width="145">Global
+Disabled</td>
+</tr>
+<tr>
+<td><img style="height: 52px;" alt="" src="Images/PTC_MBDS_ProbeMarker.png"></td>
+<td><img style="height: 52px;" alt="" src="Images/PTC_MBDS_ProbeMarker_Disabled.png"></td>
+<td><img style="height: 51px;" alt="" src="Images/PTC_MBDS_ProbeMarker_GlobalDisable.png"></td>
+</tr>
+</tbody>
+</table>
+<p>The configuration of the PM is done via the block parameter
+mask (see Figure 1):</p>
+<ul>
+<li><span style="font-weight: bold;">Name</span>:
+Specify a unique PM&nbsp;name</li>
+<li><span style="font-weight: bold;">Disable</span>:&nbsp;If
+enabled no&nbsp;source code is generated for the PM. If disabled
+source
+code is fenerated and the PM is available in the OLT session.</li>
+</ul>
+<img style="width: 432px; height: 272px;" alt="" src="Images/PTC_MBDS_ProbeMarker_ParameterDialog.png"><br>
+<span style="font-weight: bold;">Figure 1</span>:&nbsp;
+Probe-Marker&nbsp;Parameter Mask Dialog<br>
+<br>
+After a PM is removed from or added to a model the project has to be
+rebuild and downloaded to the target. Accordingly, the PMs
+are&nbsp;considered by the Online-Test, i.e. the value of the
+signal connected to the PM is displayed&nbsp;while the
+SW is running on the trarget HW.
+<p>You can globally enable/disable&nbsp;the PM blocks in
+the model design of your project via the <a href="matlab:edit(fullfile(fileparts(which('PTC_MBDS_LIB')), 'PTC_MBDS_ProjectOptions.txt'));">Project
+Options</a> dialog.</p>
+</blockquote>
+<p><font color="#990000" size="+1"><b>Inputs
+and
+Outputs</b></font></p>
+<blockquote>
+<table style="width: 594px;" border="2">
+<tbody>
+<tr>
+<th width="70"><b>Port </b></th>
+<th width="45"><b>I/O </b></th>
+<td style="text-align: center;"><span style="width: 100px; font-weight: bold;">Data
+Type</span></td>
+<th style="width: 369px;"><b>Description
+</b></th>
+</tr>
+<tr>
+<td width="70">In</td>
+<td style="text-align: center;" width="45">In</td>
+<td style="width: 100px; text-align: center;">Any</td>
+<td style="width: 369px;">Connect an arbitrary
+signal</td>
+</tr>
+<tr>
+<td>Out</td>
+<td style="text-align: center;">Out</td>
+<td style="width: 72px; text-align: center;">Same as
+input</td>
+<td>Outputs the input signal</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<font color="#990000" size="+1"><b>Example</b></font>
+<blockquote>-<br>
+</blockquote>
+</body></html>

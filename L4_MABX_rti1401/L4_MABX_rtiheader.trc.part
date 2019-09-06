@@ -1,0 +1,40 @@
+--
+--  Used options:
+--    TRCGenerateVirtualBlocks      = 1
+--    TRCGenerateLabels             = 1
+--    TRCGenerateStates             = 1
+--    TRCGenerateDerivatives        = 1
+--    TRCGenerateParamValues        = 1
+--    TRCGenerateApplicationKeyword = 0
+--    TRCOnlyGlobals                = 1
+--    TRCIsOmitVdOn                 = 0
+--
+--  Subsystems unavailable due to active TRC Exclusion blocks:
+--    L4_MABX/ETHERNET/TCPIP_Setup
+--    L4_MABX/ETHERNET/UDPIP_Communication
+--
+--  Trace file format: 3
+
+-- ******** Keywords **********************************************************
+-- _application "L4_MABX.map"
+
+_genname     "RTI"
+_genversion  "7.10"
+_gendate     "08/28/2019 10:32:21"
+_description ""
+_author      "RTI1401 7.10 (02-May-2018)"
+_model       "L4_MABX"
+
+-- Default data type formats
+_floating_point_type(64,IEEE)
+_integer_type(32)
+
+-- No Data Capture blocks within model: use base sample time as sampling period
+sampling_period[0]
+{
+  value:       0.01
+  alias:       "HostService"
+  increment:   0.01
+  unit:        "s"
+}
+

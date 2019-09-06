@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" /><title>TimerRetrigger_RE table</title>
+
+<link type="text/css" rel="stylesheet" href="../../../Help/HowToDo_CSS.css" />
+<!-- $Log: TimerRetrigger_RE_table.html  $ --><!-- Revision 1.2 2014/10/10 15:58:25MESZ Semmelrodt, Sven (uid60719) --><!-- Updated to MBDS V5.0 --><!-- Revision 1.2 2014/04/09 13:23:10CEST Nitzsche Tilo (uid03085) (uid03085) --><!-- RO-942497-41: Help adaptations for SDA 8.1 -->
+<!-- Revision 1.3 2015/05/18 08:33:56CEST Semmelrodt, Sven (uid60719)  --><!-- Revision 1.2 2014/10/10 15:58:25MESZ Semmelrodt, Sven (uid60719) --><!-- Updated to MBDS V5.0 --><!-- Revision 1.2 2014/04/09 13:23:10CEST Nitzsche Tilo (uid03085) (uid03085) --><!-- RO-942497-41: Help adaptations for SDA 8.1 -->
+<!-- Description for data type support updated --><!-- Revision 1.2 2014/10/10 15:58:25MESZ Semmelrodt, Sven (uid60719) --><!-- Updated to MBDS V5.0 --><!-- Revision 1.2 2014/04/09 13:23:10CEST Nitzsche Tilo (uid03085) (uid03085) --><!-- RO-942497-41: Help adaptations for SDA 8.1 -->
+<link type="text/css" rel="stylesheet" href="../../../Help/HowToDo_CSS.css" />
+<!-- Revision 1.2 2015/02/06 09:49:02MEZ Semmelrodt, Sven (uid60719) --><!-- Revision 1.2 2014/10/10 15:58:25MESZ Semmelrodt, Sven (uid60719) --><!-- Updated to MBDS V5.0 --><!-- Revision 1.2 2014/04/09 13:23:10CEST Nitzsche Tilo (uid03085) (uid03085) --><!-- RO-942497-41: Help adaptations for SDA 8.1 -->
+<link type="text/css" rel="stylesheet" href="../../../Help/HowToDo_CSS.css" />
+<!-- Help images updated --><!-- Revision 1.2 2014/10/10 15:58:25MESZ Semmelrodt, Sven (uid60719) --><!-- Updated to MBDS V5.0 --><!-- Revision 1.2 2014/04/09 13:23:10CEST Nitzsche Tilo (uid03085) (uid03085) --><!-- RO-942497-41: Help adaptations for SDA 8.1 -->
+</head>
+<body>
+<table style="border-collapse: collapse; width: 577px; height: 212px;" border="1" bordercolor="#000000" cellpadding="4" cellspacing="0">
+<tbody>
+<tr>
+<td style="width: 188px;" align="middle" height="180">
+<blockquote>
+<p style="margin-left: 21px; width: 103px;"> <img style="width: 107px; height: 68px;" alt="" src="../Images/PTC_MBDS_TimerRetrigger_RE.png" />&nbsp;</p>
+</blockquote>
+</td>
+<td style="width: 174px;" height="180" valign="top"> <b>Inputs:</b><br />
+&nbsp; E: logic<br />
+&nbsp; R: logic<br />
+&nbsp; IV: numeric<br />
+&nbsp; dT: numeric<br />
+<b>Outputs:</b><br />
+&nbsp; y: logic <br />
+<b>States:</b><br />
+&nbsp; x: numeric<br />
+</td>
+<td style="vertical-align: top;"><b>Init-Code:</b><br />
+x = 0.0; </td>
+<td style="width: 175px;" height="180" valign="top"> <b>Run-Code:</b><br />
+if (R) { <br />
+&nbsp; x = IV; <br />
+}<br />
+else if (E) { <br />
+&nbsp; x = MAX(x - dT, 0.0); <br />
+} <br />
+y = (x &gt; 0.0); </td>
+</tr>
+</tbody>
+</table>
+</body></html>

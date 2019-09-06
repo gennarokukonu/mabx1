@@ -1,0 +1,119 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>EdgeFalling</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta content="Dr. Sven Semmelrodt" name="Author">
+<meta content="Microsoft FrontPage 6.0" name="GENERATOR"></head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td bgcolor="#ffe4b0" valign="baseline"><b>MBDS
+Environment</b></td>
+<td bgcolor="#ffe4b0">
+<div align="right"><b><font color="#0000ee">&nbsp;</font></b></div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td>
+<h1>EdgeFalling</h1>
+</td>
+<td align="right"> <a href="matlab:doc">MATLAB
+Helpdesk</a>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- INFO -->
+<p><b><font color="#990000" size="+1">General</font></b></p>
+<blockquote>
+<p>Edge detection (falling) of input signal. </p>
+</blockquote>
+<p><font color="#990000" size="+1"><b>Library</b></font>
+</p>
+<blockquote>
+<p>MBDS Blockset </p>
+</blockquote>
+<font color="#990000" size="+1"><b>Description</b></font>
+<blockquote>
+<p>The output indicates true if the input value changes from
+true to false.</p>
+<iframe src="PseudoCode/PTC_MBDS_EdgeFalling_table.html" name="block_description" border="0" marginwidth="1" marginheight="1" frameborder="0" height="215" width="880"></iframe><br>
+Using&nbsp;the&nbsp;parameter mask the block can be
+configured according to the users needs. Via register card <span style="font-weight: bold;">Main</span> the block input
+and output ports can be shown or hidden (see Figure 1).
+<ul>
+<li><span style="font-weight: bold;">Show R
+port. &nbsp;</span>If checked, the block provides a reset
+input port. If unchecked, the block cannot be reset.</li>
+<li><span style="font-weight: bold;">Show IV
+port. &nbsp;</span>If checked, the block provides&nbsp;an
+input port for the initial value used when reset the block. If
+unchecked, the initial value can be configured&nbsp;via a mask
+parameter.</li>
+<ul>
+<li><span style="font-weight: bold;">Initial
+value (IV). &nbsp;</span>Here the initial value can be
+specified&nbsp;if the IV port is hidden.</li>
+</ul>
+</ul>
+<p><strong></strong> <img style="width: 432px; height: 317px;" alt="" src="Images/PTC_MBDS_EdgeFalling_ParameterDialog1.png"><span style="font-weight: bold;">*) </span>Except enumeration data types.<br>
+<span style="font-weight: bold;">Figure 1</span>:
+Parameter Mask Dialog - Register card Main</p>
+<p>The
+register card <span style="font-weight: bold;">Version</span>
+displays the block version information. </p>
+<span style="font-weight: bold;"></span></blockquote>
+<p><font color="#990000" size="+1"><b>Inputs
+and
+Outputs</b></font></p>
+<blockquote>
+<table style="width: 438px; height: 217px;" border="2">
+<tbody>
+<tr>
+<th style="width: 44px; height: 39px;"><b>Port
+</b></th>
+<td style="height: 39px; width: 63px; text-align: center;"><span style="font-weight: bold;">I/O</span></td><td style="font-weight: bold; width: 82px; text-align: center; height: 39px;">Data
+Type</td>
+<th style="width: 221px; height: 39px;"><b>Description
+</b></th>
+</tr>
+<tr>
+<td style="width: 44px; height: 44px;">u<br>
+</td>
+<td>In</td><td style="width: 82px; height: 44px;">boolean</td>
+<td style="width: 221px; height: 44px;">Input&nbsp;signal</td>
+</tr>
+<tr>
+<td style="height: 24px;">R</td>
+<td>In</td><td style="height: 24px;">boolean</td>
+<td style="height: 24px;">Resets the block state
+to its initial value while <span style="font-style: italic;">true</span></td>
+</tr>
+<tr>
+<td style="height: 44px;">IV</td>
+<td>In</td><td style="height: 44px;">boolean</td>
+<td style="height: 44px;">Initial value set upon
+reset</td>
+</tr>
+<tr>
+<td style="height: 44px;">y</td>
+<td style="height: 44px;">Out</td><td style="height: 44px;">boolean</td>
+<td style="height: 44px;">Number of block
+evaluations since the last reset</td>
+</tr>
+</tbody>
+</table><span style="font-weight: bold;"></span>
+</blockquote>
+<font color="#990000" size="+1"><b>Example</b></font>
+<blockquote>
+<p>Refer to the <a href="matlab:open(fullfile(fileparts(which('PTC_MBDS_LIB')), 'Examples', 'PTC_MBDS_EdgeFalling_Sample.slx'));">example</a>.<span style="font-style: italic;">&nbsp;</span></p>
+</blockquote>
+<blockquote>
+<p><br>
+</p>
+</blockquote>
+</body></html>

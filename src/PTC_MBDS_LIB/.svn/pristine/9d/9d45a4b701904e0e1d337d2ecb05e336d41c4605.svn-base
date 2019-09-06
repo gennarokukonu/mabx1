@@ -1,0 +1,140 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>MeanValuet;</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta content="Dr. Sven Semmelrodt" name="Author">
+<meta content="Microsoft FrontPage 6.0" name="GENERATOR"></head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td bgcolor="#ffe4b0" valign="baseline"><b>MBDS
+Environment</b></td>
+<td bgcolor="#ffe4b0">
+<div align="right"><b><font color="#0000ee">&nbsp;</font></b></div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td>
+<h1><span style="color: rgb(0, 0, 0);">MeanValueT_RE</span></h1>
+</td>
+<td align="right"> <a href="matlab:doc">MATLAB
+Helpdesk</a>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- INFO -->
+<p><b><font color="#990000" size="+1">General</font></b></p>
+<blockquote>
+<p>Calculation of the signals mean value. </p>
+</blockquote>
+<p><font color="#990000" size="+1"><b>Library</b></font>
+</p>
+<blockquote>
+<p>MBDS Blockset </p>
+</blockquote>
+<font color="#990000" size="+1"><b>Description</b></font>
+<blockquote>
+<p>The output value y is the arithmetic mean value of the k
+most recent samples of the input signal. </p>
+<iframe src="PseudoCode/PTC_MBDS_MeanValueT_RE_table.html" name="block_description" border="0" marginwidth="1" marginheight="1" frameborder="0" height="500" width="680"></iframe>
+<p>Using&nbsp;the&nbsp;parameter mask the block can be
+configured according to the users needs. Via register card <span style="font-weight: bold;">Main</span> the block input
+and output ports can be shown or hidden (see Figure 1).</p>
+<ul>
+<li><strong>Show E&nbsp;port. &nbsp;</strong>If
+checked, the block provides&nbsp;an enable&nbsp;input port. If
+unchecked, the block cannot be disabled.</li>
+<li><span style="font-weight: bold;">Show R
+port. &nbsp;</span>If checked, the block provides a reset
+input port. If unchecked, the block cannot be reset.</li>
+<li><span style="font-weight: bold;">Show IV
+port. &nbsp;</span>If checked, the block provides&nbsp;an
+input port for the initial value used when reset the block. If
+unchecked, the initial value can be configured&nbsp;via a mask
+parameter.</li>
+<ul>
+<li><span style="font-weight: bold;">Initial
+value (K). &nbsp;</span>Here the initial value can be
+specified&nbsp;if the IV port is hidden.</li>
+<li><span style="font-weight: bold;">Average
+window lenght (K). &nbsp;</span>By default it is 2. Here the total number of signals used to find the mean value can be specified.</li>
+</ul>
+</ul>
+<p><strong></strong> <img style="width: 431px; height: 400px;" alt="" src="Images/PTC_MBDS_MeanValueT_RE_ParameterDialog1.png"><br>
+<span style="font-weight: bold;">Figure 1</span>:
+Parameter Mask Dialog - Register card Main</p>
+<p>The
+register card <span style="font-weight: bold;">Version</span>
+displays the block version information. <span style="font-weight: bold;"></span>
+</p>
+</blockquote>
+<p><font color="#990000" size="+1"><b>Inputs
+and
+Outputs</b></font></p>
+<blockquote>
+<table style="width: 438px; height: 260px;" border="2">
+<tbody>
+<tr>
+<th style="width: 44px; height: 39px;"><b>Port
+</b></th>
+<th style="width: 63px; height: 39px;"><b>I/O
+</b></th>
+<td style="font-weight: bold; width: 82px; text-align: center; height: 39px;">Data
+Type</td>
+<th style="width: 221px; height: 39px;"><b>Description
+</b></th>
+</tr>
+<tr>
+<td style="width: 44px; height: 38px;">u<br>
+</td>
+<td style="width: 63px; height: 38px; text-align: center;">In<br>
+</td>
+<td style="width: 82px; height: 38px; text-align: center;">Any*<br>
+</td>
+<td style="width: 221px; height: 38px;">Input
+scalar signal&nbsp;</td>
+</tr>
+<tr>
+<td style="height: 39px;">E</td>
+<td style="height: 39px; text-align: center;">In</td>
+<td style="height: 39px; text-align: center;">boolean</td>
+<td style="height: 39px;">Suppresses the block calculation while <span style="font-style: italic;">false</span></td>
+</tr>
+<tr>
+<td style="height: 39px;">R</td>
+<td style="height: 39px; text-align: center;">In</td>
+<td style="height: 39px; text-align: center;">boolean</td>
+<td style="height: 39px;">Resets the block state to its initial value while <span style="font-style: italic;">true</span></td>
+</tr>
+<tr>
+<td style="height: 39px;">IV</td>
+<td style="height: 39px; text-align: center;">In</td>
+<td style="height: 39px; text-align: center;">Any*</td>
+<td style="height: 39px;">Initial value set upon
+reset</td>
+</tr>
+<tr>
+<td style="height: 39px;">y</td>
+<td style="height: 39px; text-align: center;">Out</td>
+<td style="height: 39px; text-align: center;">Any*</td>
+<td style="height: 39px;">Mean value of the input signal</td>
+</tr>
+<tr>
+</tr>
+</tbody>
+</table><span style="font-weight: bold;">*) </span>Except enumeration data types.
+</blockquote>
+<font color="#990000" size="+1"><b>Example</b></font>
+<blockquote>
+<p>Refer to the <a href="matlab:open(fullfile(fileparts(which('PTC_MBDS_LIB')), 'Examples', 'PTC_MBDS_MeanValueT_RE_Sample.slx'));">example</a>.<span style="font-style: italic;">&nbsp;</span></p>
+</blockquote>
+<blockquote>
+<p><br>
+</p>
+</blockquote>
+</body></html>

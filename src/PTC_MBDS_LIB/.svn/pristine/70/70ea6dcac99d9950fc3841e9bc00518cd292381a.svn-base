@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>String to Number</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta content="Matthias Hog" name="Author">
+<meta content="Microsoft FrontPage 6.0" name="GENERATOR"></head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td bgcolor="#ffe4b0" valign="baseline"><b>MBDS
+Environment</b></td>
+<td bgcolor="#ffe4b0">
+<div align="right"><b><font color="#0000ee">&nbsp;</font></b></div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td>
+<h1>String to Number</h1>
+</td>
+<td align="right"> &nbsp;<a href="matlab:doc">MATLAB
+Helpdesk</a>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- INFO -->
+<p><b><font color="#990000" size="+1">General</font></b></p>
+<blockquote>
+<p>Converts a numeric string into a numeric value. </p>
+</blockquote>
+<p><font color="#990000" size="+1"><b>Library</b></font>
+</p>
+<blockquote>
+<p>MBDS Blockset </p>
+</blockquote>
+<font color="#990000" size="+1"><b>Description</b></font>
+<blockquote>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; <img style="border: 0px solid ; width: 110px; height: 25px;" alt="String to Number" src="Images/PTC_MBDS_StringToNumber.png"></p>
+<p>Converts
+a numeric string at input&nbsp;In into a 32 bit signed integer
+number. Leading whitespaces and trailing characters are ignored.</p>
+</blockquote>
+<p><font color="#990000" size="+1"><b>Inputs
+and
+Outputs</b></font></p>
+<blockquote>
+<table style="width: 493px; height: 88px;" border="2">
+<tbody>
+<tr>
+<th style="width: 80px;"><b>Port </b></th>
+<th style="width: 31px;"><b>I/O </b></th>
+<td style="width: 80px;"><span style="font-weight: bold;">Data Type</span></td>
+<th style="width: 156px;"><b>Description </b></th>
+</tr>
+<tr>
+<td style="width: 80px;">In<br>
+</td>
+<td style="width: 31px; text-align: center;">In<br>
+</td>
+<td style="width: 80px; text-align: center;">uint8 (N)</td>
+<td style="width: 156px;">String to be converted</td>
+</tr>
+<tr>
+<td style="width: 80px;">Out</td>
+<td style="width: 31px; text-align: center;">Out</td>
+<td style="width: 80px; text-align: center;">int32</td>
+<td style="width: 156px;">Numeric value&nbsp;<br>
+</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<font color="#990000" size="+1"><b>Example</b></font>
+<blockquote>
+<p>Refer to the <a href="matlab:open(fullfile(fileparts(which('PTC_MBDS_LIB')), 'Examples', 'PTC_MBDS_StringToNumber_Sample.slx'));">example</a>.</p>
+<p></p>
+</blockquote>
+</body></html>

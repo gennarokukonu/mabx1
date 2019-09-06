@@ -1,0 +1,145 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>String Right</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta content="Matthias Hog" name="Author">
+<meta content="Microsoft FrontPage 6.0" name="GENERATOR"></head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td bgcolor="#ffe4b0" valign="baseline"><b>MBDS
+Environment</b></td>
+<td bgcolor="#ffe4b0">
+<div align="right"><b><font color="#0000ee">&nbsp;</font></b></div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td>
+<h1>String Right</h1>
+</td>
+<td align="right"> &nbsp;<a href="matlab:doc">MATLAB
+Helpdesk</a>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- INFO -->
+<p><b><font color="#990000" size="+1">General</font></b></p>
+<blockquote>
+<p>Get a specified number of the most right characters of a
+string.</p>
+</blockquote>
+<p><font color="#990000" size="+1"><b>Library</b></font>
+</p>
+<blockquote>
+<p>MBDS Blockset </p>
+</blockquote>
+<font color="#990000" size="+1"><b>Description</b></font>
+<blockquote>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; <img style="border: 0px solid ; width: 114px; height: 44px;" alt="" src="Images/PTC_MBDS_StringRight.png"></p>
+The specified number&nbsp;of the most right characters are output
+by the
+block. The number of characters is specified by input L. For different
+values of L the block behaves as follows:<br>
+<ul>
+<li>If&nbsp;L
+exceeds the string length of string In1, the string is&nbsp;output
+without changes, but the ENO output is set to false.</li>
+<li>If L is zero an empty string is output and the ENO output
+is set to true.</li>
+<li>If L is negative&nbsp;an empty string is output and
+the ENO output is set to false.</li>
+</ul>
+The block has an ENO (Error Number Output) output port to indicate an
+error. The ENO output is
+set to false&nbsp;in case of an error, otherwise it is set to true.
+The
+ENO output port can be hidden/shown via the parameter&nbsp;<span style="font-weight: bold;">Show ENO port</span> in the
+block mask.
+</blockquote>
+<p><font color="#990000" size="+1"><b>Inputs
+and
+Outputs</b></font></p>
+<blockquote>
+<table style="width: 569px; height: 156px;" border="2">
+<tbody>
+<tr>
+<th style="width: 117px;"><b>Port </b></th>
+<th><b>I/O </b></th>
+<td style="white-space: nowrap;"><span style="font-weight: bold;">Data
+Type</span></td>
+<th width="254"><b>Description </b></th>
+</tr>
+<tr>
+<td width="117">In<br>
+</td>
+<td style="text-align: center;">In<br>
+</td>
+<td style="text-align: center;">uint8 (N)
+</td>
+<td width="254">Connected String</td>
+</tr>
+<tr>
+<td style="width: 117px;">L<br>
+</td>
+<td style="text-align: center;">In</td>
+<td style="white-space: nowrap; text-align: center;">Any integer</td>
+<td width="254">Number of characters (L) are taken
+from the entered
+string, starting at the right. </td>
+</tr>
+<tr>
+<td>Out</td>
+<td style="text-align: center;">Out</td>
+<td style="text-align: center;">uint8 (N)
+</td>
+<td>Output string</td>
+</tr>
+<tr>
+<td>ENO</td>
+<td style="text-align: center;">Out</td>
+<td style="text-align: center;">boolean<br>
+</td>
+<td>ENO&nbsp;is <span style="font-style: italic;">false</span> if an error has been 
+occurred. If the block has been processed correctly the ENO Output is set to 
+<span style="font-style: italic;">true</span>.</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<font color="#990000" size="+1"><b>Example</b></font>
+<blockquote>
+<p>Examples for illustration: String 'abcde' is connected to
+input In.<br>
+<span style="font-weight: bold;"></span></p>
+<p><span style="font-weight: bold;">Example 1:</span><br>
+</p>
+<ul>
+<li>L =&nbsp;3 : 3 characters are taken from the string,
+starting at the right.</li>
+<li>Result: 'cde'</li>
+</ul>
+<p><span style="font-weight: bold;">Example 2:</span><br>
+</p>
+<ul>
+<li>L =&nbsp; 7 : 7 characters would be taken from the
+string, starting at the
+right. However, as the string only contains 5 characters, the string is
+output without any changes.</li>
+<li>Result: 'abcde'<br>
+</li>
+</ul>
+<p><span style="font-weight: bold;">Example 3:</span><br>
+</p>
+<ul>
+<li>L: -2 = The negative input causes an empty output.</li>
+<li>Result: ''</li>
+</ul>
+<p>For more information refer to the <a href="matlab:open(fullfile(fileparts(which('PTC_MBDS_LIB')), 'Examples', 'PTC_MBDS_StringRight_Sample.slx'));">example</a>.</p>
+<p></p>
+</blockquote>
+</body></html>

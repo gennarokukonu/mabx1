@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>SampleAndHold_RE table</title>
+
+<link href="../../../Help/HowToDo_CSS.css" rel="stylesheet" type="text/css" />
+<!-- $Log: SampleAndHold_RE_table.html  $ --><!-- Revision 1.2 2014/10/10 15:52:03MESZ Semmelrodt, Sven (uid60719) --><!-- Updated to MBDS V5.0 --><!-- Revision 1.2 2014/04/09 13:22:59CEST Nitzsche Tilo (uid03085) (uid03085) --><!-- RO-942497-41: Help adaptations for SDA 8.1 -->
+<!-- Revision 1.3 2015/05/18 08:34:14CEST Semmelrodt, Sven (uid60719)  --><!-- Revision 1.2 2014/10/10 15:52:03MESZ Semmelrodt, Sven (uid60719) --><!-- Updated to MBDS V5.0 --><!-- Revision 1.2 2014/04/09 13:22:59CEST Nitzsche Tilo (uid03085) (uid03085) --><!-- RO-942497-41: Help adaptations for SDA 8.1 -->
+<!-- Description for data type support updated --><!-- Revision 1.2 2014/10/10 15:52:03MESZ Semmelrodt, Sven (uid60719) --><!-- Updated to MBDS V5.0 --><!-- Revision 1.2 2014/04/09 13:22:59CEST Nitzsche Tilo (uid03085) (uid03085) --><!-- RO-942497-41: Help adaptations for SDA 8.1 -->
+<link href="../../../Help/HowToDo_CSS.css" rel="stylesheet" type="text/css" />
+<!-- Revision 1.2 2015/02/06 09:49:24MEZ Semmelrodt, Sven (uid60719) --><!-- Revision 1.2 2014/10/10 15:52:03MESZ Semmelrodt, Sven (uid60719) --><!-- Updated to MBDS V5.0 --><!-- Revision 1.2 2014/04/09 13:22:59CEST Nitzsche Tilo (uid03085) (uid03085) --><!-- RO-942497-41: Help adaptations for SDA 8.1 -->
+<link href="../../../Help/HowToDo_CSS.css" rel="stylesheet" type="text/css" />
+<!-- Help images updated --><!-- Revision 1.2 2014/10/10 15:52:03MESZ Semmelrodt, Sven (uid60719) --><!-- Updated to MBDS V5.0 --><!-- Revision 1.2 2014/04/09 13:22:59CEST Nitzsche Tilo (uid03085) (uid03085) --><!-- RO-942497-41: Help adaptations for SDA 8.1 -->
+</head>
+<body>
+<table style="border-collapse: collapse; width: 566px;" border="1" bordercolor="#000000" cellpadding="4" cellspacing="0">
+<tbody>
+<tr>
+<td style="width: 180px;" align="middle" height="180">
+<blockquote>
+<p style="margin-left: 0px; width: 101px;"><img style="width: 125px; height: 85px;" alt="" src="../Images/PTC_MBDS_SampleAndHold_RE.png" /> </p>
+</blockquote>
+<p>&nbsp;</p>
+</td>
+<td style="width: 184px;" height="180" valign="top"> <b>Inputs:</b><br />
+&nbsp; u: numeric<br />
+&nbsp; E: logic<br />
+&nbsp; R: logic<br />
+&nbsp; IV: numeric<br />
+<b>Outputs:</b><br />
+&nbsp; y: numeric<br />
+<b>States:</b><br />
+&nbsp; x: numeric </td>
+<td style="vertical-align: top;"><b>Init-Code:</b><br />
+&nbsp;x = 0.0;</td>
+<td style="width: 180px;" height="180" valign="top"> <b>Run-Code:</b><br />
+&nbsp;if (R) {<br />
+&nbsp;&nbsp;x = IV;<br />
+&nbsp;}<br />
+&nbsp;else if (E) {<br />
+&nbsp;&nbsp;x = u;<br />
+&nbsp;}<br />
+&nbsp;y = x;<br />
+</td>
+</tr>
+</tbody>
+</table>
+</body></html>

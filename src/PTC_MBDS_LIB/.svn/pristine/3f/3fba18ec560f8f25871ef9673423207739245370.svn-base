@@ -1,0 +1,168 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>ScrollLineWrapAround</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta content="Dr. Sven Semmelrodt" name="Author">
+<meta content="Microsoft FrontPage 6.0" name="GENERATOR"></head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td bgcolor="#ffe4b0" valign="baseline"><b>MBDS
+Environment</b></td>
+<td bgcolor="#ffe4b0">
+<div align="right"><b><font color="#0000ee">&nbsp;</font></b></div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td>
+<h1>Scroll Line Wrap Around</h1>
+</td>
+<td align="right"><a href="matlab:doc">MATLAB
+Helpdesk</a>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<br>
+<p><b><font color="#990000" size="+1">General</font></b></p>
+<blockquote>
+<p>Scroll within a list box and provide a selected/highlighted
+item. There is wrapping around performed at
+the beginning or end of
+the list. </p>
+</blockquote>
+<p><font color="#990000" size="+1"><b>Library</b></font>
+</p>
+<blockquote>
+<p>MBDS Blockset </p>
+</blockquote>
+<font color="#990000" size="+1"><b>Description</b></font>
+<blockquote>
+<p>&nbsp;&nbsp;&nbsp;<img src="Images/PTC_MBDS_ScrollLineWrapAround.png" height="115"><br>
+</p>
+<p>This block is used to scroll line by line
+within&nbsp;list boxes, check boxes, or page containers. The main
+difference to block <a href="PTC_MBDS_ScrollLineNoWrap.html">ScrollLineNoWrap</a>
+is that wrapping around is performed at the beginning or end of the
+list. This means that scrolling down from the last item causes a jump
+to the first item and&nbsp;vice versa. Additional,
+there is a reset option available. For that,
+also the selected item and the first visible item can be specified as
+input signal.</p>
+<p>A visualization of the scrolling
+behavior using
+this block is illustrated in the following two figures:
+</p>
+<p>&nbsp;&nbsp;&nbsp;<img src="Images/PTC_MBDS_ScrollLineWrapAround_ListBoxEx1.png" height="142"><br>
+<span style="font-weight: bold;">&nbsp;&nbsp;&nbsp;Figure
+1</span>: Scrolling down in a list box with <i>nItems</i>
+= 6, <i>nVisItems</i>
+= 3 items, and wrap around
+</p>
+<p>&nbsp;&nbsp;&nbsp;<img src="Images/PTC_MBDS_ScrollLineWrapAround_ListBoxEx2.png" height="142"><br>
+<span style="font-weight: bold;">&nbsp;&nbsp;&nbsp;Figure
+2</span>: Scrolling up in a list box with <i>nItems</i>
+= 6, <i>nVisItems</i>
+= 3 items and wrap around
+</p>
+<span style="font-weight: bold;">Remarks:</span>
+<ul>
+<li>Keep in mind that
+item <i>i</i> has index <i>i</i> -1.</li><li>Scrolling up/down referes to the visual location and not
+to the item number.</li><ul><li>Scrolling up from&nbsp;<i>SelItem</i>
+= 4 leads to&nbsp;<i>SelItem</i> = 3.</li></ul><ul><li>Scrolling down&nbsp;from&nbsp;<i>SelItem</i>
+= 4 leads to&nbsp;<i>SelItem</i> = 5.</li></ul><li>The first item is selected/highlighted initially.</li>
+</ul>
+</blockquote>
+<p><font color="#990000" size="+1"><b>Inputs
+and
+Outputs</b></font></p>
+<blockquote>
+<table border="2">
+<tbody>
+<tr>
+<th width="50">Port</th>
+<th width="25">I/O</th>
+<th width="75">Data Type</th>
+<th width="320">Description</th>
+</tr>
+<tr>
+<td>Up</td>
+<td style="text-align: center;">In</td>
+<td style="text-align: center;">boolean</td>
+<td>Signal to move up the selected item</td>
+</tr>
+<tr>
+<td>Down</td>
+<td style="text-align: center;">In</td>
+<td style="text-align: center;">boolean</td>
+<td>Singal to move down the selected item</td>
+</tr>
+<tr>
+<td>Reset</td>
+<td style="text-align: center;">In</td>
+<td style="text-align: center;">boolean</td>
+<td>Reset option</td>
+</tr>
+<tr>
+<td>nItems</td>
+<td style="text-align: center;">In</td>
+<td style="text-align: center;">uint8</td>
+<td>Total number of list box items</td>
+</tr>
+<tr>
+<td>nVisItems</td>
+<td style="text-align: center;">In</td>
+<td style="text-align: center;">uint8</td>
+<td>Number of visible items</td>
+</tr>
+<tr>
+<td>SetSelItem</td>
+<td style="text-align: center;">In</td>
+<td style="text-align: center;">uint8</td>
+<td>Selected item after reset</td>
+</tr>
+<tr>
+<td>SetFirstItem</td>
+<td style="text-align: center;">In</td>
+<td style="text-align: center;">unit8</td>
+<td>First item after reset</td>
+</tr>
+<tr>
+<td>FirstItem</td>
+<td style="text-align: center;">Out</td>
+<td style="text-align: center;">uint8</td>
+<td>Index of the first visible item</td>
+</tr>
+<tr>
+<td>SelItem</td>
+<td style="text-align: center;">Out</td>
+<td style="text-align: center;">uint8</td>
+<td>Index of the selected item</td>
+</tr>
+<tr>
+<td>ItemAbove</td>
+<td style="text-align: center;">Out</td>
+<td style="text-align: center;">boolean</td>
+<td>Indicates if further items exist above the selected
+item</td>
+</tr>
+<tr>
+<td>ItemBelow</td>
+<td style="text-align: center;">Out</td>
+<td style="text-align: center;">boolean</td>
+<td>Indicates if further items exist below the
+selected item</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<p><b><font color="#990000" size="+1">Example</font></b></p>
+<blockquote>
+<p>Refer to the <a href="matlab:open(fullfile(fileparts(which('PTC_MBDS_LIB')), 'Examples', 'PTC_MBDS_ScrollLineWrapAround_Sample.slx'));">example</a>.</p><p><span style="font-style: italic;"></span></p>
+</blockquote>
+</body></html>

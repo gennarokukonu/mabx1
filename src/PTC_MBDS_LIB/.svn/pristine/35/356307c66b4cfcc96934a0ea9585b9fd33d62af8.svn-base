@@ -1,0 +1,226 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>String Replace</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta content="Matthias Hog" name="Author">
+<meta content="Microsoft FrontPage 6.0" name="GENERATOR"></head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td bgcolor="#ffe4b0" valign="baseline"><b>MBDS
+Environment</b></td>
+<td bgcolor="#ffe4b0">
+<div align="right"><b><font color="#0000ee">&nbsp;</font></b></div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td>
+<h1>String Replace</h1>
+</td>
+<td align="right"> &nbsp;<a href="matlab:doc">MATLAB
+Helpdesk</a>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- INFO -->
+<p><b><font color="#990000" size="+1">General</font></b></p>
+<blockquote>
+<p>Replace a&nbsp;substring by another string. </p>
+</blockquote>
+<p><font color="#990000" size="+1"><b>Library</b></font>
+</p>
+<blockquote>
+<p>MBDS Blockset </p>
+</blockquote>
+<font color="#990000" size="+1"><b>Description</b></font>
+<blockquote>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; <img style="border: 0px solid ; width: 114px; height: 73px;" alt="" src="Images/PTC_MBDS_StringReplace.png"></p>
+This
+block acts like a combination of the <a href=".\PTC_MBDS_StringDelete.html">string
+delete</a> and the <a href=".\PTC_MBDS_StringInsert.html">string
+insert</a>
+operation. At first, a&nbsp;substring within the string
+connected at&nbsp;input In1 is deleted. The position and the number
+of
+characters are specified by the inputs P and L. Afterwards, the string
+connected at input In2 is inserted at the&nbsp;position where the
+substring was deleted.<br>
+<br>
+The block has an ENO (Error Number Output) output port to indicate an
+error. The ENO output is
+set to false&nbsp;in case of an error, otherwise it is set to true.
+The
+ENO output port can be hidden/shown via the parameter&nbsp;<span style="font-weight: bold;">Show ENO port</span> in the
+block mask.<br>
+<br>
+For special values of L and/or P the block behaves
+as follows:<br>
+<ul>
+<li>If P is zero or negative the specified position is
+invalid and hence the ENO output is set to false.</li><li>If L is zero no characters are deleted from string In1
+and string In2 is inserted at position P. The ENO output is set to true.</li>
+<li>If L is negative then P = P + L and L = L * -1</li>
+<ul>
+<li>If the&nbsp;calculated start position is negative,
+string In2 is still
+inserted at this position, but only the characters in the valid
+position range
+(P &gt; 0) are output together with the added string In1.</li>
+</ul>
+<ul>
+<li>If string In2 is completely in the negative range, only
+string In1 will be passed to the output.<br></li>
+</ul>
+</ul>
+<span style="font-weight: bold;">Remark: </span>Any
+operation that exceeds the limits of string In1 is considered
+an error and the ENO output is set to false.<br>
+</blockquote>
+<p><font color="#990000" size="+1"><b>Inputs
+and
+Outputs</b></font></p>
+<blockquote>
+<table style="width: 487px; height: 288px;" border="2">
+<tbody>
+<tr>
+<th width="117"><b>Port </b></th>
+<th><b>I/O </b></th>
+<td style="white-space: nowrap;"><span style="font-weight: bold;">Data
+Type</span></td>
+<th style="width: 229px;"><b>Description </b></th>
+</tr>
+<tr>
+<td width="117">In1<br>
+</td>
+<td style="text-align: center;">In<br>
+</td>
+<td style="text-align: center;">uint8 (N)</td>
+<td style="width: 229px;">String to be manipulated</td>
+</tr>
+<tr>
+<td>In2</td>
+<td style="text-align: center;">In</td>
+<td style="text-align: center;">uint8 (N)</td>
+<td style="width: 229px;">String to be inserted</td>
+</tr>
+<tr>
+<td>L</td>
+<td style="text-align: center;">In</td>
+<td style="text-align: center;">Any integer</td>
+<td style="width: 229px;">Number or characters of
+the substring to
+be deleted </td>
+</tr>
+<tr>
+<td>P</td>
+<td style="text-align: center;">In</td>
+<td style="white-space: nowrap; text-align: center;">Any integer</td>
+<td style="width: 229px;">Position of the
+substring to be deleted</td>
+</tr>
+<tr>
+<td style="width: 117px;">Out<br>
+</td>
+<td style="text-align: center;">Out</td>
+<td style="text-align: center;">uint8 (N)</td>
+<td style="width: 229px;">Resulting String<br>
+</td>
+</tr>
+<tr>
+<td>ENO</td>
+<td style="text-align: center;">Out</td>
+<td style="text-align: center;">boolean</td>
+<td style="width: 229px;">ENO&nbsp;is <span style="font-style: italic;">false</span> if an error has been 
+occurred. If the block has been processed correctly the ENO Output is set to 
+<span style="font-style: italic;">true</span>.</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<font color="#990000" size="+1"><b>Example</b></font>
+<blockquote>
+<p>To illustrate the behavior of the block some examples shall
+be
+discussed. Suppose the string 'abcdefg' is connected to input In1 and
+'xyz' is connected to In2</p>
+<span style="font-weight: bold;"></span><span style="font-weight: bold;">Example 1:</span><br>
+<ul>
+<li>L = 2 : 2 characters are deleted.</li>
+<li>P =&nbsp;3 : The characters are deleted from
+positions 3 ('c') to 4 ('d').
+Then In2 is inserted at position 3.</li>
+<li>Result: abxyzefg</li>
+</ul>
+<span style="font-weight: bold;">Example 2:</span><br>
+<ul>
+<li>L = 6 : 6 characters are to be deleted.</li>
+<li>P = -3 : The negative value defines a
+position&nbsp;left of the string,
+hence characters are deleted from positions &ndash;3 to 2.</li>
+<li>Result:&nbsp;cdefg</li>
+<li>Detailed explanation: Positions -3 to 0 are not within
+the valid
+range. Only the characters in position 1 and 2 are deleted
+('ab'). The starting position of the input string In2 is -3. Since the
+fact that the length of In2 is only 3, no&nbsp;characters remain to
+insert in the valid range.</li>
+</ul>
+<span style="font-weight: bold;">Example 3:</span><br>
+<ul>
+<li>L: -3</li>
+<li>P: 5</li>
+<li>Is L is negative, the start position
+is&nbsp;calculated according to the
+above formula as follows:</li>
+<ul>
+<li>P = 5 + (-3) = 2</li>
+</ul>
+<ul>
+<li>L = -3 * -1 = 3</li>
+</ul>
+<ul>
+<li>This&nbsp;means: 3 characters of In1 are deleted,
+beginning at position 2.
+Then In2 is inserted at position 2.</li>
+</ul>
+<li>Result: axyzefg</li>
+</ul>
+<span style="font-weight: bold;">Example 4:</span><br>
+<ul>
+<li>L: -3</li>
+<li>P: 2</li>
+<li>As L is negative, the start position
+is&nbsp;calculated according to the
+above formula as follows:</li>
+<ul>
+<li>P = 2 + (-3) = -1</li>
+</ul>
+<ul>
+<li>L = -3 * -1 = 3</li>
+</ul>
+<ul>
+<li>This means: 3 characters of In1 are to be deleted,
+beginning at
+position -1. Then In2 is inserted at position -1.</li>
+</ul>
+<li>Result: zbcdefg</li>
+<li>Detailed
+explanation: Positions -1 to 0 are not within the valid
+range. Only the character in the valid position 1 is deleted ('a').
+Then In2 is inserted at position -1. Position -1 and 0 are not within
+the valid range. At position 1 we found&nbsp;'z' which will
+be&nbsp;represents position 1, hence it is output. The
+final&nbsp;output string is made up of the valid&nbsp;part of
+In2 ('z')
+and
+the remaining string of In1 ('bcdefg').</li>
+</ul>
+For more information &nbsp;refer to the <a href="matlab:open(fullfile(fileparts(which('PTC_MBDS_LIB')), 'Examples', 'PTC_MBDS_StringReplace_Sample.slx'));">example</a>.
+</blockquote>
+<br>
+</body></html>

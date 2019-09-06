@@ -1,0 +1,15 @@
+function out = roundto(input, factor)
+%% OUT = ROUNDTO(INPUT, FACTOR)
+% Rounds the value INPUT to the nearest multiple of FACTOR
+%
+% Example:
+%   roundto(12345.67, 10) = 12350
+%   roundto(12345.67,  2) = 12346
+%   roundto(12345.67, .1) = 12345.7
+%
+% Revision History
+%   1.[EO]2010.03.17 Initial revision
+
+out = round(input / factor) * factor;
+
+end

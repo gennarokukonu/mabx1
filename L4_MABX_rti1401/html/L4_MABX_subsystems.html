@@ -1,0 +1,5384 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="rtwreport.css" /><script language="JavaScript" type="text/javascript" src="rtwshrink.js"></script><title>
+Non-virtual subsystems in L4_MABX
+</title>
+
+</head>
+<body onload="try {if (top) {if (top.rtwPageOnLoad) top.rtwPageOnLoad('rtwIdSubsystem'); else local_onload();}} catch(err) {};">
+<h1>
+Non-virtual subsystems in L4_MABX
+</h1>
+<div>
+
+</div>
+<div>
+
+</div>
+<h3 name="sec_Code_Mapping" id="sec_Code_Mapping">
+1. Code Mapping <span title="Click to shrink or expand section" style="cursor:pointer;font-weight:normal;" id="rtwIdSubsystem_table_001_control" onclick ="if (rtwTableShrink) rtwTableShrink(window.document, this, 'rtwIdSubsystem_table_001', false)"><span class="shrink-button">[<u>hide</u>]</span></span>
+</h3>
+<table width="100%" name="rtwIdSubsystem_table_001" id="rtwIdSubsystem_table_001" border="0">
+<tr>
+<td align="left" valign="top">
+<p>
+The following table: <br /><ul>
+<li>
+provides a mapping from the non-virtual subsystems in the model to functions or reusable functions in the generated code and
+</li>
+<li>
+notes exceptions that caused some non-virtual subsystems to not reuse code even though they were assigned a function packaging setting ('Function packaging' entry on the Subsystem Block Dialog) of 'Auto' or 'Reusable function'.
+</li>
+
+</ul>
+
+</p>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table class="AltRow FirstColumn" cellspacing="0">
+<tr class="heading">
+<th align="left" valign="top">
+<b>
+Subsystem
+</b>
+
+</th>
+<th align="left" valign="top">
+<b>
+Reuse Setting
+</b>
+
+</th>
+<th align="left" valign="top">
+<b>
+Reuse Outcome
+</b>
+
+</th>
+<th align="left" valign="top">
+<b>
+Outcome Diagnostic
+</b>
+
+</th>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S73&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MA_FAULT_MANAGER_10000ms" TARGET="rtwreport_document_frame">Reusable Function(S73)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S74&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MA_FAULT_MANAGER_10000ms" TARGET="rtwreport_document_frame">Reusable Function(S73)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S86&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S87&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S88&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S91&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S92&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S93&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S94&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S117&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S121&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S125&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S126&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S127&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S131&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S133&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S136&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S137&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S155&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S159&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S163&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S164&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S165&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S169&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S171&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S174&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S175&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S184&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S191&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S198&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S227&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S229&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S230&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S231&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S232&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S233&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S234&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S221&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S249&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S253&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S257&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S258&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S259&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S263&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S265&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S268&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S269&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S302&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S303&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S304&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S305&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S311&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S312&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S317&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S318&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S319&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S326&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S341&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S364&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S369&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S375&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S380&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S726&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S727&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S728&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S744&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S745&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S741&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S752&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S753&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S749&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S760&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S761&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S757&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S768&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S769&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S765&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S776&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S777&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S773&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S782&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S783&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S784&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S785&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S790&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S791&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S796&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S1034&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S1035&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S1036&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S1037&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else" TARGET="rtwreport_document_frame">Reusable Function(S86)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S110&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_Calculate_D_term" TARGET="rtwreport_document_frame">Reusable Function(S110)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S148&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_Calculate_D_term" TARGET="rtwreport_document_frame">Reusable Function(S110)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S242&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_Calculate_D_term" TARGET="rtwreport_document_frame">Reusable Function(S110)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S128&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else3" TARGET="rtwreport_document_frame">Reusable Function(S128)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S166&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else3" TARGET="rtwreport_document_frame">Reusable Function(S128)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S260&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else3" TARGET="rtwreport_document_frame">Reusable Function(S128)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S639&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else3" TARGET="rtwreport_document_frame">Reusable Function(S128)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S1040&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else3" TARGET="rtwreport_document_frame">Reusable Function(S128)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S111&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_Calculate_I_term" TARGET="rtwreport_document_frame">Reusable Function(S111)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S149&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_Calculate_I_term" TARGET="rtwreport_document_frame">Reusable Function(S111)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S243&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_Calculate_I_term" TARGET="rtwreport_document_frame">Reusable Function(S111)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S176&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else_l" TARGET="rtwreport_document_frame">Reusable Function(S176)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S179&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else_g" TARGET="rtwreport_document_frame">Reusable Function(S179)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S180&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else_g" TARGET="rtwreport_document_frame">Reusable Function(S179)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S186&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else_g" TARGET="rtwreport_document_frame">Reusable Function(S179)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S187&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else_g" TARGET="rtwreport_document_frame">Reusable Function(S179)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S296&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else_g" TARGET="rtwreport_document_frame">Reusable Function(S179)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S297&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else_g" TARGET="rtwreport_document_frame">Reusable Function(S179)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S350&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else_g" TARGET="rtwreport_document_frame">Reusable Function(S179)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S351&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else_g" TARGET="rtwreport_document_frame">Reusable Function(S179)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S357&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else_g" TARGET="rtwreport_document_frame">Reusable Function(S179)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S333&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else_g" TARGET="rtwreport_document_frame">Reusable Function(S179)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S987&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else_g" TARGET="rtwreport_document_frame">Reusable Function(S179)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S307&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else_c" TARGET="rtwreport_document_frame">Reusable Function(S307)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S339&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else_m" TARGET="rtwreport_document_frame">Reusable Function(S339)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S720&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else_p" TARGET="rtwreport_document_frame">Reusable Function(S720)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S947&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_ALL_CTRL_DISABLED" TARGET="rtwreport_document_frame">Reusable Function(S947)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S948&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_ALL_CTRL_DISABLED" TARGET="rtwreport_document_frame">Reusable Function(S947)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S956&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_ALL_CTRL_DISABLED" TARGET="rtwreport_document_frame">Reusable Function(S947)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S957&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_ALL_CTRL_DISABLED" TARGET="rtwreport_document_frame">Reusable Function(S947)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S958&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_ALL_CTRL_DISABLED" TARGET="rtwreport_document_frame">Reusable Function(S947)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S994&gt;
+</td>
+<td align="left" valign="top">
+Reusable Function
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_If_Then_Else_o" TARGET="rtwreport_document_frame">Reusable Function(S994)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S395&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_Background_Task" TARGET="rtwreport_document_frame">Function(S395)</A>
+</td>
+<td align="left" valign="top">
+<A HREF="#S395blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S396&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_IRQ_Level_2_SW_INT" TARGET="rtwreport_document_frame">Function(S396)</A>
+</td>
+<td align="left" valign="top">
+<A HREF="#S396blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S399&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_TcpInputProcessing" TARGET="rtwreport_document_frame">Function(S399)</A>
+</td>
+<td align="left" valign="top">
+<A HREF="#S399blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S397&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_Interrupt_Task" TARGET="rtwreport_document_frame">Function(S397)</A>
+</td>
+<td align="left" valign="top">
+<A HREF="#S397blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S802&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+<A HREF="L4_MABX_c.html#fcn_L4_MABX_IncrementTimer" TARGET="rtwreport_document_frame">Function(S802)</A>
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S29&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S29blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S11&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S11blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S35&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S35blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S12&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S12blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S41&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S41blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S13&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S13blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S47&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S47blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S14&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S14blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S53&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S53blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S15&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S15blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S59&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S59blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S16&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S16blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S67&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S68&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S69&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S119&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S157&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S251&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S96&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S97&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S177&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S178&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S201&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S204&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S212&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S223&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S206&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S294&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S320&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S321&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S345&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S346&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S70&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S71&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S72&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S463&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S463blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S472&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S472blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S480&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S480blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S482&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S482blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S484&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S484blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S486&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S486blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S488&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S488blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S490&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S490blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S492&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S492blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S494&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S494blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S496&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S496blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S497&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S497blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S499&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S499blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S501&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S501blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S503&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S503blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S505&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S505blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S509&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S510&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S506&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S552&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S552blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S554&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S554blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S556&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S556blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S558&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S558blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S560&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S560blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S561&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S561blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S563&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S563blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S566&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S566blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S567&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S567blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S571&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S571blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S572&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S572blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S582&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S582blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S583&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S583blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S594&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S594blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S595&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S595blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S596&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S596blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S604&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S604blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S605&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S605blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S606&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S606blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S608&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S608blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S609&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S609blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S611&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S611blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S613&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S613blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S615&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S615blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S617&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S617blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S619&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S619blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S621&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S621blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S623&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S623blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S625&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S625blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S627&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S627blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S629&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S629blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S633&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S634&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S630&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S662&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S663&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S664&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S665&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S666&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S731&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S732&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S722&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S801&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S806&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S825&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S825blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S833&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S833blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S807&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S807blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S845&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S845blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S846&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S846blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S849&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S849blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S850&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S850blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S865&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S865blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S866&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S866blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S868&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S868blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S870&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S870blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S883&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S894&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S894blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S808&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S808blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S907&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S907blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S916&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S916blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S917&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S917blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S920&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S920blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S921&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S921blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S929&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S929blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S960&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S809&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S809blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S974&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S974blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S976&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S976blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S984&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S984blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S810&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S810blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S811&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S1000&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S1000blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S812&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S812blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S1011&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S1011blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S1012&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S1012blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S813&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S813blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S1014&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S1019&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S1019blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S1020&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S1020blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="left" valign="top">
+&lt;S1024&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<A HREF="#S1024blker"TARGET="rtwreport_document_frame"><FONT COLOR="red">[exceptions]</FONT></A>
+</td>
+
+</tr>
+<tr class="even">
+<td align="left" valign="top">
+&lt;S1046&gt;
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Inline
+</td>
+<td align="left" valign="top">
+<FONT COLOR="green">normal</FONT>
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+<h3 name="sec_Code_Reuse_Exceptions" id="sec_Code_Reuse_Exceptions">
+2. Code Reuse Exceptions <span title="Click to shrink or expand section" style="cursor:pointer;font-weight:normal;" id="rtwIdSubsystem_table_002_control" onclick ="if (rtwTableShrink) rtwTableShrink(window.document, this, 'rtwIdSubsystem_table_002', false)"><span class="shrink-button">[<u>hide</u>]</span></span>
+</h3>
+<table width="100%" name="rtwIdSubsystem_table_002" id="rtwIdSubsystem_table_002" border="0">
+<tr>
+<td align="left" valign="top">
+<p>
+The following section provides details on each exception that caused a non-virtual subsystem with a function packaging setting of<br /><ul>
+<li>
+'Auto' to become an inlined code segment,
+</li>
+<li>
+'Auto' to become a non-reusable function without arguments, or
+</li>
+<li>
+'Reusable function' to become a non-reusable function without arguments.
+</li>
+
+</ul>
+<b>Note:</b>This section does not report graphically identical non-virtual subsystems marked as 'Auto' that were not reused due to differences in their functional properties (such as dimensions, datatypes, work vectors, parameters, etc.).  You may identify reasons for non-reuse in such cases by inspecting the differences in the functional attributes of the subsystems in the model or in the inlined generated code.
+</p>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<A NAME="S395blker">Contents of &lt;S395&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/ETHERNET/TCPIP_Setup/Background_Task/dsa_tcpip_bkg_sfcn]</li>
+</ul>
+
+<A NAME="S396blker">Contents of &lt;S396&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/ETHERNET/TCPIP_Setup/IRQ_Level_2_SW_INT/dsa_tcpip_irq_l2_sfcn]</li>
+</ul>
+
+<A NAME="S399blker">Contents of &lt;S399&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block is a function-call system with mask parameters. To achieve reuse of this block, create an atomic subsystem from this block and move the Trigger block to the newly created subsystem. [L4_MABX/ETHERNET/TCPIP_Setup/Interrupt_Task/Tcp Input Processing]</li>
+</ul>
+
+<ul>
+
+<li>The function-call port of the following block is being driven either by an S-Function with no TLC implementation or an S-Function that sets the option 'SS_OPTION_FORCE_NONINLINED_FCNCALL'. [L4_MABX/ETHERNET/TCPIP_Setup/Interrupt_Task/Tcp Input Processing]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/ETHERNET/TCPIP_Setup/Interrupt_Task/Tcp Input Processing/S-Function1]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/ETHERNET/TCPIP_Setup/IRQ_Level_2_SW_INT/dsa_tcpip_irq_l2_sfcn]</li>
+</ul>
+
+<A NAME="S397blker">Contents of &lt;S397&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/ETHERNET/TCPIP_Setup/Interrupt_Task/dsa_tcpip_irq_l1_sfcn]</li>
+</ul>
+
+<ul>
+
+<li>The following block is a function-call system with mask parameters. To achieve reuse of this block, create an atomic subsystem from this block and move the Trigger block to the newly created subsystem. [L4_MABX/ETHERNET/TCPIP_Setup/Interrupt_Task/Tcp Input Processing]</li>
+</ul>
+
+<ul>
+
+<li>The function-call port of the following block is being driven either by an S-Function with no TLC implementation or an S-Function that sets the option 'SS_OPTION_FORCE_NONINLINED_FCNCALL'. [L4_MABX/ETHERNET/TCPIP_Setup/Interrupt_Task/Tcp Input Processing]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/ETHERNET/TCPIP_Setup/Interrupt_Task/Tcp Input Processing/S-Function1]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/ETHERNET/TCPIP_Setup/IRQ_Level_2_SW_INT/dsa_tcpip_irq_l2_sfcn]</li>
+</ul>
+
+<A NAME="S29blker">Contents of &lt;S29&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/BUS_DIAGNOSTICS/BUS_OFF_RECOVERY_1/CAN_TYPE1_BOR_M1_C1/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/BUS_DIAGNOSTICS/BUS_OFF_RECOVERY_1/CAN_TYPE1_BOR_M1_C1/S-Function1]</li>
+</ul>
+
+<A NAME="S11blker">Contents of &lt;S11&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/BUS_DIAGNOSTICS/BUS_OFF_RECOVERY_1/CAN_TYPE1_BOR_M1_C1/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/BUS_DIAGNOSTICS/BUS_OFF_RECOVERY_1/CAN_TYPE1_BOR_M1_C1/S-Function1]</li>
+</ul>
+
+<A NAME="S35blker">Contents of &lt;S35&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/BUS_DIAGNOSTICS/BUS_OFF_RECOVERY_2/CAN_TYPE1_BOR_M1_C2/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/BUS_DIAGNOSTICS/BUS_OFF_RECOVERY_2/CAN_TYPE1_BOR_M1_C2/S-Function1]</li>
+</ul>
+
+<A NAME="S12blker">Contents of &lt;S12&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/BUS_DIAGNOSTICS/BUS_OFF_RECOVERY_2/CAN_TYPE1_BOR_M1_C2/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/BUS_DIAGNOSTICS/BUS_OFF_RECOVERY_2/CAN_TYPE1_BOR_M1_C2/S-Function1]</li>
+</ul>
+
+<A NAME="S41blker">Contents of &lt;S41&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/BUS_DIAGNOSTICS/BUS_OFF_RECOVERY_3/CAN_TYPE1_BOR_M2_C1/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/BUS_DIAGNOSTICS/BUS_OFF_RECOVERY_3/CAN_TYPE1_BOR_M2_C1/S-Function1]</li>
+</ul>
+
+<A NAME="S13blker">Contents of &lt;S13&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/BUS_DIAGNOSTICS/BUS_OFF_RECOVERY_3/CAN_TYPE1_BOR_M2_C1/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/BUS_DIAGNOSTICS/BUS_OFF_RECOVERY_3/CAN_TYPE1_BOR_M2_C1/S-Function1]</li>
+</ul>
+
+<A NAME="S47blker">Contents of &lt;S47&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/BUS_DIAGNOSTICS/BUS_OFF_RECOVERY_4/CAN_TYPE1_BOR_M2_C2/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/BUS_DIAGNOSTICS/BUS_OFF_RECOVERY_4/CAN_TYPE1_BOR_M2_C2/S-Function1]</li>
+</ul>
+
+<A NAME="S14blker">Contents of &lt;S14&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/BUS_DIAGNOSTICS/BUS_OFF_RECOVERY_4/CAN_TYPE1_BOR_M2_C2/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/BUS_DIAGNOSTICS/BUS_OFF_RECOVERY_4/CAN_TYPE1_BOR_M2_C2/S-Function1]</li>
+</ul>
+
+<A NAME="S53blker">Contents of &lt;S53&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/BUS_DIAGNOSTICS/BUS_OFF_RECOVERY_5/CAN_TYPE1_BOR_M3_C1/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/BUS_DIAGNOSTICS/BUS_OFF_RECOVERY_5/CAN_TYPE1_BOR_M3_C1/S-Function1]</li>
+</ul>
+
+<A NAME="S15blker">Contents of &lt;S15&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/BUS_DIAGNOSTICS/BUS_OFF_RECOVERY_5/CAN_TYPE1_BOR_M3_C1/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/BUS_DIAGNOSTICS/BUS_OFF_RECOVERY_5/CAN_TYPE1_BOR_M3_C1/S-Function1]</li>
+</ul>
+
+<A NAME="S59blker">Contents of &lt;S59&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/BUS_DIAGNOSTICS/BUS_OFF_RECOVERY_6/CAN_TYPE1_BOR_M3_C2/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/BUS_DIAGNOSTICS/BUS_OFF_RECOVERY_6/CAN_TYPE1_BOR_M3_C2/S-Function1]</li>
+</ul>
+
+<A NAME="S16blker">Contents of &lt;S16&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/BUS_DIAGNOSTICS/BUS_OFF_RECOVERY_6/CAN_TYPE1_BOR_M3_C2/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/BUS_DIAGNOSTICS/BUS_OFF_RECOVERY_6/CAN_TYPE1_BOR_M3_C2/S-Function1]</li>
+</ul>
+
+<A NAME="S463blker">Contents of &lt;S463&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN1_RX_TPCM_FF_00/RX_CAN_1/CAN_TYPE1_RX_M1_C1/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN1_RX_TPCM_FF_00/RX_CAN_1/CAN_TYPE1_RX_M1_C1/S-Function1]</li>
+</ul>
+
+<A NAME="S472blker">Contents of &lt;S472&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN1_RX_TPDT_FF_00/RX_CAN_1/CAN_TYPE1_RX_M1_C1/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN1_RX_TPDT_FF_00/RX_CAN_1/CAN_TYPE1_RX_M1_C1/S-Function1]</li>
+</ul>
+
+<A NAME="S480blker">Contents of &lt;S480&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_ACC1_2A/RX_CAN_1/ACC1_2A_/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_ACC1_2A/RX_CAN_1/ACC1_2A_/S-Function1]</li>
+</ul>
+
+<A NAME="S482blker">Contents of &lt;S482&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_AEBS1_2A/RX_CAN_1/AEBS1_A0/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_AEBS1_2A/RX_CAN_1/AEBS1_A0/S-Function1]</li>
+</ul>
+
+<A NAME="S484blker">Contents of &lt;S484&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_AIR1_31/RX_CAN_1/AIR1/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_AIR1_31/RX_CAN_1/AIR1/S-Function1]</li>
+</ul>
+
+<A NAME="S486blker">Contents of &lt;S486&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_AMB_00/RX_CAN_1/AMB/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_AMB_00/RX_CAN_1/AMB/S-Function1]</li>
+</ul>
+
+<A NAME="S488blker">Contents of &lt;S488&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_B2_31/RX_CAN_4/B2/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_B2_31/RX_CAN_4/B2/S-Function1]</li>
+</ul>
+
+<A NAME="S490blker">Contents of &lt;S490&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_Bendix_RADAR_Tracks/RX_CAN_1/Tracks/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_Bendix_RADAR_Tracks/RX_CAN_1/Tracks/S-Function1]</li>
+</ul>
+
+<A NAME="S492blker">Contents of &lt;S492&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_CCVS1_00/RX_CAN_1/CCVS1_00/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_CCVS1_00/RX_CAN_1/CCVS1_00/S-Function1]</li>
+</ul>
+
+<A NAME="S494blker">Contents of &lt;S494&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_CCVS1_31/RX_CAN_1/CCVS1_31/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_CCVS1_31/RX_CAN_1/CCVS1_31/S-Function1]</li>
+</ul>
+
+<A NAME="S496blker">Contents of &lt;S496&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_COGSOGRapidUpdate_01/RX_CAN_4/COGSOGRapidUpdate_00/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_COGSOGRapidUpdate_01/RX_CAN_4/COGSOGRapidUpdate_00/S-Function1]</li>
+</ul>
+
+<A NAME="S497blker">Contents of &lt;S497&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_COGSOGRapidUpdate_01/RX_CAN_4/COGSOGRapidUpdate_1/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_COGSOGRapidUpdate_01/RX_CAN_4/COGSOGRapidUpdate_1/S-Function1]</li>
+</ul>
+
+<A NAME="S499blker">Contents of &lt;S499&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_CVW_0B/RX_CAN_1/CVW_0B1/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_CVW_0B/RX_CAN_1/CVW_0B1/S-Function1]</li>
+</ul>
+
+<A NAME="S501blker">Contents of &lt;S501&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_EBC1_0B/RX_CAN_1_EBC1/EBC1_0B/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_EBC1_0B/RX_CAN_1_EBC1/EBC1_0B/S-Function1]</li>
+</ul>
+
+<A NAME="S503blker">Contents of &lt;S503&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_EBC1_8B/RX_CAN_5_EBC1/EBC1_0B/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_EBC1_8B/RX_CAN_5_EBC1/EBC1_0B/S-Function1]</li>
+</ul>
+
+<A NAME="S505blker">Contents of &lt;S505&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_EBC2_0B/RX_CAN_1/EBC2_0B1/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_EBC2_0B/RX_CAN_1/EBC2_0B1/S-Function1]</li>
+</ul>
+
+<A NAME="S552blker">Contents of &lt;S552&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_EEC1_00/RX_CAN_1/EEC1_001/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_EEC1_00/RX_CAN_1/EEC1_001/S-Function1]</li>
+</ul>
+
+<A NAME="S554blker">Contents of &lt;S554&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_EEC2_00/RX_CAN_2/EEC2_001/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_EEC2_00/RX_CAN_2/EEC2_001/S-Function1]</li>
+</ul>
+
+<A NAME="S556blker">Contents of &lt;S556&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_EEC3_00/RX_CAN_1/EEC3_001/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_EEC3_00/RX_CAN_1/EEC3_001/S-Function1]</li>
+</ul>
+
+<A NAME="S558blker">Contents of &lt;S558&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_ETC2_03/RX_CAN_1/ETC2_031/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_ETC2_03/RX_CAN_1/ETC2_031/S-Function1]</li>
+</ul>
+
+<A NAME="S560blker">Contents of &lt;S560&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_GNSSDOPs_00/RX_CAN_4/GNSSDOPs_011/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_GNSSDOPs_00/RX_CAN_4/GNSSDOPs_011/S-Function1]</li>
+</ul>
+
+<A NAME="S561blker">Contents of &lt;S561&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_GNSSDOPs_00/RX_CAN_4/GNSSDOPs_1/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_GNSSDOPs_00/RX_CAN_4/GNSSDOPs_1/S-Function1]</li>
+</ul>
+
+<A NAME="S563blker">Contents of &lt;S563&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_HRW_0B/RX_CAN_1/HRW_0B/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_HRW_0B/RX_CAN_1/HRW_0B/S-Function1]</li>
+</ul>
+
+<A NAME="S566blker">Contents of &lt;S566&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_PROPB_REAX_2_13/RX_CAN_2/PropB_REAX_2_13/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_PROPB_REAX_2_13/RX_CAN_2/PropB_REAX_2_13/S-Function1]</li>
+</ul>
+
+<A NAME="S567blker">Contents of &lt;S567&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_PROPB_REAX_2_13/RX_CAN_6/PropB_REAX_2_13/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_PROPB_REAX_2_13/RX_CAN_6/PropB_REAX_2_13/S-Function1]</li>
+</ul>
+
+<A NAME="S571blker">Contents of &lt;S571&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_PROPB_REAX_3_13/RX_CAN_1/CAN_TYPE1_RX_M1_C1/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_PROPB_REAX_3_13/RX_CAN_1/CAN_TYPE1_RX_M1_C1/S-Function1]</li>
+</ul>
+
+<A NAME="S572blker">Contents of &lt;S572&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_PROPB_REAX_3_13/RX_CAN_2/CAN_TYPE1_RX_M1_C2/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_PROPB_REAX_3_13/RX_CAN_2/CAN_TYPE1_RX_M1_C2/S-Function1]</li>
+</ul>
+
+<A NAME="S582blker">Contents of &lt;S582&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_PROPB_REAX_4_13/RX_CAN_1/CAN_TYPE1_RX_M1_C1/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_PROPB_REAX_4_13/RX_CAN_1/CAN_TYPE1_RX_M1_C1/S-Function1]</li>
+</ul>
+
+<A NAME="S583blker">Contents of &lt;S583&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_PROPB_REAX_4_13/RX_CAN_2/CAN_TYPE1_RX_M1_C2/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_PROPB_REAX_4_13/RX_CAN_2/CAN_TYPE1_RX_M1_C2/S-Function1]</li>
+</ul>
+
+<A NAME="S594blker">Contents of &lt;S594&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_PROPB_XPR_1_50/RX_CAN_1/CAN_TYPE1_RX_M1_C1/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_PROPB_XPR_1_50/RX_CAN_1/CAN_TYPE1_RX_M1_C1/S-Function1]</li>
+</ul>
+
+<A NAME="S595blker">Contents of &lt;S595&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_PROPB_XPR_1_50/RX_CAN_2/CAN_TYPE1_RX_M1_C2/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_PROPB_XPR_1_50/RX_CAN_2/CAN_TYPE1_RX_M1_C2/S-Function1]</li>
+</ul>
+
+<A NAME="S596blker">Contents of &lt;S596&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_PROPB_XPR_1_50/RX_CAN_3/CAN_TYPE1_RX_M2_C1/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_PROPB_XPR_1_50/RX_CAN_3/CAN_TYPE1_RX_M2_C1/S-Function1]</li>
+</ul>
+
+<A NAME="S604blker">Contents of &lt;S604&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_PX2/RX_CAN_6/PX2_LaneEdgeLeft/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_PX2/RX_CAN_6/PX2_LaneEdgeLeft/S-Function1]</li>
+</ul>
+
+<A NAME="S605blker">Contents of &lt;S605&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_PX2/RX_CAN_6/PX2_LaneEdgeRight/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_PX2/RX_CAN_6/PX2_LaneEdgeRight/S-Function1]</li>
+</ul>
+
+<A NAME="S606blker">Contents of &lt;S606&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_PX2/RX_CAN_6/PX2_LanePosEst/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_PX2/RX_CAN_6/PX2_LanePosEst/S-Function1]</li>
+</ul>
+
+<A NAME="S608blker">Contents of &lt;S608&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_PosRapidUpdate_01/RX_CAN_4/PosRapidUpdate_011/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_PosRapidUpdate_01/RX_CAN_4/PosRapidUpdate_011/S-Function1]</li>
+</ul>
+
+<A NAME="S609blker">Contents of &lt;S609&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_PosRapidUpdate_01/RX_CAN_4/PosRapidUpdate_1/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_PosRapidUpdate_01/RX_CAN_4/PosRapidUpdate_1/S-Function1]</li>
+</ul>
+
+<A NAME="S611blker">Contents of &lt;S611&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_Prop2C2_Status_30/RX_CAN_3/Bendix_Prop2C2_Status_30/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_Prop2C2_Status_30/RX_CAN_3/Bendix_Prop2C2_Status_30/S-Function1]</li>
+</ul>
+
+<A NAME="S613blker">Contents of &lt;S613&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_SSI2_03/RX_CAN_1/SSI2_031/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_SSI2_03/RX_CAN_1/SSI2_031/S-Function1]</li>
+</ul>
+
+<A NAME="S615blker">Contents of &lt;S615&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_STD_PROPB_PX2_1_E2/RX_CAN_6/PX2_MapLaneEgoLeft/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_STD_PROPB_PX2_1_E2/RX_CAN_6/PX2_MapLaneEgoLeft/S-Function1]</li>
+</ul>
+
+<A NAME="S617blker">Contents of &lt;S617&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_STD_PROPB_PX2_1_E3/RX_CAN_6/PX2_MapLaneEgoRight/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_STD_PROPB_PX2_1_E3/RX_CAN_6/PX2_MapLaneEgoRight/S-Function1]</li>
+</ul>
+
+<A NAME="S619blker">Contents of &lt;S619&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_STD_PROPB_PX2_1_E5/RX_CAN_6/PX2_EgoLanePos/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_STD_PROPB_PX2_1_E5/RX_CAN_6/PX2_EgoLanePos/S-Function1]</li>
+</ul>
+
+<A NAME="S621blker">Contents of &lt;S621&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_SystemTime_01/RX_CAN_4/SystemTime_01/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_SystemTime_01/RX_CAN_4/SystemTime_01/S-Function1]</li>
+</ul>
+
+<A NAME="S623blker">Contents of &lt;S623&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_TC1_05/RX_CAN_5/TC1_03_05/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_TC1_05/RX_CAN_5/TC1_03_05/S-Function1]</li>
+</ul>
+
+<A NAME="S625blker">Contents of &lt;S625&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_VDC1_0B/RX_CAN_1/VDC1_0B_/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_VDC1_0B/RX_CAN_1/VDC1_0B_/S-Function1]</li>
+</ul>
+
+<A NAME="S627blker">Contents of &lt;S627&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_VDC2_0B/RX_CAN_1/VDC2_0B1/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_VDC2_0B/RX_CAN_1/VDC2_0B1/S-Function1]</li>
+</ul>
+
+<A NAME="S629blker">Contents of &lt;S629&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_VEP1_03/RX_CAN_1/VEP1/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/INPUTS_PIC_KW/CAN_PIC_KW/CAN_RX_VEP1_03/RX_CAN_1/VEP1/S-Function1]</li>
+</ul>
+
+<A NAME="S825blker">Contents of &lt;S825&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_1000ms/CAN_TX_AIR1_31/TX_CAN4/AIR1/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_1000ms/CAN_TX_AIR1_31/TX_CAN4/AIR1/S-Function1]</li>
+</ul>
+
+<A NAME="S833blker">Contents of &lt;S833&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_1000ms/CAN_TX_AMB_00/TX_CAN4/AMB/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_1000ms/CAN_TX_AMB_00/TX_CAN4/AMB/S-Function1]</li>
+</ul>
+
+<A NAME="S807blker">Contents of &lt;S807&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_1000ms/CAN_TX_AIR1_31/TX_CAN4/AIR1/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_1000ms/CAN_TX_AIR1_31/TX_CAN4/AIR1/S-Function1]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_1000ms/CAN_TX_AMB_00/TX_CAN4/AMB/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_1000ms/CAN_TX_AMB_00/TX_CAN4/AMB/S-Function1]</li>
+</ul>
+
+<A NAME="S845blker">Contents of &lt;S845&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_100ms/CAN_TX_CCVS1_00/TX_CAN2/CCVS1_00/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_100ms/CAN_TX_CCVS1_00/TX_CAN2/CCVS1_00/S-Function1]</li>
+</ul>
+
+<A NAME="S846blker">Contents of &lt;S846&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_100ms/CAN_TX_CCVS1_00/TX_CAN6/CCVS1_00/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_100ms/CAN_TX_CCVS1_00/TX_CAN6/CCVS1_00/S-Function1]</li>
+</ul>
+
+<A NAME="S849blker">Contents of &lt;S849&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_100ms/CAN_TX_PROPB_REAX_5_E4/TX_CAN2/PropB_REAX_5_E4/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_100ms/CAN_TX_PROPB_REAX_5_E4/TX_CAN2/PropB_REAX_5_E4/S-Function1]</li>
+</ul>
+
+<A NAME="S850blker">Contents of &lt;S850&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_100ms/CAN_TX_PROPB_REAX_5_E4/TX_CAN6/PropB_REAX_5_E4/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_100ms/CAN_TX_PROPB_REAX_5_E4/TX_CAN6/PropB_REAX_5_E4/S-Function1]</li>
+</ul>
+
+<A NAME="S865blker">Contents of &lt;S865&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_100ms/CAN_TX_PROPB_XPR_FC/TX_CAN1/PropB_XPR_FC/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_100ms/CAN_TX_PROPB_XPR_FC/TX_CAN1/PropB_XPR_FC/S-Function1]</li>
+</ul>
+
+<A NAME="S866blker">Contents of &lt;S866&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_100ms/CAN_TX_PROPB_XPR_FC/TX_CAN3/PropB_XPR_FC/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_100ms/CAN_TX_PROPB_XPR_FC/TX_CAN3/PropB_XPR_FC/S-Function1]</li>
+</ul>
+
+<A NAME="S868blker">Contents of &lt;S868&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_100ms/COGSRapidUpdate/TX/Std_COGSOGRapidUpdate_01/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_100ms/COGSRapidUpdate/TX/Std_COGSOGRapidUpdate_01/S-Function1]</li>
+</ul>
+
+<A NAME="S870blker">Contents of &lt;S870&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_100ms/EBC1_8B/TX_EBC1_8B/EBC1_TX/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_100ms/EBC1_8B/TX_EBC1_8B/EBC1_TX/S-Function1]</li>
+</ul>
+
+<A NAME="S894blker">Contents of &lt;S894&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_100ms/POSRapidUpdate/TX/Std_PosRapidUpdate_01/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_100ms/POSRapidUpdate/TX/Std_PosRapidUpdate_01/S-Function1]</li>
+</ul>
+
+<A NAME="S808blker">Contents of &lt;S808&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_100ms/CAN_TX_CCVS1_00/TX_CAN2/CCVS1_00/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_100ms/CAN_TX_CCVS1_00/TX_CAN2/CCVS1_00/S-Function1]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_100ms/CAN_TX_CCVS1_00/TX_CAN6/CCVS1_00/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_100ms/CAN_TX_CCVS1_00/TX_CAN6/CCVS1_00/S-Function1]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_100ms/CAN_TX_PROPB_REAX_5_E4/TX_CAN2/PropB_REAX_5_E4/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_100ms/CAN_TX_PROPB_REAX_5_E4/TX_CAN2/PropB_REAX_5_E4/S-Function1]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_100ms/CAN_TX_PROPB_REAX_5_E4/TX_CAN6/PropB_REAX_5_E4/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_100ms/CAN_TX_PROPB_REAX_5_E4/TX_CAN6/PropB_REAX_5_E4/S-Function1]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_100ms/CAN_TX_PROPB_XPR_FC/TX_CAN1/PropB_XPR_FC/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_100ms/CAN_TX_PROPB_XPR_FC/TX_CAN1/PropB_XPR_FC/S-Function1]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_100ms/CAN_TX_PROPB_XPR_FC/TX_CAN3/PropB_XPR_FC/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_100ms/CAN_TX_PROPB_XPR_FC/TX_CAN3/PropB_XPR_FC/S-Function1]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_100ms/COGSRapidUpdate/TX/Std_COGSOGRapidUpdate_01/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_100ms/COGSRapidUpdate/TX/Std_COGSOGRapidUpdate_01/S-Function1]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_100ms/EBC1_8B/TX_EBC1_8B/EBC1_TX/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_100ms/EBC1_8B/TX_EBC1_8B/EBC1_TX/S-Function1]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_100ms/POSRapidUpdate/TX/Std_PosRapidUpdate_01/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_100ms/POSRapidUpdate/TX/Std_PosRapidUpdate_01/S-Function1]</li>
+</ul>
+
+<A NAME="S907blker">Contents of &lt;S907&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_10ms/CAN_TX_ACCS_E4/TX_CAN4/ACCS/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_10ms/CAN_TX_ACCS_E4/TX_CAN4/ACCS/S-Function1]</li>
+</ul>
+
+<A NAME="S916blker">Contents of &lt;S916&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_10ms/CAN_TX_EEC1_00/TX_CAN4/EEC1_00/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_10ms/CAN_TX_EEC1_00/TX_CAN4/EEC1_00/S-Function1]</li>
+</ul>
+
+<A NAME="S917blker">Contents of &lt;S917&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_10ms/CAN_TX_EEC1_00/TX_CAN5/EEC1_00/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_10ms/CAN_TX_EEC1_00/TX_CAN5/EEC1_00/S-Function1]</li>
+</ul>
+
+<A NAME="S920blker">Contents of &lt;S920&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_10ms/CAN_TX_PROPB_REAX_1_E4/TX_CAN2/PropB_REAX_1_E4/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_10ms/CAN_TX_PROPB_REAX_1_E4/TX_CAN2/PropB_REAX_1_E4/S-Function1]</li>
+</ul>
+
+<A NAME="S921blker">Contents of &lt;S921&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_10ms/CAN_TX_PROPB_REAX_1_E4/TX_CAN6/PropB_REAX_1_E4/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_10ms/CAN_TX_PROPB_REAX_1_E4/TX_CAN6/PropB_REAX_1_E4/S-Function1]</li>
+</ul>
+
+<A NAME="S929blker">Contents of &lt;S929&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_10ms/CAN_TX_VDC2_0B/TX_CAN5/VDC2_0B/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_10ms/CAN_TX_VDC2_0B/TX_CAN5/VDC2_0B/S-Function1]</li>
+</ul>
+
+<A NAME="S809blker">Contents of &lt;S809&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_10ms/CAN_TX_ACCS_E4/TX_CAN4/ACCS/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_10ms/CAN_TX_ACCS_E4/TX_CAN4/ACCS/S-Function1]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_10ms/CAN_TX_EEC1_00/TX_CAN4/EEC1_00/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_10ms/CAN_TX_EEC1_00/TX_CAN4/EEC1_00/S-Function1]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_10ms/CAN_TX_EEC1_00/TX_CAN5/EEC1_00/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_10ms/CAN_TX_EEC1_00/TX_CAN5/EEC1_00/S-Function1]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_10ms/CAN_TX_PROPB_REAX_1_E4/TX_CAN2/PropB_REAX_1_E4/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_10ms/CAN_TX_PROPB_REAX_1_E4/TX_CAN2/PropB_REAX_1_E4/S-Function1]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_10ms/CAN_TX_PROPB_REAX_1_E4/TX_CAN6/PropB_REAX_1_E4/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_10ms/CAN_TX_PROPB_REAX_1_E4/TX_CAN6/PropB_REAX_1_E4/S-Function1]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_10ms/CAN_TX_VDC2_0B/TX_CAN5/VDC2_0B/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_10ms/CAN_TX_VDC2_0B/TX_CAN5/VDC2_0B/S-Function1]</li>
+</ul>
+
+<A NAME="S974blker">Contents of &lt;S974&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_20ms/CAN_TX_PROPB_XBR_B3/TX_CAN3/PropB_XBR_B3/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_20ms/CAN_TX_PROPB_XBR_B3/TX_CAN3/PropB_XBR_B3/S-Function1]</li>
+</ul>
+
+<A NAME="S976blker">Contents of &lt;S976&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_20ms/CAN_TX_PropB_2C2_XPR_65/TX_CAN3/PropB_Bendix_2C2_XPR/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_20ms/CAN_TX_PropB_2C2_XPR_65/TX_CAN3/PropB_Bendix_2C2_XPR/S-Function1]</li>
+</ul>
+
+<A NAME="S984blker">Contents of &lt;S984&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_20ms/CAN_TX_STD_ODOMETRY/TX_CAN6/Std_OdometryData/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_20ms/CAN_TX_STD_ODOMETRY/TX_CAN6/Std_OdometryData/S-Function1]</li>
+</ul>
+
+<A NAME="S810blker">Contents of &lt;S810&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_20ms/CAN_TX_PROPB_XBR_B3/TX_CAN3/PropB_XBR_B3/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_20ms/CAN_TX_PROPB_XBR_B3/TX_CAN3/PropB_XBR_B3/S-Function1]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_20ms/CAN_TX_PropB_2C2_XPR_65/TX_CAN3/PropB_Bendix_2C2_XPR/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_20ms/CAN_TX_PropB_2C2_XPR_65/TX_CAN3/PropB_Bendix_2C2_XPR/S-Function1]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_20ms/CAN_TX_STD_ODOMETRY/TX_CAN6/Std_OdometryData/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_20ms/CAN_TX_STD_ODOMETRY/TX_CAN6/Std_OdometryData/S-Function1]</li>
+</ul>
+
+<A NAME="S1000blker">Contents of &lt;S1000&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_5000ms/CAN_TX_RQST_13_E4/TX_CAN5/RQST_13_E4/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_5000ms/CAN_TX_RQST_13_E4/TX_CAN5/RQST_13_E4/S-Function1]</li>
+</ul>
+
+<A NAME="S812blker">Contents of &lt;S812&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_5000ms/CAN_TX_RQST_13_E4/TX_CAN5/RQST_13_E4/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_5000ms/CAN_TX_RQST_13_E4/TX_CAN5/RQST_13_E4/S-Function1]</li>
+</ul>
+
+<A NAME="S1011blker">Contents of &lt;S1011&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_50ms/CAN_TX_CCVS1/CCVS1_E3/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_50ms/CAN_TX_CCVS1/CCVS1_E3/S-Function1]</li>
+</ul>
+
+<A NAME="S1012blker">Contents of &lt;S1012&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_50ms/CAN_TX_TC1_05/TC1_03_05/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_50ms/CAN_TX_TC1_05/TC1_03_05/S-Function1]</li>
+</ul>
+
+<A NAME="S813blker">Contents of &lt;S813&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_50ms/CAN_TX_CCVS1/CCVS1_E3/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_50ms/CAN_TX_CCVS1/CCVS1_E3/S-Function1]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_50ms/CAN_TX_TC1_05/TC1_03_05/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_50ms/CAN_TX_TC1_05/TC1_03_05/S-Function1]</li>
+</ul>
+
+<A NAME="S1019blker">Contents of &lt;S1019&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_BAM/TX_TPCM/CAN_TYPE1_TX_M1_C1/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_BAM/TX_TPCM/CAN_TYPE1_TX_M1_C1/S-Function1]</li>
+</ul>
+
+<A NAME="S1020blker">Contents of &lt;S1020&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_BAM/TX_TPDT/CAN_TYPE1_TX_M1_C1/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_BAM/TX_TPDT/CAN_TYPE1_TX_M1_C1/S-Function1]</li>
+</ul>
+
+<A NAME="S1024blker">Contents of &lt;S1024&gt; not reusable because: </B><BR />
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_VariableRate/CAN_TX_Std_SystemTime_01/TX_CAN6/Std_SystemTime_01/S-Function]</li>
+</ul>
+
+<ul>
+
+<li>The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option 'SS_OPTION_WORKS_WITH_CODE_REUSE'. [L4_MABX/OUTPUTS_PIC_KW/CAN_Out_PIC_KW/CAN_TX_VariableRate/CAN_TX_Std_SystemTime_01/TX_CAN6/Std_SystemTime_01/S-Function1]</li>
+</ul>
+
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>

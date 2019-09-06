@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>TurnOnDelayTime table</title>
+
+<link href="../../../Help/HowToDo_CSS.css" rel="stylesheet" type="text/css" />
+<!-- $Log: TurnOnDelayTime_table.html  $ --><!-- Revision 1.2 2014/10/10 15:59:12MESZ Semmelrodt, Sven (uid60719) --><!-- Updated to MBDS V5.0 --><!-- Revision 2.4 2014/04/09 13:23:11CEST Nitzsche Tilo (uid03085) (uid03085) --><!-- RO-942497-41: Help adaptations for SDA 8.1 -->
+<!-- Revision 1.3 2015/05/18 08:33:44CEST Semmelrodt, Sven (uid60719)  --><!-- Revision 1.2 2014/10/10 15:59:12MESZ Semmelrodt, Sven (uid60719) --><!-- Updated to MBDS V5.0 --><!-- Revision 2.4 2014/04/09 13:23:11CEST Nitzsche Tilo (uid03085) (uid03085) --><!-- RO-942497-41: Help adaptations for SDA 8.1 -->
+<!-- Description for data type support updated --><!-- Revision 1.2 2014/10/10 15:59:12MESZ Semmelrodt, Sven (uid60719) --><!-- Updated to MBDS V5.0 --><!-- Revision 2.4 2014/04/09 13:23:11CEST Nitzsche Tilo (uid03085) (uid03085) --><!-- RO-942497-41: Help adaptations for SDA 8.1 -->
+<link href="../../../Help/HowToDo_CSS.css" rel="stylesheet" type="text/css" />
+<!-- Revision 1.2 2015/02/06 09:49:24MEZ Semmelrodt, Sven (uid60719) --><!-- Revision 1.2 2014/10/10 15:59:12MESZ Semmelrodt, Sven (uid60719) --><!-- Updated to MBDS V5.0 --><!-- Revision 2.4 2014/04/09 13:23:11CEST Nitzsche Tilo (uid03085) (uid03085) --><!-- RO-942497-41: Help adaptations for SDA 8.1 -->
+<link href="../../../Help/HowToDo_CSS.css" rel="stylesheet" type="text/css" />
+<!-- Help images updated --><!-- Revision 1.2 2014/10/10 15:59:12MESZ Semmelrodt, Sven (uid60719) --><!-- Updated to MBDS V5.0 --><!-- Revision 2.4 2014/04/09 13:23:11CEST Nitzsche Tilo (uid03085) (uid03085) --><!-- RO-942497-41: Help adaptations for SDA 8.1 -->
+</head>
+<body>
+<table style="border-collapse: collapse; width: 695px;" border="1" bordercolor="#111111" cellpadding="4" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td style="width: 206px;" align="middle" height="180">
+<blockquote>
+<p> <img style="width: 130px; height: 81px;" alt="" src="../Images/PTC_MBDS_TurnOnDelayTime.png" />&nbsp;</p>
+</blockquote>
+</td>
+<td style="width: 134px;" height="180" valign="top">
+<b>Inputs:</b> <br />
+&nbsp; R: logic<br />
+&nbsp; dT: numeric<br />
+&nbsp; T: &nbsp;numeric<br />
+&nbsp; u: logic<br /><span style="font-weight: bold;">Outputs:</span><br />
+&nbsp; y: logic<br /><span style="font-weight: bold;">States:</span><br />
+&nbsp; x: numeric<br />
+&nbsp; temp: numeric<br />
+&nbsp;
+</td>
+<td style="width: 140px;" height="180" valign="top"> <b>Init-Code:</b><br />
+&nbsp; x = 0.0;<br />
+<br />
+</td>
+<td style="width: 178px;" height="180" valign="top"> <b>Run-Code:</b><br />
+if (R) {<br />
+&nbsp;x = T;<br />
+}<br />
+&nbsp;temp = x; <br />
+&nbsp;if(u) {<br />
+&nbsp;&nbsp;if(temp&nbsp;&gt; 0.0) {<br />
+&nbsp;&nbsp;&nbsp;x = x - dT;<br />
+&nbsp;&nbsp;}<br />
+&nbsp;}<br />
+&nbsp;else {<br />
+&nbsp;&nbsp;x = T;<br />
+&nbsp;} <br />
+y = ((temp &lt;= 0.0) &amp;&amp; u); <br />
+</td>
+</tr>
+</tbody>
+</table>
+</body></html>

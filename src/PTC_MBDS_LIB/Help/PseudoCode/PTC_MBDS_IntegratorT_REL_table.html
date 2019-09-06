@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" /><title>IntegratorT_REL table</title>
+
+<link type="text/css" rel="stylesheet" href="../../../Help/HowToDo_CSS.css" />
+<!-- $Log: IntegratorT_REL_table.html  $ --><!-- Revision 1.2 2014/10/10 15:59:21MESZ Semmelrodt, Sven (uid60719) --><!-- Updated to MBDS V5.0 --><!-- Revision 1.2 2014/04/09 13:22:55CEST Nitzsche Tilo (uid03085) (uid03085) --><!-- RO-942497-41: Help adaptations for SDA 8.1 -->
+<!-- Revision 1.3 2015/05/18 08:34:09CEST Semmelrodt, Sven (uid60719)  --><!-- Revision 1.2 2014/10/10 15:59:21MESZ Semmelrodt, Sven (uid60719) --><!-- Updated to MBDS V5.0 --><!-- Revision 1.2 2014/04/09 13:22:55CEST Nitzsche Tilo (uid03085) (uid03085) --><!-- RO-942497-41: Help adaptations for SDA 8.1 -->
+<!-- Description for data type support updated --><!-- Revision 1.2 2014/10/10 15:59:21MESZ Semmelrodt, Sven (uid60719) --><!-- Updated to MBDS V5.0 --><!-- Revision 1.2 2014/04/09 13:22:55CEST Nitzsche Tilo (uid03085) (uid03085) --><!-- RO-942497-41: Help adaptations for SDA 8.1 -->
+<link type="text/css" rel="stylesheet" href="../../../Help/HowToDo_CSS.css" />
+<!-- Revision 1.2 2015/02/06 09:49:14MEZ Semmelrodt, Sven (uid60719) --><!-- Revision 1.2 2014/10/10 15:59:21MESZ Semmelrodt, Sven (uid60719) --><!-- Updated to MBDS V5.0 --><!-- Revision 1.2 2014/04/09 13:22:55CEST Nitzsche Tilo (uid03085) (uid03085) --><!-- RO-942497-41: Help adaptations for SDA 8.1 -->
+<link type="text/css" rel="stylesheet" href="../../../Help/HowToDo_CSS.css" />
+<!-- Help images updated --><!-- Revision 1.2 2014/10/10 15:59:21MESZ Semmelrodt, Sven (uid60719) --><!-- Updated to MBDS V5.0 --><!-- Revision 1.2 2014/04/09 13:22:55CEST Nitzsche Tilo (uid03085) (uid03085) --><!-- RO-942497-41: Help adaptations for SDA 8.1 -->
+</head>
+<body>
+<table style="border-collapse: collapse; width: 609px;" border="1" bordercolor="#000000" cellpadding="4" cellspacing="0">
+<tbody>
+<tr>
+<td style="width: 195px;" align="middle" height="180">
+<blockquote>
+<p style="width: 105px;"> <img style="width: 111px; height: 131px;" alt="" src="../Images/PTC_MBDS_IntegratorT_REL.png" />&nbsp;</p>
+</blockquote>
+</td>
+<td style="width: 194px;" height="180" valign="top"><b>Inputs:</b><br />
+&nbsp; MX: numeric<br />
+&nbsp; MN: numeric<br />
+&nbsp; T: numeric<br />
+&nbsp; u: numeric<br />
+&nbsp; E: logic<br />
+&nbsp; R: logic<br />
+&nbsp; IV: numeric<br />
+&nbsp; dT: numeric<br />
+<b>Outputs:</b><br />
+&nbsp; y: numeric<br />
+&nbsp; B_max: logic<br />
+&nbsp; B_min: logic<br />
+<b>States:</b><br />
+&nbsp; x: numeric </td>
+<td style="vertical-align: top;"><b>Init-Code:</b><br />
+&nbsp; x = 0.0;</td>
+<td style="width: 196px;" height="180" valign="top"><b>Run-Code:</b><br />
+if (R) {<br />
+&nbsp;x = IV;<br />
+}<br />
+else if (E) { <br />
+&nbsp;&nbsp;&nbsp;x = x + u*dT/T;<br />
+}<br />
+if (x&nbsp;&gt; MX) {<br />
+&nbsp;&nbsp;&nbsp; x = MX;<br />
+&nbsp;&nbsp;&nbsp; B_max = 1;<br />
+&nbsp;&nbsp;&nbsp; B_min = 0;<br />
+}<br />
+else if (x&nbsp;&lt; MN) {<br />
+&nbsp;&nbsp;&nbsp; x = MN;<br />
+&nbsp;&nbsp;&nbsp; B_max = 0;<br />
+&nbsp;&nbsp;&nbsp; B_min = 1;<br />
+} <br />
+else {<br />
+&nbsp;&nbsp;&nbsp; B_max = 0;<br />
+&nbsp;&nbsp;&nbsp; B_min = 0;<br />
+&nbsp;} <br />
+y = x;<br />
+</td>
+</tr>
+</tbody>
+</table>
+</body></html>

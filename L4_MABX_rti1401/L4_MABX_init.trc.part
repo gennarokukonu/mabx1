@@ -1,0 +1,595 @@
+
+-- Type definitions for enumerations
+
+enum L4_MABX_ENUM_CAN_STATUS_DIAG_T
+{
+  type:     int(32)
+  enums
+    {
+      0:    "ENUM_CAN_STATUS_DIAG_T_ACTIVE"
+      1:    "ENUM_CAN_STATUS_DIAG_T_ERROR_WARN"
+      2:    "ENUM_CAN_STATUS_DIAG_T_BUS_OFF"
+    }
+}
+
+enum L4_MABX_ENUM_PEDAL_POS_SIGNAL_SOURCE_T
+{
+  type:     int(32)
+  enums
+    {
+      0:    "ENUM_PEDAL_POS_SIGNAL_SOURCE_T_DISABLED"
+      1:    "ENUM_PEDAL_POS_SIGNAL_SOURCE_T_CAN_EEC2_00"
+      2:    "ENUM_PEDAL_POS_SIGNAL_SOURCE_T_SW_EMULATION"
+      3:    "ENUM_PEDAL_POS_SIGNAL_SOURCE_T_CAN_EEC2_00_AND_SW_EMULATION"
+    }
+}
+
+enum L4_MABX_ENUM_AUTONOMOUS_MODE_T
+{
+  type:     int(32)
+  enums
+    {
+      0:    "ENUM_AUTONOMOUS_MODE_T_AUTO"
+      1:    "ENUM_AUTONOMOUS_MODE_T_GHOST"
+    }
+}
+
+enum L4_MABX_ENUM_J1939_SWITCH_T
+{
+  type:     int(32)
+  enums
+    {
+      0:    "ENUM_J1939_SWITCH_T_OFF"
+      1:    "ENUM_J1939_SWITCH_T_ON"
+      2:    "ENUM_J1939_SWITCH_T_ERROR"
+      3:    "ENUM_J1939_SWITCH_T_NOT_AVAILABLE"
+    }
+}
+
+enum L4_MABX_ENUM_XPR_CONTROL_MODE_T
+{
+  type:     int(32)
+  enums
+    {
+      0:    "ENUM_XPR_CONTROL_MODE_T_NO_BRAKE_DEMAND"
+      1:    "ENUM_XPR_CONTROL_MODE_T_DRIVER_BRAKING_ONLY"
+      2:    "ENUM_XPR_CONTROL_MODE_T_ADDITIONAL_MODE"
+      3:    "ENUM_XPR_CONTROL_MODE_T_MAXIMUM_MODE"
+      13:    "ENUM_XPR_CONTROL_MODE_T_FAILSAFE_BRAKING_ACTIVE"
+      14:    "ENUM_XPR_CONTROL_MODE_T_ERROR"
+      15:    "ENUM_XPR_CONTROL_MODE_T_NOT_AVAILABLE"
+    }
+}
+
+enum L4_MABX_ENUM_XPR_ERROR_STATE_T
+{
+  type:     int(32)
+  enums
+    {
+      0:    "ENUM_XPR_ERROR_STATE_T_XPR_OK"
+      1:    "ENUM_XPR_ERROR_STATE_T_XPR_MESSAGE_MISSING"
+      2:    "ENUM_XPR_ERROR_STATE_T_XPR_ERROR"
+      3:    "ENUM_XPR_ERROR_STATE_T_XPR_DISABLED"
+    }
+}
+
+enum L4_MABX_ENUM_SWITCH_T
+{
+  type:     int(32)
+  enums
+    {
+      0:    "ENUM_SWITCH_T_OFF"
+      1:    "ENUM_SWITCH_T_ON"
+      2:    "ENUM_SWITCH_T_ERROR"
+      3:    "ENUM_SWITCH_T_NOT_AVAILABLE"
+    }
+}
+
+enum L4_MABX_ENUM_AUTO_CTRL_STATE_T
+{
+  type:     int(32)
+  enums
+    {
+      0:    "ENUM_AUTO_CTRL_STATE_T_NOT_AVAILABLE"
+      1:    "ENUM_AUTO_CTRL_STATE_T_INIT"
+      2:    "ENUM_AUTO_CTRL_STATE_T_OPERATOR_DISABLED"
+      3:    "ENUM_AUTO_CTRL_STATE_T_FAULT"
+      4:    "ENUM_AUTO_CTRL_STATE_T_SELF_TEST"
+      5:    "ENUM_AUTO_CTRL_STATE_T_AUTO_CTRL_ENABLED"
+    }
+}
+
+enum L4_MABX_ENUM_AUTO_CTRL_VEHICLE_STATE_T
+{
+  type:     int(32)
+  enums
+    {
+      0:    "ENUM_AUTO_CTRL_VEHICLE_STATE_T_NOT_AVAILABLE"
+      1:    "ENUM_AUTO_CTRL_VEHICLE_STATE_T_INIT"
+      2:    "ENUM_AUTO_CTRL_VEHICLE_STATE_T_OPERATOR_DISABLED"
+      3:    "ENUM_AUTO_CTRL_VEHICLE_STATE_T_FAULT"
+      4:    "ENUM_AUTO_CTRL_VEHICLE_STATE_T_SELF_TEST"
+      5:    "ENUM_AUTO_CTRL_VEHICLE_STATE_T_STOPPED_PARKED"
+      6:    "ENUM_AUTO_CTRL_VEHICLE_STATE_T_STOPPED_NEUTRAL"
+      7:    "ENUM_AUTO_CTRL_VEHICLE_STATE_T_STOPPED_DRIVE"
+      8:    "ENUM_AUTO_CTRL_VEHICLE_STATE_T_INITIATE_LAUNCH"
+      9:    "ENUM_AUTO_CTRL_VEHICLE_STATE_T_DRIVING_PEDAL_CONTROL"
+      10:    "ENUM_AUTO_CTRL_VEHICLE_STATE_T_DRIVING_CRUISE_CONTROL"
+      11:    "ENUM_AUTO_CTRL_VEHICLE_STATE_T_NORMAL_BRAKING"
+      12:    "ENUM_AUTO_CTRL_VEHICLE_STATE_T_EMERGENCY_BRAKING"
+    }
+}
+
+enum L4_MABX_ENUM_LONG_SPEED_DEMAND_SOURCE_T
+{
+  type:     int(32)
+  enums
+    {
+      0:    "ENUM_LONG_SPEED_DEMAND_SOURCE_T_GPS_PATH"
+      1:    "ENUM_LONG_SPEED_DEMAND_SOURCE_T_OVERRIDE"
+      2:    "ENUM_LONG_SPEED_DEMAND_SOURCE_T_RW_WAYPOINTS"
+    }
+}
+
+enum L4_MABX_ENUM_CAN_RX_T
+{
+  type:     int(32)
+  enums
+    {
+      0:    "ENUM_CAN_RX_T_RX_DISABLED"
+      1:    "ENUM_CAN_RX_T_RX_CAN_1"
+      2:    "ENUM_CAN_RX_T_RX_CAN_2"
+      3:    "ENUM_CAN_RX_T_RX_CAN_3"
+      4:    "ENUM_CAN_RX_T_RX_CAN_4"
+      5:    "ENUM_CAN_RX_T_RX_CAN_5"
+      6:    "ENUM_CAN_RX_T_RX_CAN_6"
+    }
+}
+
+enum L4_MABX_ENUM_XPR_FEEDBACK_T
+{
+  type:     int(32)
+  enums
+    {
+      0:    "ENUM_XPR_FEEDBACK_T_NOT_AVAILABLE"
+      1:    "ENUM_XPR_FEEDBACK_T_AVAILABLE_IDLE"
+      2:    "ENUM_XPR_FEEDBACK_T_APPLIED"
+      3:    "ENUM_XPR_FEEDBACK_T_ERROR"
+    }
+}
+
+enum L4_MABX_ENUM_SIGNAL_HEALTH_T
+{
+  type:     int(32)
+  enums
+    {
+      0:    "ENUM_SIGNAL_HEALTH_T_FAULT_INACTIVE"
+      1:    "ENUM_SIGNAL_HEALTH_T_FAULT_PENDING"
+      2:    "ENUM_SIGNAL_HEALTH_T_FAULT_ACTIVE"
+      255:    "ENUM_SIGNAL_HEALTH_T_FAULT_NOT_AVAILABLE"
+    }
+}
+
+enum L4_MABX_ENUM_CAN_TX_T
+{
+  type:     int(32)
+  enums
+    {
+      0:    "ENUM_CAN_TX_T_TX_DISABLED"
+      1:    "ENUM_CAN_TX_T_TX_CAN_1"
+      2:    "ENUM_CAN_TX_T_TX_CAN_2"
+      3:    "ENUM_CAN_TX_T_TX_CAN_1_2"
+      4:    "ENUM_CAN_TX_T_TX_CAN_3"
+      5:    "ENUM_CAN_TX_T_TX_CAN_1_3"
+      6:    "ENUM_CAN_TX_T_TX_CAN_2_3"
+      7:    "ENUM_CAN_TX_T_TX_CAN_1_2_3"
+      8:    "ENUM_CAN_TX_T_TX_CAN_4"
+      9:    "ENUM_CAN_TX_T_TX_CAN_1_4"
+      10:    "ENUM_CAN_TX_T_TX_CAN_2_4"
+      11:    "ENUM_CAN_TX_T_TX_CAN_1_2_4"
+      12:    "ENUM_CAN_TX_T_TX_CAN_3_4"
+      13:    "ENUM_CAN_TX_T_TX_CAN_1_3_4"
+      14:    "ENUM_CAN_TX_T_TX_CAN_2_3_4"
+      15:    "ENUM_CAN_TX_T_TX_CAN_1_2_3_4"
+      16:    "ENUM_CAN_TX_T_TX_CAN_5"
+      17:    "ENUM_CAN_TX_T_TX_CAN_1_5"
+      18:    "ENUM_CAN_TX_T_TX_CAN_2_5"
+      19:    "ENUM_CAN_TX_T_TX_CAN_1_2_5"
+      20:    "ENUM_CAN_TX_T_TX_CAN_3_5"
+      21:    "ENUM_CAN_TX_T_TX_CAN_1_3_5"
+      22:    "ENUM_CAN_TX_T_TX_CAN_2_3_5"
+      23:    "ENUM_CAN_TX_T_TX_CAN_1_2_3_5"
+      24:    "ENUM_CAN_TX_T_TX_CAN_4_5"
+      25:    "ENUM_CAN_TX_T_TX_CAN_1_4_5"
+      26:    "ENUM_CAN_TX_T_TX_CAN_2_4_5"
+      27:    "ENUM_CAN_TX_T_TX_CAN_1_2_4_5"
+      28:    "ENUM_CAN_TX_T_TX_CAN_3_4_5"
+      29:    "ENUM_CAN_TX_T_TX_CAN_1_3_4_5"
+      30:    "ENUM_CAN_TX_T_TX_CAN_2_3_4_5"
+      31:    "ENUM_CAN_TX_T_TX_CAN_1_2_3_4_5"
+      32:    "ENUM_CAN_TX_T_TX_CAN_6"
+      33:    "ENUM_CAN_TX_T_TX_CAN_1_6"
+      34:    "ENUM_CAN_TX_T_TX_CAN_2_6"
+      35:    "ENUM_CAN_TX_T_TX_CAN_1_2_6"
+      36:    "ENUM_CAN_TX_T_TX_CAN_3_6"
+      37:    "ENUM_CAN_TX_T_TX_CAN_1_3_6"
+      38:    "ENUM_CAN_TX_T_TX_CAN_2_3_6"
+      39:    "ENUM_CAN_TX_T_TX_CAN_1_2_3_6"
+      40:    "ENUM_CAN_TX_T_TX_CAN_4_6"
+      41:    "ENUM_CAN_TX_T_TX_CAN_1_4_6"
+      42:    "ENUM_CAN_TX_T_TX_CAN_2_4_6"
+      43:    "ENUM_CAN_TX_T_TX_CAN_1_2_4_6"
+      44:    "ENUM_CAN_TX_T_TX_CAN_3_4_6"
+      45:    "ENUM_CAN_TX_T_TX_CAN_1_3_4_6"
+      46:    "ENUM_CAN_TX_T_TX_CAN_2_3_4_6"
+      47:    "ENUM_CAN_TX_T_TX_CAN_1_2_3_4_6"
+      48:    "ENUM_CAN_TX_T_TX_CAN_5_6"
+      49:    "ENUM_CAN_TX_T_TX_CAN_1_5_6"
+      50:    "ENUM_CAN_TX_T_TX_CAN_2_5_6"
+      51:    "ENUM_CAN_TX_T_TX_CAN_1_2_5_6"
+      52:    "ENUM_CAN_TX_T_TX_CAN_3_5_6"
+      53:    "ENUM_CAN_TX_T_TX_CAN_1_3_5_6"
+      54:    "ENUM_CAN_TX_T_TX_CAN_2_3_5_6"
+      55:    "ENUM_CAN_TX_T_TX_CAN_1_2_3_5_6"
+      56:    "ENUM_CAN_TX_T_TX_CAN_4_5_6"
+      57:    "ENUM_CAN_TX_T_TX_CAN_1_4_5_6"
+      58:    "ENUM_CAN_TX_T_TX_CAN_2_4_5_6"
+      59:    "ENUM_CAN_TX_T_TX_CAN_1_2_4_5_6"
+      60:    "ENUM_CAN_TX_T_TX_CAN_3_4_5_6"
+      61:    "ENUM_CAN_TX_T_TX_CAN_1_3_4_5_6"
+      62:    "ENUM_CAN_TX_T_TX_CAN_2_3_4_5_6"
+      63:    "ENUM_CAN_TX_T_TX_CAN_1_2_3_4_5_6"
+    }
+}
+
+enum L4_MABX_ENUM_XPR_INHIBIT_PARK_MANUAL_T
+{
+  type:     int(32)
+  enums
+    {
+      0:    "ENUM_XPR_INHIBIT_PARK_MANUAL_T_NO_OVERRIDE"
+      1:    "ENUM_XPR_INHIBIT_PARK_MANUAL_T_INHIBIT_TRACTOR_PARK_BRAKE_COMMAND"
+      2:    "ENUM_XPR_INHIBIT_PARK_MANUAL_T_INHIBIT_TRAILER_PARK_BRAKE_COMMAND"
+      3:    "ENUM_XPR_INHIBIT_PARK_MANUAL_T_INHIBIT_BOTH_PARK_BRAKE_COMMANDS"
+    }
+}
+
+enum L4_MABX_ENUM_XPR_INHIBIT_UNPARK_MANUAL_T
+{
+  type:     int(32)
+  enums
+    {
+      0:    "ENUM_XPR_INHIBIT_UNPARK_MANUAL_T_NO_OVERRIDE"
+      1:    "ENUM_XPR_INHIBIT_UNPARK_MANUAL_T_INHIBIT_TRACTOR_UNPARK_BRAKE_COMMAND"
+      2:    "ENUM_XPR_INHIBIT_UNPARK_MANUAL_T_INHIBIT_TRAILER_UNPARK_BRAKE_COMMAND"
+      3:    "ENUM_XPR_INHIBIT_UNPARK_MANUAL_T_INHIBIT_BOTH_UNPARK_BRAKE_COMMANDS"
+    }
+}
+
+enum L4_MABX_ENUM_XPR_PARK_MANUAL_T
+{
+  type:     int(32)
+  enums
+    {
+      0:    "ENUM_XPR_PARK_MANUAL_T_NO_OVERRIDE"
+      1:    "ENUM_XPR_PARK_MANUAL_T_APPLY_TRACTOR_PARK_BRAKE"
+      2:    "ENUM_XPR_PARK_MANUAL_T_APPLY_TRAILER_PARK_BRAKE"
+      3:    "ENUM_XPR_PARK_MANUAL_T_APPLY_BOTH_PARK_BRAKE"
+    }
+}
+
+enum L4_MABX_ENUM_XPR_UNPARK_MANUAL_T
+{
+  type:     int(32)
+  enums
+    {
+      0:    "ENUM_XPR_UNPARK_MANUAL_T_NO_OVERRIDE"
+      1:    "ENUM_XPR_UNPARK_MANUAL_T_RELEASE_TRACTOR_PARK_BRAKE"
+      2:    "ENUM_XPR_UNPARK_MANUAL_T_RELEASE_TRAILER_PARK_BRAKE"
+      3:    "ENUM_XPR_UNPARK_MANUAL_T_RELEASE_BOTH_PARK_BRAKE"
+    }
+}
+
+enum L4_MABX_ENUM_REAX_OPERATION_MODE_T
+{
+  type:     int(32)
+  enums
+    {
+      0:    "ENUM_REAX_OPERATION_MODE_T_DEFAULT_TRQ_CTRL_MODE"
+      1:    "ENUM_REAX_OPERATION_MODE_T_POSITION_CTRL_MODE"
+      2:    "ENUM_REAX_OPERATION_MODE_T_EXT_TRQ_CTRL_MODE_A"
+      3:    "ENUM_REAX_OPERATION_MODE_T_ALL_CTRL_DISABLED"
+      4:    "ENUM_REAX_OPERATION_MODE_T_EXT_TRQ_CTRL_MODE_B"
+      5:    "ENUM_REAX_OPERATION_MODE_T_EXT_TRQ_CTRL_MODE_C"
+    }
+}
+
+enum L4_MABX_ENUM_STEERING_POS_SIGNAL_SOURCE_T
+{
+  type:     int(32)
+  enums
+    {
+      2:    "ENUM_STEERING_POS_SIGNAL_SOURCE_T_SW_EMULATION"
+      3:    "ENUM_STEERING_POS_SIGNAL_SOURCE_T_ESTIMATION"
+    }
+}
+
+enum L4_MABX_ENUM_XBR_PASS_THROUGH_ACTIVE_T
+{
+  type:     int(32)
+  enums
+    {
+      0:    "ENUM_XBR_PASS_THROUGH_ACTIVE_T_NOT_ACTIVE"
+      1:    "ENUM_XBR_PASS_THROUGH_ACTIVE_T_ACTIVE"
+      2:    "ENUM_XBR_PASS_THROUGH_ACTIVE_T_ERROR"
+      3:    "ENUM_XBR_PASS_THROUGH_ACTIVE_T_NOT_AVAILABLE"
+    }
+}
+
+enum L4_MABX_ENUM_XBR_CONTROL_MODE_T
+{
+  type:     int(32)
+  enums
+    {
+      0:    "ENUM_XBR_CONTROL_MODE_T_OVERRIDE_DISABLED"
+      1:    "ENUM_XBR_CONTROL_MODE_T_ACCEL_CTRL_WITH_ADDITION_MODE"
+      2:    "ENUM_XBR_CONTROL_MODE_T_ACCEL_CTRL_WITH_MAX_MODE"
+      3:    "ENUM_XBR_CONTROL_MODE_T_NOT_DEFINED"
+    }
+}
+
+enum L4_MABX_ENUM_XBR_EBI_MODE_T
+{
+  type:     int(32)
+  enums
+    {
+      0:    "ENUM_XBR_EBI_MODE_T_NO_EBI_ALLOWED"
+      1:    "ENUM_XBR_EBI_MODE_T_ONLY_ENDURANCE_BRAKES_ALLOWED"
+      2:    "ENUM_XBR_EBI_MODE_T_EBI_ALLOWED"
+      3:    "ENUM_XBR_EBI_MODE_T_NOT_DEFINED"
+    }
+}
+
+enum L4_MABX_ENUM_XBR_PRIORITY_T
+{
+  type:     int(32)
+  enums
+    {
+      0:    "ENUM_XBR_PRIORITY_T_HIGHEST_PRIORITY"
+      1:    "ENUM_XBR_PRIORITY_T_HIGH_PRIORITY"
+      2:    "ENUM_XBR_PRIORITY_T_MEDIUM_PRIORITY"
+      3:    "ENUM_XBR_PRIORITY_T_LOW_PRIORITY"
+    }
+}
+
+
+
+-- Type definitions for structures
+
+struct L4_MABX_RTMapsRX
+{
+  array-incr: -1
+}
+    structField0 
+    {
+      alias:   "Heartbeat"
+      type:    uint(8)
+      offs:    -1
+      range:   < 0 ; 1 >
+      bitmask: 0x01
+      desc:    "Heartbeat from RTMaps"
+    }
+    structField1 
+    {
+      alias:   "RTMapsOk"
+      type:    uint(8)
+      offs:    -1
+      range:   < 0 ; 1 >
+      bitmask: 0x01
+      desc:    "RTMaps runing with no faults"
+    }
+    structField2 
+    {
+      alias:   "SupervisorMode"
+      type:    uint(8)
+      offs:    -1
+      desc:    "0 = Manual\n1 = Initializing\n2 = Autonomous\n3 = Failure\n4 = Ready"
+    }
+    structField3 
+    {
+      alias:   "CurrentAzimuth"
+      type:    flt(64,IEEE)
+      offs:    -1
+      unit:    "rad"
+      desc:    "Current vehicle azimuth"
+    }
+    structField4 
+    {
+      alias:   "TargetAzimuth"
+      type:    flt(64,IEEE)
+      offs:    -1
+      unit:    "rad"
+      desc:    "Target azimuth to selected waypoint"
+    }
+    structField5 
+    {
+      alias:   "CurrentVelocity"
+      type:    flt(64,IEEE)
+      offs:    -1
+      unit:    "m/s"
+      desc:    "Current velocity of vehicle"
+    }
+    structField6 
+    {
+      alias:   "TargetVelocity"
+      type:    flt(64,IEEE)
+      offs:    -1
+      unit:    "m/s"
+      desc:    "Target velocity of selected waypoint"
+    }
+    structField7 
+    {
+      alias:   "Curvature"
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    structField8 
+    {
+      alias:   "CrosstrackError"
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    structField9 
+    {
+      alias:   "GPS_X"
+      type:    flt(64,IEEE)
+      offs:    -1
+      desc:    "GPS Position X"
+    }
+    structField10 
+    {
+      alias:   "GPS_Y"
+      type:    flt(64,IEEE)
+      offs:    -1
+      desc:    "GPS Position Y"
+    }
+    structField11 
+    {
+      alias:   "GPS_Time"
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+endstruct
+
+struct L4_MABX_RTMapsTX
+{
+  array-incr: -1
+}
+    structField0 
+    {
+      alias:   "Heartbeat"
+      type:    uint(8)
+      offs:    -1
+      range:   < 0 ; 1 >
+      bitmask: 0x01
+      desc:    "MABX heartbeat"
+    }
+    structField1 
+    {
+      alias:   "EStop"
+      type:    uint(8)
+      offs:    -1
+      range:   < 0 ; 1 >
+      bitmask: 0x01
+      desc:    "0 = E-stop active (pressed)\n1 = E-stop Ok (pulled out)"
+    }
+    structField2 
+    {
+      alias:   "EnableSW"
+      type:    uint(8)
+      offs:    -1
+      range:   < 0 ; 1 >
+      bitmask: 0x01
+      desc:    "Enable Autonomous Switch\n0 = OFF\n1 = ON"
+    }
+    structField3 
+    {
+      alias:   "EngagePB"
+      type:    uint(8)
+      offs:    -1
+      range:   < 0 ; 1 >
+      bitmask: 0x01
+      desc:    "Engage Autonomous Push Button\n0 = OFF\n1 = ON"
+    }
+    structField4 
+    {
+      alias:   "AutonomousEnabled"
+      type:    uint(8)
+      offs:    -1
+      range:   < 0 ; 1 >
+      bitmask: 0x01
+      desc:    "Autonomous Mode is Enabled\n0 = False\n1 = True"
+    }
+    structField5 
+    {
+      alias:   "MABX_Mode"
+      type:    uint(8)
+      offs:    -1
+      desc:    "Controller mode for feedback to Supervisor\n0 = No mode\n1 = Running Manual Mode\n2 = Autonomos Mode\n3 = Fault"
+    }
+endstruct
+
+struct L4_MABX_struct_isB4Cw3Ovpp8VfzP6RUqbD
+{
+  array-incr: -1
+}
+    structField0 
+    {
+      alias:   "OutputPortsWidth"
+      type:    int(32)
+      offs:    -1
+    }
+endstruct
+
+typedef L4_MABX_struct_6Hj7z6Di1PEUr8TFSJkHvD_OutputPortsWidth_0 int(32)[2]
+
+struct L4_MABX_struct_6Hj7z6Di1PEUr8TFSJkHvD
+{
+  array-incr: -1
+}
+    structField0 
+    {
+      alias:   "OutputPortsWidth"
+      type:    L4_MABX_struct_6Hj7z6Di1PEUr8TFSJkHvD_OutputPortsWidth_0
+      offs:    -1
+    }
+endstruct
+
+struct L4_MABX_struct_z8IL72b4r57TjkVvP5IoWE
+{
+  array-incr: -1
+}
+    structField0 
+    {
+      alias:   "InputPortsWidth"
+      type:    L4_MABX_struct_6Hj7z6Di1PEUr8TFSJkHvD_OutputPortsWidth_0
+      offs:    -1
+    }
+endstruct
+
+
+-- Type definitions for arrays
+typedef L4_MABX_ArrayDT0_8 flt(64,IEEE)[8]
+typedef L4_MABX_ArrayDT0_2 flt(64,IEEE)[2]
+typedef L4_MABX_ArrayDT0_33 flt(64,IEEE)[33]
+typedef L4_MABX_ArrayDT0_6 flt(64,IEEE)[6]
+typedef L4_MABX_ArrayDT0_4 flt(64,IEEE)[4]
+typedef L4_MABX_ArrayDT7_3 uint(32)[3]
+typedef L4_MABX_ArrayDT7_8 uint(32)[8]
+typedef L4_MABX_ArrayDT3_8 uint(8)[8]
+typedef L4_MABX_ArrayDT3_39 uint(8)[39]
+typedef L4_MABX_ArrayDT3_22 uint(8)[22]
+typedef L4_MABX_ArrayDT3_128 uint(8)[128]
+typedef L4_MABX_ArrayDT3_16 uint(8)[16]
+typedef L4_MABX_ArrayDT3_17 uint(8)[17]
+typedef L4_MABX_ArrayDT8_17 uint(8)[17]
+typedef L4_MABX_ArrayDT8_2 uint(8)[2]
+typedef L4_MABX_ArrayDT8_33 uint(8)[33]
+typedef L4_MABX_ArrayDT3_100 uint(8)[100]
+typedef L4_MABX_ArrayDT0_3 flt(64,IEEE)[3]
+typedef L4_MABX_ArrayDT0_5 flt(64,IEEE)[5]
+typedef L4_MABX_ArrayDT0_17 flt(64,IEEE)[17]
+typedef L4_MABX_ArrayDT0_10 flt(64,IEEE)[10]
+typedef L4_MABX_ArrayDT0_9 flt(64,IEEE)[9]
+typedef L4_MABX_ArrayDT0_72 flt(64,IEEE)[72]
+typedef L4_MABX_ArrayDT7_2 uint(32)[2]
+typedef L4_MABX_ArrayDT44_39 uint(8)[39]
+typedef L4_MABX_ArrayDT44_17 uint(8)[17]
+typedef L4_MABX_ArrayDT0_83_16_Col col flt(64,IEEE)[83][16]
+typedef L4_MABX_ArrayDT0_83 flt(64,IEEE)[83]
+typedef L4_MABX_ArrayDT0_8_16_Col col flt(64,IEEE)[8][16]
+typedef L4_MABX_ArrayDT0_16 flt(64,IEEE)[16]
+typedef L4_MABX_ArrayDT0_16_2_Col col flt(64,IEEE)[16][2]
+typedef L4_MABX_ArrayDT0_8_8_Col col flt(64,IEEE)[8][8]
+
+

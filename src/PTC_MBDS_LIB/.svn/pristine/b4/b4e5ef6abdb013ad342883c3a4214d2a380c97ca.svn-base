@@ -1,0 +1,18 @@
+function out = PTC_MBDS_ProjectOptions(varargin)
+
+pairs = {'Query', ''};
+ARGS = ptc_matlab_lib.parseargs(varargin, pairs);
+
+%%%%%%%%%%%%%%%%%%%%%% SPECIFY SETTINGS %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+out.BlockSignatureLength = 20;
+out.GlobalDisable = false;
+out.GlobalFeedThrough = false;
+out.LengthOfStaticStrings = 40;
+
+if isfield(out, ARGS.Query)
+   out = out.(ARGS.Query);
+else
+   out = orderfields(out);
+end
+
+end

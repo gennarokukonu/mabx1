@@ -1,0 +1,86 @@
+classdef ENUM_CAN_TX_T < Simulink.IntEnumType
+    enumeration
+        TX_DISABLED(0)
+        TX_CAN_1(1)
+        TX_CAN_2(2)
+        TX_CAN_1_2(3)
+        TX_CAN_3(4)
+        TX_CAN_1_3(5)
+        TX_CAN_2_3(6)
+        TX_CAN_1_2_3(7)
+        TX_CAN_4(8)
+        TX_CAN_1_4(9)
+        TX_CAN_2_4(10)
+        TX_CAN_1_2_4(11)
+        TX_CAN_3_4(12)
+        TX_CAN_1_3_4(13)
+        TX_CAN_2_3_4(14)
+        TX_CAN_1_2_3_4(15)
+        TX_CAN_5(16)
+        TX_CAN_1_5(17)
+        TX_CAN_2_5(18)
+        TX_CAN_1_2_5(19)
+        TX_CAN_3_5(20)
+        TX_CAN_1_3_5(21)
+        TX_CAN_2_3_5(22)
+        TX_CAN_1_2_3_5(23)
+        TX_CAN_4_5(24)
+        TX_CAN_1_4_5(25)
+        TX_CAN_2_4_5(26)
+        TX_CAN_1_2_4_5(27)
+        TX_CAN_3_4_5(28)
+        TX_CAN_1_3_4_5(29)
+        TX_CAN_2_3_4_5(30)
+        TX_CAN_1_2_3_4_5(31)
+        TX_CAN_6(32)
+        TX_CAN_1_6(33)
+        TX_CAN_2_6(34)
+        TX_CAN_1_2_6(35)
+        TX_CAN_3_6(36)
+        TX_CAN_1_3_6(37)
+        TX_CAN_2_3_6(38)
+        TX_CAN_1_2_3_6(39)
+        TX_CAN_4_6(40)
+        TX_CAN_1_4_6(41)
+        TX_CAN_2_4_6(42)
+        TX_CAN_1_2_4_6(43)
+        TX_CAN_3_4_6(44)
+        TX_CAN_1_3_4_6(45)
+        TX_CAN_2_3_4_6(46)
+        TX_CAN_1_2_3_4_6(47)
+        TX_CAN_5_6(48)
+        TX_CAN_1_5_6(49)
+        TX_CAN_2_5_6(50)
+        TX_CAN_1_2_5_6(51)
+        TX_CAN_3_5_6(52)
+        TX_CAN_1_3_5_6(53)
+        TX_CAN_2_3_5_6(54)
+        TX_CAN_1_2_3_5_6(55)
+        TX_CAN_4_5_6(56)
+        TX_CAN_1_4_5_6(57)
+        TX_CAN_2_4_5_6(58)
+        TX_CAN_1_2_4_5_6(59)
+        TX_CAN_3_4_5_6(60)
+        TX_CAN_1_3_4_5_6(61)
+        TX_CAN_2_3_4_5_6(62)
+        TX_CAN_1_2_3_4_5_6(63)
+    end
+    methods (Static = true)
+        function retVal = getDataScope()
+            retVal = 'Exported';
+        end
+        function retVal = getHeaderFile()
+            retVal = 'EnumTypes.h';
+        end
+        function retVal = getDescription()
+            retVal = 'Enumeration to select the CAN bus to transmit a message on, for the microautobox';
+        end
+        function retVal = addClassNameToEnumNames()
+            retVal = true;
+        end
+        function retVal = getMotoHawkEnumStruct()
+            [enumerations, fields] = enumeration(mfilename);
+            retVal = struct('name', fields(:), 'value', num2cell(double(enumerations)));
+        end
+    end
+end
