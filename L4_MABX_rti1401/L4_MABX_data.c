@@ -3,9 +3,9 @@
  *
  * Code generation for model "L4_MABX".
  *
- * Model version              : 1.845
+ * Model version              : 1.846
  * Simulink Coder version : 8.14 (R2018a) 06-Feb-2018
- * C source code generated on : Wed Aug 28 10:31:29 2019
+ * C source code generated on : Wed Nov  6 11:22:45 2019
  *
  * Target selection: rti1401.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -1201,6 +1201,28 @@ P_L4_MABX_T L4_MABX_P = {
   0.0,
   0.0,
   0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
   1.0,
   0.0,
   0.01,
@@ -1648,6 +1670,12 @@ P_L4_MABX_T L4_MABX_P = {
   ENUM_CAN_RX_T_RX_CAN_1,
   ENUM_CAN_RX_T_RX_CAN_1,
   ENUM_CAN_RX_T_RX_CAN_2,
+  ENUM_CAN_RX_T_RX_CAN_1,
+  ENUM_CAN_RX_T_RX_CAN_3,
+  ENUM_CAN_RX_T_RX_CAN_4,
+  ENUM_CAN_RX_T_RX_CAN_5,
+  ENUM_CAN_RX_T_RX_CAN_6,
+  ENUM_CAN_RX_T_RX_CAN_2,
   ENUM_CAN_RX_T_RX_CAN_3,
   ENUM_CAN_RX_T_RX_CAN_4,
   ENUM_CAN_RX_T_RX_CAN_5,
@@ -1665,16 +1693,16 @@ P_L4_MABX_T L4_MABX_P = {
   ENUM_CAN_RX_T_RX_CAN_6,
   ENUM_CAN_RX_T_RX_CAN_1,
   ENUM_CAN_RX_T_RX_CAN_2,
+  ENUM_CAN_RX_T_RX_CAN_6,
   ENUM_CAN_RX_T_RX_CAN_3,
   ENUM_CAN_RX_T_RX_CAN_4,
   ENUM_CAN_RX_T_RX_CAN_5,
-  ENUM_CAN_RX_T_RX_CAN_6,
   ENUM_CAN_RX_T_RX_CAN_1,
   ENUM_CAN_RX_T_RX_CAN_2,
+  ENUM_CAN_RX_T_RX_CAN_6,
   ENUM_CAN_RX_T_RX_CAN_3,
   ENUM_CAN_RX_T_RX_CAN_4,
   ENUM_CAN_RX_T_RX_CAN_5,
-  ENUM_CAN_RX_T_RX_CAN_6,
   ENUM_CAN_STATUS_DIAG_T_BUS_OFF,
   ENUM_CAN_STATUS_DIAG_T_BUS_OFF,
   ENUM_CAN_STATUS_DIAG_T_BUS_OFF,
@@ -1930,7 +1958,6 @@ P_L4_MABX_T L4_MABX_P = {
   0,
   0,
   1,
-  1,
   0,
   0,
   0,
@@ -2109,45 +2136,45 @@ P_L4_MABX_T L4_MABX_P = {
   0U,
   0U,
 
-  /* Start of '<S932>/EXT_TRQ_CTRL_MODE_C' */
+  /* Start of '<S943>/EXT_TRQ_CTRL_MODE_C' */
   {
     -1
   }
   ,
 
-  /* End of '<S932>/EXT_TRQ_CTRL_MODE_C' */
+  /* End of '<S943>/EXT_TRQ_CTRL_MODE_C' */
 
-  /* Start of '<S932>/EXT_TRQ_CTRL_MODE_B' */
+  /* Start of '<S943>/EXT_TRQ_CTRL_MODE_B' */
   {
     -1
   }
   ,
 
-  /* End of '<S932>/EXT_TRQ_CTRL_MODE_B' */
+  /* End of '<S943>/EXT_TRQ_CTRL_MODE_B' */
 
-  /* Start of '<S932>/EXT_TRQ_CTRL_MODE_A' */
+  /* Start of '<S943>/EXT_TRQ_CTRL_MODE_A' */
   {
     -1
   }
   ,
 
-  /* End of '<S932>/EXT_TRQ_CTRL_MODE_A' */
+  /* End of '<S943>/EXT_TRQ_CTRL_MODE_A' */
 
-  /* Start of '<S932>/DEFAULT_TRQ_CTRL_MODE' */
+  /* Start of '<S943>/DEFAULT_TRQ_CTRL_MODE' */
   {
     -1
   }
   ,
 
-  /* End of '<S932>/DEFAULT_TRQ_CTRL_MODE' */
+  /* End of '<S943>/DEFAULT_TRQ_CTRL_MODE' */
 
-  /* Start of '<S932>/ALL_CTRL_DISABLED' */
+  /* Start of '<S943>/ALL_CTRL_DISABLED' */
   {
     -1
   }
   ,
 
-  /* End of '<S932>/ALL_CTRL_DISABLED' */
+  /* End of '<S943>/ALL_CTRL_DISABLED' */
 
   /* Start of '<S238>/Calculate_I_term' */
   {

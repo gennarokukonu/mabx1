@@ -1,0 +1,109 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   13 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "is_active_c6_SUB_L4_Task_10ms_SUB_STATE_CONTROL"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_c6_SUB_L4_Task_10ms_SUB_STATE_CONTROL"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_POWER_UP_ROUTINE"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "POWER_UP_ROUTINE"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_POWER_DOWN_ROUTINE"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "POWER_DOWN_ROUTINE"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "INVERTER_RELAY_ON_DELAY_SECS_APV"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "INVERTER_RELAY_ON_DELAY_SECS_APV"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "SENSOR_RELAY_ON_DELAY_SECS_APV"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "SENSOR_RELAY_ON_DELAY_SECS_APV"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "IGN_RELAY_OFF_DELAY_SECS_APV"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "IGN_RELAY_OFF_DELAY_SECS_APV"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "INVERTER_RELAY_OFF_DELAY_SECS_APV"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "INVERTER_RELAY_OFF_DELAY_SECS_APV"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "MABX_RELAY_ON_DELAY_SECS_APV"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "MABX_RELAY_ON_DELAY_SECS_APV"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "MABX_RELAY_OFF_DELAY_SECS_APV"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "MABX_RELAY_OFF_DELAY_SECS_APV"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "SENSOR_RELAY_OFF_DELAY_SECS_APV"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "SENSOR_RELAY_OFF_DELAY_SECS_APV"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "IGN_RELAY_ON_DELAY_SECS_APV"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "IGN_RELAY_ON_DELAY_SECS_APV"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "temporalCounter_i1"\
+      Description  "TemporalCounter"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+  }
+  %return ChartDataElements
+%endfunction

@@ -3,7 +3,7 @@
 --  Trace file: L4_MABX.trc
 --
 --  RTI1401 7.10 (02-May-2018)
---  Wed Aug 28 10:31:29 2019
+--  Wed Nov  6 11:22:45 2019
 --
 --  Copyright 2019, dSPACE GmbH. All rights reserved.
 --
@@ -30,7 +30,7 @@
 
 _genname     "RTI"
 _genversion  "7.10"
-_gendate     "08/28/2019 10:32:21"
+_gendate     "11/06/2019 11:23:34"
 _description ""
 _author      "RTI1401 7.10 (02-May-2018)"
 _model       "L4_MABX"
@@ -1594,7 +1594,7 @@ group "Tunable Parameters"
 	{
 	 type:    flt(64,IEEE)
 	 alias:   "Lateral_Control_Curvature_Limit"
-	 range:   < 0.2 ; 1.0 >
+	 range:   < 0.1 ; 1.0 >
 	 desc:    "Lateral Control Curvature Saturation Limit (rad)"
 	 value:   0.5
 	 flags:   PARAM
@@ -1773,28 +1773,20 @@ group "Tunable Parameters"
 	 value:   0
 	 flags:   PARAM
 	}
-	CANR_PROPB_REAX_3_13_CHANNEL_APV
-	{
-	 type:    enum L4_MABX_ENUM_CAN_RX_T
-	 alias:   "CANR_PROPB_REAX_3_13_CHANNEL_APV"
-	 desc:    "Channel to receive PropB_REAX_3_13"
-	 value:   2
-	 flags:   PARAM
-	}
-	CANR_PROPB_REAX_4_13_CHANNEL_APV
-	{
-	 type:    enum L4_MABX_ENUM_CAN_RX_T
-	 alias:   "CANR_PROPB_REAX_4_13_CHANNEL_APV"
-	 desc:    "Channel to receive PropB_REAX_4_13"
-	 value:   2
-	 flags:   PARAM
-	}
 	CANR_PROPB_XPR_1_50_CHANNEL_APV
 	{
 	 type:    enum L4_MABX_ENUM_CAN_RX_T
 	 alias:   "CANR_PROPB_XPR_1_50_CHANNEL_APV"
 	 desc:    "Channel to receive PropB_XPR_1_50"
 	 value:   3
+	 flags:   PARAM
+	}
+	PROPB_REAX_CHANNEL_APV
+	{
+	 type:    enum L4_MABX_ENUM_CAN_RX_T
+	 alias:   "PROPB_REAX_CHANNEL_APV"
+	 desc:    "Channel to receive PropB_REAX"
+	 value:   6
 	 flags:   PARAM
 	}
 	LONG_SPEED_SRC_SELECTOR_APV
