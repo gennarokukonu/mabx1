@@ -1,0 +1,102 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   12 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "TimeFinal"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "TimeFinal"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "VelocityInitialLimited"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "VelocityInitialLimited"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "VelocityFinalLimited"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "VelocityFinalLimited"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "AccelerationInitialLimited"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "AccelerationInitialLimited"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "AccelerationFinalLimited"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "AccelerationFinalLimited"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "Jerk56"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Jerk56"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "Jerk12"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Jerk12"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "a"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "a"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "b"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "b"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "c"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "c"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "Acceleration34"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Acceleration34"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "AlternateMethod"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "AlternateMethod"\
+      SrcLocation  ""\
+    }\
+  }
+  %return ChartDataElements
+%endfunction

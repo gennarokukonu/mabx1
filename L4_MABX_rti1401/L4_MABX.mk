@@ -106,7 +106,7 @@ EXT_MODE                       = 0
 MULTITASKING                   = 1
 # Support for parallel computing
 MASTER_ANCHOR_DIR              = 
-START_DIR                      = C:\Users\GAVIN~1.COE\Repos\L4SVN~1\branches\TWIN_C~1
+START_DIR                      = C:\Users\Gavin.Coelho\Repos\mabx
 # Shared library for utility code
 RTW_SHARED_LIB_SRCS_WILD       = 
 RTW_SHARED_LIB_SRCS_DIR        = 

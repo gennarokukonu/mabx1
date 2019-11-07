@@ -63,7 +63,7 @@ rtGetInf.m03
 -JC:\PROGRA~1\MATLAB\R2018a\extern\include
 -JC:\PROGRA~1\MATLAB\R2018a\rtw\c\src
 -JC:\PROGRA~1\MATLAB\R2018a\rtw\c\src\ext_mode\common
--JC:\Users\GAVIN~1.COE\Repos\L4SVN~1\branches\TWIN_C~1
--JC:\Users\GAVIN~1.COE\Repos\L4SVN~1\branches\TWIN_C~1\L4_MABX_rti1401
--JC:\Users\GAVIN~1.COE\Repos\L4SVN~1\branches\TWIN_C~1\src
--JC:\Users\GAVIN~1.COE\Repos\L4SVN~1\branches\TWIN_C~1\src\dsa_gen_code 
+-JC:\Users\Gavin.Coelho\Repos\mabx
+-JC:\Users\Gavin.Coelho\Repos\mabx\L4_MABX_rti1401
+-JC:\Users\Gavin.Coelho\Repos\mabx\src
+-JC:\Users\Gavin.Coelho\Repos\mabx\src\dsa_gen_code 
