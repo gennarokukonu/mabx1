@@ -96,6 +96,9 @@ DesiredSteeringAngle = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Desired St
 %% EthernetLinkStatus
 EthernetLinkStatus = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Ethernet Link Status');
 
+%% Heartbeat_Ok
+Heartbeat_Ok = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Heartbeat Ok');
+
 %% SteeringWheelAngle
 SteeringWheelAngle = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'SPN1807 Steering Wheel Angle', ...
     'Unit', 'deg');

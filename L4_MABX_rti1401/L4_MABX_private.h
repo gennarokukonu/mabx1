@@ -3,9 +3,9 @@
  *
  * Code generation for model "L4_MABX".
  *
- * Model version              : 1.848
+ * Model version              : 1.851
  * Simulink Coder version : 8.14 (R2018a) 06-Feb-2018
- * C source code generated on : Thu Nov  7 14:50:03 2019
+ * C source code generated on : Thu Nov 14 14:52:37 2019
  *
  * Target selection: rti1401.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -657,14 +657,14 @@ extern can_tp1_canMsg can_type1_M2_C2_XTD[CANTP1_M2_C2_NUM_XTD_MSG];
 /* define user accessible RX service message constant for STD-Msg 1540 */
 #define CANTP1_M3_C2_RXSRVC_STD_0x604  3
 
-/* define user accessible RX service message constant for XTD-Msg 419426323 */
-#define CANTP1_M3_C2_RXSRVC_XTD_0x18FFF013 0
+/* define user accessible RX service message constant for XTD-Msg 486535187 */
+#define CANTP1_M3_C2_RXSRVC_XTD_0x1CFFF013 0
 
-/* define user accessible RX service message constant for XTD-Msg 419426579 */
-#define CANTP1_M3_C2_RXSRVC_XTD_0x18FFF113 1
+/* define user accessible RX service message constant for XTD-Msg 486535443 */
+#define CANTP1_M3_C2_RXSRVC_XTD_0x1CFFF113 1
 
-/* define user accessible RX service message constant for XTD-Msg 419428115 */
-#define CANTP1_M3_C2_RXSRVC_XTD_0x18FFF713 2
+/* define user accessible RX service message constant for XTD-Msg 486536979 */
+#define CANTP1_M3_C2_RXSRVC_XTD_0x1CFFF713 2
 
 /* define needed RX service STD_Msg array size for controller 2 on board 3 */
 #define CANTP1_M3_C2_NUM_STD_MSG       6
@@ -797,17 +797,17 @@ extern void L4_MABX_If_Then_Else_c(real_T rtu_If, real_T rtu_Then, real_T
 extern void L4_MABX_If_Then_Else_m(boolean_T rtu_If, real_T rtu_Then, real_T
   rtu_Then_l, real_T rtu_Then_f, real_T rtu_Else, real_T rtu_Else_i, real_T
   rtu_Else_k, B_If_Then_Else_L4_MABX_h_T *localB);
-extern void L4_MABX_If_Then_Else_n(boolean_T rtu_If, real_T rtu_Then, real_T
+extern void L4_MABX_If_Then_Else_ch(boolean_T rtu_If, real_T rtu_Then, real_T
   rtu_Else);
 extern void L4_MABX_ALL_CTRL_DISABLED(boolean_T rtu_Enable, int32_T *rty_Out1,
   P_ALL_CTRL_DISABLED_L4_MABX_T *localP);
-extern void L4_MABX_If_Then_Else_a(boolean_T rtu_If, real_T rtu_Then,
-  ENUM_XBR_EBI_MODE_T rtu_Then_i, ENUM_XBR_PRIORITY_T rtu_Then_c,
-  ENUM_XBR_CONTROL_MODE_T rtu_Then_j, ENUM_XBR_PASS_THROUGH_ACTIVE_T rtu_Then_d,
-  real_T rtu_Then_js, real_T rtu_Then_h, real_T rtu_Else, ENUM_XBR_EBI_MODE_T
-  rtu_Else_m, ENUM_XBR_PRIORITY_T rtu_Else_i, ENUM_XBR_CONTROL_MODE_T rtu_Else_j,
-  ENUM_XBR_PASS_THROUGH_ACTIVE_T rtu_Else_j3, real_T rtu_Else_f, real_T
-  rtu_Else_c, B_If_Then_Else_L4_MABX_ke_T *localB);
+extern void L4_MABX_If_Then_Else_f(boolean_T rtu_If, real_T rtu_Then,
+  ENUM_XBR_EBI_MODE_T rtu_Then_h, ENUM_XBR_PRIORITY_T rtu_Then_k,
+  ENUM_XBR_CONTROL_MODE_T rtu_Then_l, ENUM_XBR_PASS_THROUGH_ACTIVE_T rtu_Then_p,
+  real_T rtu_Then_g, real_T rtu_Then_m, real_T rtu_Else, ENUM_XBR_EBI_MODE_T
+  rtu_Else_o, ENUM_XBR_PRIORITY_T rtu_Else_d, ENUM_XBR_CONTROL_MODE_T rtu_Else_c,
+  ENUM_XBR_PASS_THROUGH_ACTIVE_T rtu_Else_l, real_T rtu_Else_i, real_T
+  rtu_Else_da, B_If_Then_Else_L4_MABX_b_T *localB);
 extern void L4_MAB_Background_Task_Init(void);
 extern void L4_MA_Background_Task_Reset(void);
 extern void L4_MA_Background_Task_Start(void);

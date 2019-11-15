@@ -174,7 +174,7 @@ group "Tunable Parameters"
 	 alias:   "Lateral_Control_D"
 	 range:   < 0.0 ; 100.0 >
 	 desc:    "Lateral Controller Devivative Value"
-	 value:   0.25
+	 value:   0.2
 	 flags:   PARAM
 	}
 	Lateral_Control_Error_Limit
@@ -184,6 +184,15 @@ group "Tunable Parameters"
 	 range:   < 0.0 ; 1.0 >
 	 desc:    "Lateral Control Error Saturation Limit (rad)"
 	 value:   0.1
+	 flags:   PARAM
+	}
+	Lateral_Control_Error_Rate_Limit
+	{
+	 type:    flt(64,IEEE)
+	 alias:   "Lateral_Control_Error_Rate_Limit"
+	 range:   < 0.0001 ; 0.2 >
+	 desc:    "Lateral Control Error Rate Limit"
+	 value:   0.05
 	 flags:   PARAM
 	}
 	Lateral_Control_I
@@ -201,7 +210,7 @@ group "Tunable Parameters"
 	 alias:   "Lateral_Control_P"
 	 range:   < 0.0 ; 100.0 >
 	 desc:    "Lateral controller proportional value (P)"
-	 value:   0.3
+	 value:   0.2
 	 flags:   PARAM
 	}
 	Lateral_Control_Pole
@@ -211,6 +220,15 @@ group "Tunable Parameters"
 	 range:   < 0.0 ; 1.0 >
 	 desc:    "Lateral Compensator Pole Value"
 	 value:   0.98
+	 flags:   PARAM
+	}
+	Lateral_Control_Rate_Limit_APV
+	{
+	 type:    flt(64,IEEE)
+	 alias:   "Lateral_Control_Rate_Limit_APV"
+	 range:   < 0.0001 ; 0.5 >
+	 desc:    "Lateral Control Rate Limit"
+	 value:   0.05
 	 flags:   PARAM
 	}
 	Lateral_Control_YawRate_Limit
@@ -238,6 +256,14 @@ group "Tunable Parameters"
 	 range:   < -10.0 ; 10.0 >
 	 unit:    "deg"
 	 desc:    "Desired angle position for steering wheel"
+	 value:   0.0
+	 flags:   PARAM
+	}
+	REAX_OFFSET_APV
+	{
+	 type:    flt(64,IEEE)
+	 alias:   "REAX_OFFSET_APV"
+	 desc:    "ReAX offset"
 	 value:   0.0
 	 flags:   PARAM
 	}
@@ -312,7 +338,7 @@ group "Tunable Parameters"
 	 alias:   "UndersteerCorection"
 	 range:   < 0.0 ; 2.5 >
 	 desc:    "The Haris Fudge Factor"
-	 value:   1.5
+	 value:   0.75
 	 flags:   PARAM
 	}
 	VSPD_TARGET_KPH_APV
@@ -331,7 +357,7 @@ group "Tunable Parameters"
 	 alias:   "Yaw_Rate_FF_Gain"
 	 range:   < 0.0 ; 10.0 >
 	 desc:    "Yaw rate feed forward gain"
-	 value:   0.15
+	 value:   0.25
 	 flags:   PARAM
 	}
 	AUTONOMOUS_MODE_SELECTOR_APV
@@ -355,7 +381,7 @@ group "Tunable Parameters"
 	 type:    enum L4_MABX_ENUM_CAN_RX_T
 	 alias:   "PROPB_REAX_CHANNEL_APV"
 	 desc:    "Channel to receive PropB_REAX"
-	 value:   6
+	 value:   2
 	 flags:   PARAM
 	}
 	LONG_SPEED_SRC_SELECTOR_APV
@@ -386,7 +412,7 @@ group "Tunable Parameters"
 	{
 	 type:    enum L4_MABX_ENUM_SWITCH_T
 	 alias:   "RATE_LIMITER_ENABLE_APV"
-	 desc:    "Ghost mode selector"
+	 desc:    "Rate Limiter Enable Selector"
 	 value:   1
 	 flags:   PARAM
 	}
@@ -546,6 +572,14 @@ group "Labels"
 	 desc:    "CCVS1_00 Brake Switch"
 	 flags:   READONLY
 	}
+	Lateral_Control_Rate_Limit
+	{
+	 type:    flt(64,IEEE)
+	 alias:   "Lateral_Control_Rate_Limit"
+	 unit:    "rad"
+	 desc:    "Lateral Control Rate Upper Limit"
+	 flags:   READONLY
+	}
 	Lateral_Control_Output
 	{
 	 type:    flt(64,IEEE)
@@ -576,6 +610,14 @@ group "Labels"
 	 alias:   "DesiredSteeringAngle"
 	 unit:    "deg"
 	 desc:    "Desired Steering Wheel Angle Output"
+	 flags:   READONLY
+	}
+	Lateral_Control_Heading_Error
+	{
+	 type:    flt(64,IEEE)
+	 alias:   "Lateral_Control_Heading_Error"
+	 unit:    "rad"
+	 desc:    "Lateral Control Heading Error"
 	 flags:   READONLY
 	}
 	DIAG_CAN1_Count_Stuff_Errors
@@ -1018,6 +1060,15 @@ group "Labels"
 	 bitmask: 0x01
 	 range:   < 0 ; 1 >
 	 desc:    "Autonomous Mode Enable Switch"
+	 flags:   READONLY
+	}
+	Heartbeat_Ok
+	{
+	 type:    uint(8)
+	 alias:   "Heartbeat_Ok"
+	 bitmask: 0x01
+	 range:   < 0 ; 1 >
+	 desc:    "Heartbeat Ok"
 	 flags:   READONLY
 	}
 	RTMapsOk

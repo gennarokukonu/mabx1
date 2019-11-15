@@ -3,9 +3,9 @@
  *
  * Code generation for model "L4_MABX".
  *
- * Model version              : 1.848
+ * Model version              : 1.851
  * Simulink Coder version : 8.14 (R2018a) 06-Feb-2018
- * C source code generated on : Thu Nov  7 14:50:03 2019
+ * C source code generated on : Thu Nov 14 14:52:37 2019
  *
  * Target selection: rti1401.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -521,30 +521,12 @@ P_L4_MABX_T L4_MABX_P = {
   0.0,
   0.0,
 
-  { 1.0, 0.9, 0.8, 0.5, 0.35, 0.3 },
+  { 1.0, 0.9, 0.8, 0.5, 0.2, 0.01 },
 
   { 10.0, 20.0, 30.0, 50.0, 70.0, 100.0 },
-
-  { 0.0001, 0.001, 0.1, 0.2, 1.0 },
-
-  { 1.0E-5, 0.0001, 0.1, 0.2, 0.5 },
-
-  { 0.0, 0.003864487551074, 0.013274721856995, 0.002862882791433 },
-
-  { 1.0, -2.404462450768444, 1.9732761790619751, -0.548811636094028 },
-  0.0,
-
-  { 0.0001, 0.001, 0.1, 0.2, 1.0 },
-
-  { 0.001, 0.01, 0.1, 0.5, 1.0 },
-
-  { 1.0, 0.6, 0.3, 0.1, 0.05, 0.01 },
-
-  { 10.0, 20.0, 30.0, 50.0, 70.0, 100.0 },
-  0.005,
-  -0.005,
-  0.0,
   0.01,
+  0.01,
+  0.0,
   0.0,
   0.01,
   0.0,
@@ -572,12 +554,10 @@ P_L4_MABX_T L4_MABX_P = {
     529.9799805, 549.9749756, 569.9699707, 589.9650269, 610.2199707, 630.0,
     650.25, 670.0 },
   0.017453292519943295,
-
-  { 0.0, 0.003864487551074, 0.013274721856995, 0.002862882791433 },
-
-  { 1.0, -2.404462450768444, 1.9732761790619751, -0.548811636094028 },
+  -1.0,
+  0.01,
   0.0,
-  0.003,
+  0.002,
   0.0,
   -1.0,
   -1.0,
@@ -589,8 +569,23 @@ P_L4_MABX_T L4_MABX_P = {
   1000.0,
   -1000.0,
   -1.0,
+
+  { 0.0001, 0.001, 0.1, 0.2, 1.0 },
+
+  { 1.0E-5, 0.0001, 0.1, 0.2, 0.5 },
+
+  { 0.01, 0.05, 0.1, 0.2, 1.0 },
+
+  { 0.001, 0.01, 0.1, 0.5, 1.0 },
+
+  { 1.0, 0.6, 0.3, 0.1, 0.05, 0.01 },
+
+  { 10.0, 20.0, 30.0, 50.0, 70.0, 100.0 },
+  0.005,
+  -0.005,
   0.0,
   1.0,
+  0.0,
   1.0,
   1.0,
   0.0,
@@ -2136,45 +2131,45 @@ P_L4_MABX_T L4_MABX_P = {
   0U,
   0U,
 
-  /* Start of '<S943>/EXT_TRQ_CTRL_MODE_C' */
+  /* Start of '<S947>/EXT_TRQ_CTRL_MODE_C' */
   {
     -1
   }
   ,
 
-  /* End of '<S943>/EXT_TRQ_CTRL_MODE_C' */
+  /* End of '<S947>/EXT_TRQ_CTRL_MODE_C' */
 
-  /* Start of '<S943>/EXT_TRQ_CTRL_MODE_B' */
+  /* Start of '<S947>/EXT_TRQ_CTRL_MODE_B' */
   {
     -1
   }
   ,
 
-  /* End of '<S943>/EXT_TRQ_CTRL_MODE_B' */
+  /* End of '<S947>/EXT_TRQ_CTRL_MODE_B' */
 
-  /* Start of '<S943>/EXT_TRQ_CTRL_MODE_A' */
+  /* Start of '<S947>/EXT_TRQ_CTRL_MODE_A' */
   {
     -1
   }
   ,
 
-  /* End of '<S943>/EXT_TRQ_CTRL_MODE_A' */
+  /* End of '<S947>/EXT_TRQ_CTRL_MODE_A' */
 
-  /* Start of '<S943>/DEFAULT_TRQ_CTRL_MODE' */
+  /* Start of '<S947>/DEFAULT_TRQ_CTRL_MODE' */
   {
     -1
   }
   ,
 
-  /* End of '<S943>/DEFAULT_TRQ_CTRL_MODE' */
+  /* End of '<S947>/DEFAULT_TRQ_CTRL_MODE' */
 
-  /* Start of '<S943>/ALL_CTRL_DISABLED' */
+  /* Start of '<S947>/ALL_CTRL_DISABLED' */
   {
     -1
   }
   ,
 
-  /* End of '<S943>/ALL_CTRL_DISABLED' */
+  /* End of '<S947>/ALL_CTRL_DISABLED' */
 
   /* Start of '<S238>/Calculate_I_term' */
   {
