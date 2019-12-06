@@ -120,6 +120,18 @@ enum L4_MABX_ENUM_AUTO_CTRL_VEHICLE_STATE_T
     }
 }
 
+enum L4_MABX_ENUM_LAT_STEER_SOURCE_T
+{
+  type:     int(32)
+  enums
+    {
+      0:    "ENUM_LAT_STEER_SOURCE_T_GPS_PATH"
+      1:    "ENUM_LAT_STEER_SOURCE_T_OVERRIDE"
+      2:    "ENUM_LAT_STEER_SOURCE_T_PIC_HARIS"
+      3:    "ENUM_LAT_STEER_SOURCE_T_PIC_STANLEY"
+    }
+}
+
 enum L4_MABX_ENUM_LONG_SPEED_DEMAND_SOURCE_T
 {
   type:     int(32)
@@ -127,7 +139,7 @@ enum L4_MABX_ENUM_LONG_SPEED_DEMAND_SOURCE_T
     {
       0:    "ENUM_LONG_SPEED_DEMAND_SOURCE_T_GPS_PATH"
       1:    "ENUM_LONG_SPEED_DEMAND_SOURCE_T_OVERRIDE"
-      2:    "ENUM_LONG_SPEED_DEMAND_SOURCE_T_RW_WAYPOINTS"
+      2:    "ENUM_LONG_SPEED_DEMAND_SOURCE_T_WAYPOINTS"
     }
 }
 
@@ -577,14 +589,14 @@ typedef L4_MABX_ArrayDT8_2 uint(8)[2]
 typedef L4_MABX_ArrayDT8_33 uint(8)[33]
 typedef L4_MABX_ArrayDT3_100 uint(8)[100]
 typedef L4_MABX_ArrayDT0_3 flt(64,IEEE)[3]
+typedef L4_MABX_ArrayDT0_72 flt(64,IEEE)[72]
 typedef L4_MABX_ArrayDT0_5 flt(64,IEEE)[5]
 typedef L4_MABX_ArrayDT0_17 flt(64,IEEE)[17]
 typedef L4_MABX_ArrayDT0_10 flt(64,IEEE)[10]
 typedef L4_MABX_ArrayDT0_9 flt(64,IEEE)[9]
-typedef L4_MABX_ArrayDT0_72 flt(64,IEEE)[72]
 typedef L4_MABX_ArrayDT7_2 uint(32)[2]
-typedef L4_MABX_ArrayDT44_39 uint(8)[39]
-typedef L4_MABX_ArrayDT44_17 uint(8)[17]
+typedef L4_MABX_ArrayDT45_39 uint(8)[39]
+typedef L4_MABX_ArrayDT45_17 uint(8)[17]
 typedef L4_MABX_ArrayDT0_83_16_Col col flt(64,IEEE)[83][16]
 typedef L4_MABX_ArrayDT0_83 flt(64,IEEE)[83]
 typedef L4_MABX_ArrayDT0_8_16_Col col flt(64,IEEE)[8][16]

@@ -158,6 +158,22 @@ enum ENUM_AUTO_CTRL_VEHICLE_STATE_T
 typedef enum ENUM_AUTO_CTRL_VEHICLE_STATE_T ENUM_AUTO_CTRL_VEHICLE_STATE_T;
 
 /* Enumeration to select a the signal source for longitudnal speed target */
+#ifndef enum_ENUM_LAT_STEER_SOURCE_T
+#define enum_ENUM_LAT_STEER_SOURCE_T
+
+enum ENUM_LAT_STEER_SOURCE_T
+{
+  ENUM_LAT_STEER_SOURCE_T_GPS_PATH = 0,/* Default value */
+  ENUM_LAT_STEER_SOURCE_T_OVERRIDE,
+  ENUM_LAT_STEER_SOURCE_T_PIC_HARIS,
+  ENUM_LAT_STEER_SOURCE_T_PIC_STANLEY
+};
+
+#endif                                 /*enum_ENUM_LAT_STEER_SOURCE_T*/
+
+typedef enum ENUM_LAT_STEER_SOURCE_T ENUM_LAT_STEER_SOURCE_T;
+
+/* Enumeration to select a the signal source for longitudnal speed target */
 #ifndef enum_ENUM_LONG_SPEED_DEMAND_SOURCE_T
 #define enum_ENUM_LONG_SPEED_DEMAND_SOURCE_T
 
@@ -165,7 +181,7 @@ enum ENUM_LONG_SPEED_DEMAND_SOURCE_T
 {
   ENUM_LONG_SPEED_DEMAND_SOURCE_T_GPS_PATH = 0,/* Default value */
   ENUM_LONG_SPEED_DEMAND_SOURCE_T_OVERRIDE,
-  ENUM_LONG_SPEED_DEMAND_SOURCE_T_RW_WAYPOINTS
+  ENUM_LONG_SPEED_DEMAND_SOURCE_T_WAYPOINTS
 };
 
 #endif                                 /*enum_ENUM_LONG_SPEED_DEMAND_SOURCE_T*/

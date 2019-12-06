@@ -174,7 +174,7 @@ group "Tunable Parameters"
 	 alias:   "Lateral_Control_D"
 	 range:   < 0.0 ; 100.0 >
 	 desc:    "Lateral Controller Devivative Value"
-	 value:   0.2
+	 value:   0.1
 	 flags:   PARAM
 	}
 	Lateral_Control_Error_Limit
@@ -210,7 +210,7 @@ group "Tunable Parameters"
 	 alias:   "Lateral_Control_P"
 	 range:   < 0.0 ; 100.0 >
 	 desc:    "Lateral controller proportional value (P)"
-	 value:   0.2
+	 value:   0.5
 	 flags:   PARAM
 	}
 	Lateral_Control_Pole
@@ -265,6 +265,14 @@ group "Tunable Parameters"
 	 alias:   "REAX_OFFSET_APV"
 	 desc:    "ReAX offset"
 	 value:   0.0
+	 flags:   PARAM
+	}
+	STANLEY_GAIN_APV
+	{
+	 type:    flt(64,IEEE)
+	 alias:   "STANLEY_GAIN_APV"
+	 desc:    "Stanley Controller Gain"
+	 value:   320.0
 	 flags:   PARAM
 	}
 	STEERCTRL_WHEEL_ANGLE_DATA_MPV
@@ -338,7 +346,7 @@ group "Tunable Parameters"
 	 alias:   "UndersteerCorection"
 	 range:   < 0.0 ; 2.5 >
 	 desc:    "The Haris Fudge Factor"
-	 value:   0.75
+	 value:   0.5
 	 flags:   PARAM
 	}
 	VSPD_TARGET_KPH_APV
@@ -351,13 +359,22 @@ group "Tunable Parameters"
 	 value:   0.0
 	 flags:   PARAM
 	}
+	YAW_RATE_OFFSET_APV
+	{
+	 type:    flt(64,IEEE)
+	 alias:   "YAW_RATE_OFFSET_APV"
+	 range:   < -0.01 ; 0.01 >
+	 desc:    "Yaw Rate Offset"
+	 value:   -0.0066
+	 flags:   PARAM
+	}
 	Yaw_Rate_FF_Gain
 	{
 	 type:    flt(64,IEEE)
 	 alias:   "Yaw_Rate_FF_Gain"
 	 range:   < 0.0 ; 10.0 >
 	 desc:    "Yaw rate feed forward gain"
-	 value:   0.25
+	 value:   0.1
 	 flags:   PARAM
 	}
 	AUTONOMOUS_MODE_SELECTOR_APV
@@ -381,6 +398,14 @@ group "Tunable Parameters"
 	 type:    enum L4_MABX_ENUM_CAN_RX_T
 	 alias:   "PROPB_REAX_CHANNEL_APV"
 	 desc:    "Channel to receive PropB_REAX"
+	 value:   2
+	 flags:   PARAM
+	}
+	LAT_STEER_SRC_SELECTOR_APV
+	{
+	 type:    enum L4_MABX_ENUM_LAT_STEER_SOURCE_T
+	 alias:   "LAT_STEER_SRC_SELECTOR_APV"
+	 desc:    "Selector for lateral control source"
 	 value:   2
 	 flags:   PARAM
 	}
@@ -486,20 +511,20 @@ group "Labels"
 	 desc:    "Curvature at target waypoint"
 	 flags:   READONLY
 	}
-	CurrentVelocity_kph
-	{
-	 type:    flt(64,IEEE)
-	 alias:   "CurrentVelocity_kph"
-	 unit:    "km/h"
-	 desc:    "Current Velocity"
-	 flags:   READONLY
-	}
 	CrosstrackError
 	{
 	 type:    flt(64,IEEE)
 	 alias:   "CrosstrackError"
 	 unit:    "m"
 	 desc:    "Crosstrack error of target waypoint"
+	 flags:   READONLY
+	}
+	CurrentVelocity_kph
+	{
+	 type:    flt(64,IEEE)
+	 alias:   "CurrentVelocity_kph"
+	 unit:    "km/h"
+	 desc:    "Current Velocity"
 	 flags:   READONLY
 	}
 	GPS_X

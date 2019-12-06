@@ -16,33 +16,7 @@
         <Datatype name="single" size="4"/>
         <Datatype name="double" size="8"/>
     </DataTypes>
-    <Structs>
-        <Struct name="RTMapsRX" header="dsa_gen_RTMapsRX.h">
-            <Member name="Heartbeat" dimensions="1" datatype="boolean"/>
-            <Member name="RTMapsOk" dimensions="1" datatype="boolean"/>
-            <Member name="SupervisorMode" dimensions="1" datatype="uint8"/>
-            <Member name="CurrentAzimuth" dimensions="1" datatype="double"/>
-            <Member name="TargetAzimuth" dimensions="1" datatype="double"/>
-            <Member name="CurrentVelocity" dimensions="1" datatype="double"/>
-            <Member name="TargetVelocity" dimensions="1" datatype="double"/>
-            <Member name="Curvature" dimensions="1" datatype="double"/>
-            <Member name="CrosstrackError" dimensions="1" datatype="double"/>
-            <Member name="GPS_X" dimensions="1" datatype="double"/>
-            <Member name="GPS_Y" dimensions="1" datatype="double"/>
-            <Member name="GPS_Time" dimensions="1" datatype="double"/>
-        </Struct>
-        <Struct name="RTMapsTX" header="dsa_gen_RTMapsTX.h">
-            <Member name="Heartbeat" dimensions="1" datatype="boolean"/>
-            <Member name="EStop" dimensions="1" datatype="boolean"/>
-            <Member name="EnableSW" dimensions="1" datatype="boolean"/>
-            <Member name="EngagePB" dimensions="1" datatype="boolean"/>
-            <Member name="AutonomousEnabled" dimensions="1" datatype="boolean"/>
-            <Member name="MABX_Mode" dimensions="1" datatype="uint8"/>
-        </Struct>
-    </Structs>
-    <Blocks>
-        <Block Hash="550683566" name="RTMapsDecode" structref="RTMapsRX" direction="RX"/>
-        <Block Hash="1691094422" name="RTMapsEncode" structref="RTMapsTX" direction="TX"/>
-    </Blocks>
+    <Structs/>
+    <Blocks/>
 </BusDescription>
 

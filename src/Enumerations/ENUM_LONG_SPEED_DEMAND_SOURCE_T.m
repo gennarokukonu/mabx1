@@ -2,7 +2,7 @@ classdef ENUM_LONG_SPEED_DEMAND_SOURCE_T < Simulink.IntEnumType
     enumeration
        GPS_PATH(0)
        OVERRIDE(1)
-       RW_WAYPOINTS(2)
+       WAYPOINTS(2)
     end
     methods (Static = true)
         function retVal = getDataScope()

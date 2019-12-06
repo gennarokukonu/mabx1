@@ -5,7 +5,7 @@
    Declaration of function that initializes the global TRC pointers
 
    RTI1401 7.10 (02-May-2018)
-   Thu Nov 14 14:52:37 2019
+   Fri Dec  6 11:54:14 2019
 
    Copyright 2019, dSPACE GmbH. All rights reserved.
 
@@ -118,17 +118,17 @@ EXTERN_C volatile real_T *p_0_L4_MABX_real_T_81;
 EXTERN_C volatile real_T *p_0_L4_MABX_real_T_82;
 EXTERN_C volatile real_T *p_0_L4_MABX_real_T_83;
 EXTERN_C volatile real_T *p_0_L4_MABX_real_T_84;
-EXTERN_C volatile uint8_T *p_0_L4_MABX_uint8_T_85;
-EXTERN_C volatile boolean_T *p_0_L4_MABX_boolean_T_86;
+EXTERN_C volatile real_T *p_0_L4_MABX_real_T_85;
+EXTERN_C volatile uint8_T *p_0_L4_MABX_uint8_T_86;
 EXTERN_C volatile boolean_T *p_0_L4_MABX_boolean_T_87;
-EXTERN_C volatile real_T *p_0_L4_MABX_real_T_88;
+EXTERN_C volatile boolean_T *p_0_L4_MABX_boolean_T_88;
 EXTERN_C volatile real_T *p_0_L4_MABX_real_T_89;
 EXTERN_C volatile real_T *p_0_L4_MABX_real_T_90;
 EXTERN_C volatile real_T *p_0_L4_MABX_real_T_91;
 EXTERN_C volatile real_T *p_0_L4_MABX_real_T_92;
-EXTERN_C volatile uint8_T *p_0_L4_MABX_uint8_T_93;
-EXTERN_C volatile boolean_T *p_0_L4_MABX_boolean_T_94;
-EXTERN_C volatile real_T *p_0_L4_MABX_real_T_95;
+EXTERN_C volatile real_T *p_0_L4_MABX_real_T_93;
+EXTERN_C volatile uint8_T *p_0_L4_MABX_uint8_T_94;
+EXTERN_C volatile boolean_T *p_0_L4_MABX_boolean_T_95;
 EXTERN_C volatile real_T *p_0_L4_MABX_real_T_96;
 EXTERN_C volatile real_T *p_0_L4_MABX_real_T_97;
 EXTERN_C volatile real_T *p_0_L4_MABX_real_T_98;
@@ -144,39 +144,39 @@ EXTERN_C volatile real_T *p_0_L4_MABX_real_T_107;
 EXTERN_C volatile real_T *p_0_L4_MABX_real_T_108;
 EXTERN_C volatile real_T *p_0_L4_MABX_real_T_109;
 EXTERN_C volatile real_T *p_0_L4_MABX_real_T_110;
-EXTERN_C volatile boolean_T *p_0_L4_MABX_boolean_T_111;
-EXTERN_C volatile real_T *p_0_L4_MABX_real_T_112;
+EXTERN_C volatile real_T *p_0_L4_MABX_real_T_111;
+EXTERN_C volatile boolean_T *p_0_L4_MABX_boolean_T_112;
 EXTERN_C volatile real_T *p_0_L4_MABX_real_T_113;
 EXTERN_C volatile real_T *p_0_L4_MABX_real_T_114;
 EXTERN_C volatile real_T *p_0_L4_MABX_real_T_115;
 EXTERN_C volatile real_T *p_0_L4_MABX_real_T_116;
-EXTERN_C volatile uint8_T *p_0_L4_MABX_uint8_T_117;
-EXTERN_C volatile boolean_T *p_0_L4_MABX_boolean_T_118;
+EXTERN_C volatile real_T *p_0_L4_MABX_real_T_117;
+EXTERN_C volatile uint8_T *p_0_L4_MABX_uint8_T_118;
 EXTERN_C volatile boolean_T *p_0_L4_MABX_boolean_T_119;
-EXTERN_C volatile real_T *p_0_L4_MABX_real_T_120;
+EXTERN_C volatile boolean_T *p_0_L4_MABX_boolean_T_120;
 EXTERN_C volatile real_T *p_0_L4_MABX_real_T_121;
 EXTERN_C volatile real_T *p_0_L4_MABX_real_T_122;
 EXTERN_C volatile real_T *p_0_L4_MABX_real_T_123;
 EXTERN_C volatile real_T *p_0_L4_MABX_real_T_124;
-EXTERN_C volatile uint8_T *p_0_L4_MABX_uint8_T_125;
-EXTERN_C volatile boolean_T *p_0_L4_MABX_boolean_T_126;
-EXTERN_C volatile real_T *p_0_L4_MABX_real_T_127;
+EXTERN_C volatile real_T *p_0_L4_MABX_real_T_125;
+EXTERN_C volatile uint8_T *p_0_L4_MABX_uint8_T_126;
+EXTERN_C volatile boolean_T *p_0_L4_MABX_boolean_T_127;
 EXTERN_C volatile real_T *p_0_L4_MABX_real_T_128;
 EXTERN_C volatile real_T *p_0_L4_MABX_real_T_129;
 EXTERN_C volatile real_T *p_0_L4_MABX_real_T_130;
 EXTERN_C volatile real_T *p_0_L4_MABX_real_T_131;
 EXTERN_C volatile real_T *p_0_L4_MABX_real_T_132;
-EXTERN_C volatile uint8_T *p_0_L4_MABX_uint8_T_133;
-EXTERN_C volatile boolean_T *p_0_L4_MABX_boolean_T_134;
+EXTERN_C volatile real_T *p_0_L4_MABX_real_T_133;
+EXTERN_C volatile uint8_T *p_0_L4_MABX_uint8_T_134;
 EXTERN_C volatile boolean_T *p_0_L4_MABX_boolean_T_135;
-EXTERN_C volatile real_T *p_0_L4_MABX_real_T_136;
+EXTERN_C volatile boolean_T *p_0_L4_MABX_boolean_T_136;
 EXTERN_C volatile real_T *p_0_L4_MABX_real_T_137;
 EXTERN_C volatile real_T *p_0_L4_MABX_real_T_138;
 EXTERN_C volatile real_T *p_0_L4_MABX_real_T_139;
 EXTERN_C volatile real_T *p_0_L4_MABX_real_T_140;
-EXTERN_C volatile uint8_T *p_0_L4_MABX_uint8_T_141;
-EXTERN_C volatile boolean_T *p_0_L4_MABX_boolean_T_142;
-EXTERN_C volatile real_T *p_0_L4_MABX_real_T_143;
+EXTERN_C volatile real_T *p_0_L4_MABX_real_T_141;
+EXTERN_C volatile uint8_T *p_0_L4_MABX_uint8_T_142;
+EXTERN_C volatile boolean_T *p_0_L4_MABX_boolean_T_143;
 EXTERN_C volatile real_T *p_0_L4_MABX_real_T_144;
 EXTERN_C volatile real_T *p_0_L4_MABX_real_T_145;
 EXTERN_C volatile real_T *p_0_L4_MABX_real_T_146;
@@ -184,6 +184,7 @@ EXTERN_C volatile real_T *p_0_L4_MABX_real_T_147;
 EXTERN_C volatile real_T *p_0_L4_MABX_real_T_148;
 EXTERN_C volatile real_T *p_0_L4_MABX_real_T_149;
 EXTERN_C volatile real_T *p_0_L4_MABX_real_T_150;
+EXTERN_C volatile real_T *p_0_L4_MABX_real_T_151;
 EXTERN_C volatile const uint32_T *p_1_L4_MABX_uint32_T_0;
 EXTERN_C volatile uint8_T *p_2_L4_MABX_uint8_T_0;
 EXTERN_C volatile real_T *p_2_L4_MABX_real_T_1;

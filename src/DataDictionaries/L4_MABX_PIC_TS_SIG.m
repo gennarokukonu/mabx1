@@ -99,6 +99,12 @@ EthernetLinkStatus = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Ethernet Lin
 %% Heartbeat_Ok
 Heartbeat_Ok = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Heartbeat Ok');
 
+%% Speed_Check_Ok
+Speed_Check_Ok = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Speed Difference Check Ok, within 5 km/h');
+
+%% Brake_Pedal_Not_Pressed
+Brake_Pedal_Not_Pressed = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Brake pedal not pressed');
+
 %% SteeringWheelAngle
 SteeringWheelAngle = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'SPN1807 Steering Wheel Angle', ...
     'Unit', 'deg');

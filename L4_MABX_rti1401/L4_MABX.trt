@@ -3,7 +3,7 @@
 --  Trace file: L4_MABX.trc
 --
 --  RTI1401 7.10 (02-May-2018)
---  Thu Nov 14 14:52:37 2019
+--  Fri Dec  6 11:54:14 2019
 --
 --  Copyright 2019, dSPACE GmbH. All rights reserved.
 --
@@ -30,7 +30,7 @@
 
 _genname     "RTI"
 _genversion  "7.10"
-_gendate     "11/14/2019 14:53:29"
+_gendate     "12/06/2019 11:55:09"
 _description ""
 _author      "RTI1401 7.10 (02-May-2018)"
 _model       "L4_MABX"
@@ -170,6 +170,18 @@ enum L4_MABX_ENUM_AUTO_CTRL_VEHICLE_STATE_T
     }
 }
 
+enum L4_MABX_ENUM_LAT_STEER_SOURCE_T
+{
+  type:     int(32)
+  enums
+    {
+      0:    "ENUM_LAT_STEER_SOURCE_T_GPS_PATH"
+      1:    "ENUM_LAT_STEER_SOURCE_T_OVERRIDE"
+      2:    "ENUM_LAT_STEER_SOURCE_T_PIC_HARIS"
+      3:    "ENUM_LAT_STEER_SOURCE_T_PIC_STANLEY"
+    }
+}
+
 enum L4_MABX_ENUM_LONG_SPEED_DEMAND_SOURCE_T
 {
   type:     int(32)
@@ -177,7 +189,7 @@ enum L4_MABX_ENUM_LONG_SPEED_DEMAND_SOURCE_T
     {
       0:    "ENUM_LONG_SPEED_DEMAND_SOURCE_T_GPS_PATH"
       1:    "ENUM_LONG_SPEED_DEMAND_SOURCE_T_OVERRIDE"
-      2:    "ENUM_LONG_SPEED_DEMAND_SOURCE_T_RW_WAYPOINTS"
+      2:    "ENUM_LONG_SPEED_DEMAND_SOURCE_T_WAYPOINTS"
     }
 }
 
@@ -627,14 +639,14 @@ typedef L4_MABX_ArrayDT8_2 uint(8)[2]
 typedef L4_MABX_ArrayDT8_33 uint(8)[33]
 typedef L4_MABX_ArrayDT3_100 uint(8)[100]
 typedef L4_MABX_ArrayDT0_3 flt(64,IEEE)[3]
+typedef L4_MABX_ArrayDT0_72 flt(64,IEEE)[72]
 typedef L4_MABX_ArrayDT0_5 flt(64,IEEE)[5]
 typedef L4_MABX_ArrayDT0_17 flt(64,IEEE)[17]
 typedef L4_MABX_ArrayDT0_10 flt(64,IEEE)[10]
 typedef L4_MABX_ArrayDT0_9 flt(64,IEEE)[9]
-typedef L4_MABX_ArrayDT0_72 flt(64,IEEE)[72]
 typedef L4_MABX_ArrayDT7_2 uint(32)[2]
-typedef L4_MABX_ArrayDT44_39 uint(8)[39]
-typedef L4_MABX_ArrayDT44_17 uint(8)[17]
+typedef L4_MABX_ArrayDT45_39 uint(8)[39]
+typedef L4_MABX_ArrayDT45_17 uint(8)[17]
 typedef L4_MABX_ArrayDT0_83_16_Col col flt(64,IEEE)[83][16]
 typedef L4_MABX_ArrayDT0_83 flt(64,IEEE)[83]
 typedef L4_MABX_ArrayDT0_8_16_Col col flt(64,IEEE)[8][16]
@@ -1605,7 +1617,7 @@ group "Tunable Parameters"
 	 alias:   "Lateral_Control_D"
 	 range:   < 0.0 ; 100.0 >
 	 desc:    "Lateral Controller Devivative Value"
-	 value:   0.2
+	 value:   0.1
 	 flags:   PARAM
 	}
 	Lateral_Control_Error_Limit
@@ -1641,7 +1653,7 @@ group "Tunable Parameters"
 	 alias:   "Lateral_Control_P"
 	 range:   < 0.0 ; 100.0 >
 	 desc:    "Lateral controller proportional value (P)"
-	 value:   0.2
+	 value:   0.5
 	 flags:   PARAM
 	}
 	Lateral_Control_Pole
@@ -1696,6 +1708,14 @@ group "Tunable Parameters"
 	 alias:   "REAX_OFFSET_APV"
 	 desc:    "ReAX offset"
 	 value:   0.0
+	 flags:   PARAM
+	}
+	STANLEY_GAIN_APV
+	{
+	 type:    flt(64,IEEE)
+	 alias:   "STANLEY_GAIN_APV"
+	 desc:    "Stanley Controller Gain"
+	 value:   320.0
 	 flags:   PARAM
 	}
 	STEERCTRL_WHEEL_ANGLE_DATA_MPV
@@ -1769,7 +1789,7 @@ group "Tunable Parameters"
 	 alias:   "UndersteerCorection"
 	 range:   < 0.0 ; 2.5 >
 	 desc:    "The Haris Fudge Factor"
-	 value:   0.75
+	 value:   0.5
 	 flags:   PARAM
 	}
 	VSPD_TARGET_KPH_APV
@@ -1782,13 +1802,22 @@ group "Tunable Parameters"
 	 value:   0.0
 	 flags:   PARAM
 	}
+	YAW_RATE_OFFSET_APV
+	{
+	 type:    flt(64,IEEE)
+	 alias:   "YAW_RATE_OFFSET_APV"
+	 range:   < -0.01 ; 0.01 >
+	 desc:    "Yaw Rate Offset"
+	 value:   -0.0066
+	 flags:   PARAM
+	}
 	Yaw_Rate_FF_Gain
 	{
 	 type:    flt(64,IEEE)
 	 alias:   "Yaw_Rate_FF_Gain"
 	 range:   < 0.0 ; 10.0 >
 	 desc:    "Yaw rate feed forward gain"
-	 value:   0.25
+	 value:   0.1
 	 flags:   PARAM
 	}
 	AUTONOMOUS_MODE_SELECTOR_APV
@@ -1812,6 +1841,14 @@ group "Tunable Parameters"
 	 type:    enum L4_MABX_ENUM_CAN_RX_T
 	 alias:   "PROPB_REAX_CHANNEL_APV"
 	 desc:    "Channel to receive PropB_REAX"
+	 value:   2
+	 flags:   PARAM
+	}
+	LAT_STEER_SRC_SELECTOR_APV
+	{
+	 type:    enum L4_MABX_ENUM_LAT_STEER_SOURCE_T
+	 alias:   "LAT_STEER_SRC_SELECTOR_APV"
+	 desc:    "Selector for lateral control source"
 	 value:   2
 	 flags:   PARAM
 	}
@@ -1917,20 +1954,20 @@ group "Labels"
 	 desc:    "Curvature at target waypoint"
 	 flags:   READONLY
 	}
-	CurrentVelocity_kph
-	{
-	 type:    flt(64,IEEE)
-	 alias:   "CurrentVelocity_kph"
-	 unit:    "km/h"
-	 desc:    "Current Velocity"
-	 flags:   READONLY
-	}
 	CrosstrackError
 	{
 	 type:    flt(64,IEEE)
 	 alias:   "CrosstrackError"
 	 unit:    "m"
 	 desc:    "Crosstrack error of target waypoint"
+	 flags:   READONLY
+	}
+	CurrentVelocity_kph
+	{
+	 type:    flt(64,IEEE)
+	 alias:   "CurrentVelocity_kph"
+	 unit:    "km/h"
+	 desc:    "Current Velocity"
 	 flags:   READONLY
 	}
 	GPS_X
