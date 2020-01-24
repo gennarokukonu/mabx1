@@ -5,9 +5,9 @@
    Declaration of function that initializes the global TRC pointers
 
    RTI1401 7.10 (02-May-2018)
-   Fri Dec  6 11:54:14 2019
+   Thu Jan 23 10:37:49 2020
 
-   Copyright 2019, dSPACE GmbH. All rights reserved.
+   Copyright 2020, dSPACE GmbH. All rights reserved.
 
  *****************************************************************************/
 #ifndef RTI_HEADER_L4_MABX_trc_ptr_h_

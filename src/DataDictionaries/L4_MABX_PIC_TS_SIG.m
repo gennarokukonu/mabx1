@@ -57,23 +57,30 @@ GPS_Time = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'GPS Time', ...
 %% MABX_Heartbeat
 MABX_Heartbeat = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'MicroAutobox heartbeat');
 
-%% MABX_Mode
-MABX_Mode = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'MicroAutobox mode');
-
-%% EngagePB
-EngagePB = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Start momentary button to engage autonomous mode');
-
-%% AutonomousEnabled
-AutonomousEnabled = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Autonomous System Engaged');
-
-%% AutonomousOutputEnabled
-AutonomousOutputEnabled = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Autonomous System Engaged and Outputs Enabled');
-
 %% EStop
 EStop = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'E-Stop Pressed');
 
 %% EnableSw
 EnableSw = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Autonomous Mode Enable Switch');
+
+%% EngagePB
+EngagePB = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Momentary push button to engage autonomous mode');
+
+%% EngageRequest
+EngageRequest = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Engage request signal');
+
+%% LogEventPB
+LogEventPB = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Log event momentary push button');
+
+%% AutonomousEnabled
+AutonomousEnabled = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Autonomous System Engaged');
+
+
+%% MABX_Mode
+MABX_Mode = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'MicroAutobox mode');
+
+%% AutonomousOutputEnabled
+AutonomousOutputEnabled = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Autonomous System Engaged and Outputs Enabled');
 
 %% Pedal_pwm_position
 Pedal_pwm_position = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Pedal Input Percentage');

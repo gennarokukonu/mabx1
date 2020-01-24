@@ -61,7 +61,7 @@
 <tr name="25" id="25">
 <td><a id="l25" class='ln'>25</a></td><td><span class="pp">#endif</span></td></tr>
 <tr name="26" id="26">
-<td><a id="l26" class='ln'>26</a></td><td><span class="pp">#define</span> <a id="26c9" class="tk">DSA_STRUCTURE_SIZE</a>    (6)</td></tr>
+<td><a id="l26" class='ln'>26</a></td><td><span class="pp">#define</span> <a id="26c9" class="tk">DSA_STRUCTURE_SIZE</a>    (7)</td></tr>
 <tr name="27" id="27">
 <td><a id="l27" class='ln'>27</a></td><td><span class="pp">#define</span> <a id="27c9" class="tk">DSA_BUS_SIZE</a>          (<a id="27c32" class="tk">DSA_STRUCTURE_SIZE</a> <a id="27c51" class="tk">+</a> <a id="27c53" class="tk">DSA_HEADER_PAYLOAD_OFFSET</a>)</td></tr>
 <tr name="28" id="28">
@@ -287,29 +287,35 @@
 <tr name="138" id="138">
 <td><a id="l138" class='ln'>138</a></td><td></td></tr>
 <tr name="139" id="139">
-<td><a id="l139" class='ln'>139</a></td><td>    <a id="139c5" class="tk">*</a><a id="139c6" class="tk">result_ptr</a> = <a id="139c19" class="tk">*</a>((<a id="139c22" class="tk">uint8_T</a><a id="139c29" class="tk">*</a>)<a id="139c31" class="tk">&amp;</a>(<a id="139c33" class="tk">in</a>-&gt;<a id="139c37" class="tk">AutonomousEnabled</a>));</td></tr>
+<td><a id="l139" class='ln'>139</a></td><td>    <a id="139c5" class="tk">*</a><a id="139c6" class="tk">result_ptr</a> = <a id="139c19" class="tk">*</a>((<a id="139c22" class="tk">uint8_T</a><a id="139c29" class="tk">*</a>)<a id="139c31" class="tk">&amp;</a>(<a id="139c33" class="tk">in</a>-&gt;<a id="139c37" class="tk">LogEventPB</a>));</td></tr>
 <tr name="140" id="140">
 <td><a id="l140" class='ln'>140</a></td><td>    <a id="140c5" class="tk">result_ptr</a> <a id="140c16" class="tk">+=</a> 1;</td></tr>
 <tr name="141" id="141">
 <td><a id="l141" class='ln'>141</a></td><td></td></tr>
 <tr name="142" id="142">
-<td><a id="l142" class='ln'>142</a></td><td>    <a id="142c5" class="tk">*</a><a id="142c6" class="tk">result_ptr</a> = <a id="142c19" class="tk">*</a>((<a id="142c22" class="tk">uint8_T</a><a id="142c29" class="tk">*</a>)<a id="142c31" class="tk">&amp;</a>(<a id="142c33" class="tk">in</a>-&gt;<a id="142c37" class="tk">MABX_Mode</a>));</td></tr>
+<td><a id="l142" class='ln'>142</a></td><td>    <a id="142c5" class="tk">*</a><a id="142c6" class="tk">result_ptr</a> = <a id="142c19" class="tk">*</a>((<a id="142c22" class="tk">uint8_T</a><a id="142c29" class="tk">*</a>)<a id="142c31" class="tk">&amp;</a>(<a id="142c33" class="tk">in</a>-&gt;<a id="142c37" class="tk">AutonomousEnabled</a>));</td></tr>
 <tr name="143" id="143">
 <td><a id="l143" class='ln'>143</a></td><td>    <a id="143c5" class="tk">result_ptr</a> <a id="143c16" class="tk">+=</a> 1;</td></tr>
 <tr name="144" id="144">
 <td><a id="l144" class='ln'>144</a></td><td></td></tr>
 <tr name="145" id="145">
-<td><a id="l145" class='ln'>145</a></td><td></td></tr>
+<td><a id="l145" class='ln'>145</a></td><td>    <a id="145c5" class="tk">*</a><a id="145c6" class="tk">result_ptr</a> = <a id="145c19" class="tk">*</a>((<a id="145c22" class="tk">uint8_T</a><a id="145c29" class="tk">*</a>)<a id="145c31" class="tk">&amp;</a>(<a id="145c33" class="tk">in</a>-&gt;<a id="145c37" class="tk">MABX_Mode</a>));</td></tr>
 <tr name="146" id="146">
-<td><a id="l146" class='ln'>146</a></td><td>    <span class="ct">/* Set the buffer size to the total bus size */</span></td></tr>
+<td><a id="l146" class='ln'>146</a></td><td>    <a id="146c5" class="tk">result_ptr</a> <a id="146c16" class="tk">+=</a> 1;</td></tr>
 <tr name="147" id="147">
-<td><a id="l147" class='ln'>147</a></td><td>    <a id="147c5" class="tk">*</a><a id="147c6" class="tk">size</a> = <a id="147c13" class="tk">DSA_BUS_SIZE</a>;</td></tr>
+<td><a id="l147" class='ln'>147</a></td><td></td></tr>
 <tr name="148" id="148">
-<td><a id="l148" class='ln'>148</a></td><td><span class="br">}</span></td></tr>
+<td><a id="l148" class='ln'>148</a></td><td></td></tr>
 <tr name="149" id="149">
-<td><a id="l149" class='ln'>149</a></td><td></td></tr>
+<td><a id="l149" class='ln'>149</a></td><td>    <span class="ct">/* Set the buffer size to the total bus size */</span></td></tr>
 <tr name="150" id="150">
-<td><a id="l150" class='ln'>150</a></td><td></td></tr>
+<td><a id="l150" class='ln'>150</a></td><td>    <a id="150c5" class="tk">*</a><a id="150c6" class="tk">size</a> = <a id="150c13" class="tk">DSA_BUS_SIZE</a>;</td></tr>
+<tr name="151" id="151">
+<td><a id="l151" class='ln'>151</a></td><td><span class="br">}</span></td></tr>
+<tr name="152" id="152">
+<td><a id="l152" class='ln'>152</a></td><td></td></tr>
+<tr name="153" id="153">
+<td><a id="l153" class='ln'>153</a></td><td></td></tr>
 </table>
 </pre>
 </body>

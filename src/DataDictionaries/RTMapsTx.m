@@ -52,7 +52,7 @@ elems(4).DocUnits = '';
 elems(4).Description = sprintf('Engage Autonomous Push Button\n0 = OFF\n1 = ON');
 
 elems(5) = Simulink.BusElement;
-elems(5).Name = 'AutonomousEnabled';
+elems(5).Name = 'LogEventPB';
 elems(5).Dimensions = 1;
 elems(5).DimensionsMode = 'Fixed';
 elems(5).DataType = 'boolean';
@@ -61,19 +61,31 @@ elems(5).Complexity = 'real';
 elems(5).Min = [];
 elems(5).Max = [];
 elems(5).DocUnits = '';
-elems(5).Description = sprintf('Autonomous Mode is Enabled\n0 = False\n1 = True');
+elems(5).Description = sprintf('Log Event Push Button\n0 = OFF\n1 = ON');
 
 elems(6) = Simulink.BusElement;
-elems(6).Name = 'MABX_Mode';
+elems(6).Name = 'AutonomousEnabled';
 elems(6).Dimensions = 1;
 elems(6).DimensionsMode = 'Fixed';
-elems(6).DataType = 'uint8';
+elems(6).DataType = 'boolean';
 elems(6).SampleTime = -1;
 elems(6).Complexity = 'real';
 elems(6).Min = [];
 elems(6).Max = [];
 elems(6).DocUnits = '';
-elems(6).Description = sprintf('Controller mode for feedback to Supervisor\n0 = No mode\n1 = Running Manual Mode\n2 = Autonomos Mode\n3 = Fault');
+elems(6).Description = sprintf('Autonomous Mode is Enabled\n0 = False\n1 = True');
+
+elems(7) = Simulink.BusElement;
+elems(7).Name = 'MABX_Mode';
+elems(7).Dimensions = 1;
+elems(7).DimensionsMode = 'Fixed';
+elems(7).DataType = 'uint8';
+elems(7).SampleTime = -1;
+elems(7).Complexity = 'real';
+elems(7).Min = [];
+elems(7).Max = [];
+elems(7).DocUnits = '';
+elems(7).Description = sprintf('Controller mode for feedback to Supervisor\n0 = No mode\n1 = Running Manual Mode\n2 = Autonomos Mode\n3 = Fault');
 
 RTMapsTX = Simulink.Bus;
 RTMapsTX.HeaderFile = 'dsa_gen_RTMapsTX.h';

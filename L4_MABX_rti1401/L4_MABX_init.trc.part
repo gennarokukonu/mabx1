@@ -515,6 +515,15 @@ struct L4_MABX_RTMapsTX
     }
     structField4 
     {
+      alias:   "LogEventPB"
+      type:    uint(8)
+      offs:    -1
+      range:   < 0 ; 1 >
+      bitmask: 0x01
+      desc:    "Log Event Push Button\n0 = OFF\n1 = ON"
+    }
+    structField5 
+    {
       alias:   "AutonomousEnabled"
       type:    uint(8)
       offs:    -1
@@ -522,7 +531,7 @@ struct L4_MABX_RTMapsTX
       bitmask: 0x01
       desc:    "Autonomous Mode is Enabled\n0 = False\n1 = True"
     }
-    structField5 
+    structField6 
     {
       alias:   "MABX_Mode"
       type:    uint(8)
@@ -580,7 +589,7 @@ typedef L4_MABX_ArrayDT7_3 uint(32)[3]
 typedef L4_MABX_ArrayDT7_8 uint(32)[8]
 typedef L4_MABX_ArrayDT3_8 uint(8)[8]
 typedef L4_MABX_ArrayDT3_39 uint(8)[39]
-typedef L4_MABX_ArrayDT3_22 uint(8)[22]
+typedef L4_MABX_ArrayDT3_23 uint(8)[23]
 typedef L4_MABX_ArrayDT3_128 uint(8)[128]
 typedef L4_MABX_ArrayDT3_16 uint(8)[16]
 typedef L4_MABX_ArrayDT3_17 uint(8)[17]

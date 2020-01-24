@@ -6,9 +6,9 @@
    the hardware and software interrupts used.
 
    RTI1401 7.10 (02-May-2018)
-   Fri Dec  6 11:54:14 2019
+   Thu Jan 23 10:37:49 2020
 
-   Copyright 2019, dSPACE GmbH. All rights reserved.
+   Copyright 2020, dSPACE GmbH. All rights reserved.
 
  *****************************************************************************/
 
@@ -130,10 +130,10 @@ static void rti_TIMERB(rtk_p_task_control_block task)
 
   /* Task code. */
   {
-    /* S-Function (rti_commonblock): '<S823>/S-Function1' */
+    /* S-Function (rti_commonblock): '<S833>/S-Function1' */
     L4_MABX_IncrementTimer();
 
-    /* End of Outputs for S-Function (rti_commonblock): '<S823>/S-Function1' */
+    /* End of Outputs for S-Function (rti_commonblock): '<S833>/S-Function1' */
 
     /* RateTransition: '<S412>/Rate Transition' */
     switch (L4_MABX_DW.RateTransition_read_buf) {
@@ -544,6 +544,7 @@ static void rti_mdl_initialize_io_boards(void)
   dio_tp4_digin_init(DIO_TP4_1_MODULE_ADDR, 1, DIO_TP4_MASK_CH1);
   dio_tp4_digin_init(DIO_TP4_1_MODULE_ADDR, 1, DIO_TP4_MASK_CH4);
   dio_tp4_digin_init(DIO_TP4_1_MODULE_ADDR, 1, DIO_TP4_MASK_CH5);
+  dio_tp4_digin_init(DIO_TP4_1_MODULE_ADDR, 1, DIO_TP4_MASK_CH6);
 
   /* dSPACE I/O Board DS1401STDDIOT4 #1 Unit:PWM2D */
   /* PWM measurement setup for channel 1 on port 2 */
@@ -950,113 +951,113 @@ static void rti_mdl_initialize_io_boards(void)
   can_type1_M1_C2_XTD[CANTP1_M1_C2_RXSRVC_XTD_0x18FF5850].identifier = 419387472;/* 0x18FF5850*/
 
   /* dSPACE RTICAN RX Message Block: "TPCM_FF_00" Id:485293824 */
-  L4_MABX_B.SFunction1_o9_bh = 0;      /* processed - flag */
-  L4_MABX_B.SFunction1_o10_mc = 0;     /* timestamp */
-  L4_MABX_B.SFunction1_o11_ow = 0;     /* deltatime */
+  L4_MABX_B.SFunction1_o9_bw = 0;      /* processed - flag */
+  L4_MABX_B.SFunction1_o10_p4 = 0;     /* timestamp */
+  L4_MABX_B.SFunction1_o11_do = 0;     /* deltatime */
 
   /* dSPACE RTICAN RX Message Block: "TPDT_FF_00" Id:485228288 */
-  L4_MABX_B.SFunction1_o9_pl = 0;      /* processed - flag */
-  L4_MABX_B.SFunction1_o10_o = 0;      /* timestamp */
-  L4_MABX_B.SFunction1_o11_j = 0;      /* deltatime */
+  L4_MABX_B.SFunction1_o9_o = 0;       /* processed - flag */
+  L4_MABX_B.SFunction1_o10_ji = 0;     /* timestamp */
+  L4_MABX_B.SFunction1_o11_jx = 0;     /* deltatime */
 
   /* dSPACE RTICAN RX Message Block: "ACC1_2A" Id:285110058 */
-  L4_MABX_B.SFunction1_o11_o = 0;      /* processed - flag */
-  L4_MABX_B.SFunction1_o12_h = 0;      /* timestamp */
-  L4_MABX_B.SFunction1_o13_ip = 0;     /* deltatime */
+  L4_MABX_B.SFunction1_o11_fw = 0;     /* processed - flag */
+  L4_MABX_B.SFunction1_o12_m = 0;      /* timestamp */
+  L4_MABX_B.SFunction1_o13_cn = 0;     /* deltatime */
 
   /* dSPACE RTICAN RX Message Block: "AEBS1_A0" Id:217067306 */
-  L4_MABX_B.SFunction1_o6_b3d = 0;     /* processed - flag */
-  L4_MABX_B.SFunction1_o7_hh = 0;      /* timestamp */
-  L4_MABX_B.SFunction1_o8_c = 0;       /* deltatime */
+  L4_MABX_B.SFunction1_o6_em = 0;      /* processed - flag */
+  L4_MABX_B.SFunction1_o7_ie4 = 0;     /* timestamp */
+  L4_MABX_B.SFunction1_o8_bp = 0;      /* deltatime */
 
   /* dSPACE RTICAN RX Message Block: "AIR1" Id:419343921 */
-  L4_MABX_B.SFunction1_o9_g = 0;       /* processed - flag */
-  L4_MABX_B.SFunction1_o10_fpb = 0;    /* timestamp */
-  L4_MABX_B.SFunction1_o11_a = 0;      /* deltatime */
+  L4_MABX_B.SFunction1_o9_kp = 0;      /* processed - flag */
+  L4_MABX_B.SFunction1_o10_ju = 0;     /* timestamp */
+  L4_MABX_B.SFunction1_o11_j2 = 0;     /* deltatime */
 
   /* dSPACE RTICAN RX Message Block: "AMB" Id:419362048 */
-  L4_MABX_B.SFunction1_o6_pf = 0;      /* processed - flag */
-  L4_MABX_B.SFunction1_o7_nx = 0;      /* timestamp */
-  L4_MABX_B.SFunction1_o8_ko = 0;      /* deltatime */
+  L4_MABX_B.SFunction1_o6_c = 0;       /* processed - flag */
+  L4_MABX_B.SFunction1_o7_nvh = 0;     /* timestamp */
+  L4_MABX_B.SFunction1_o8_au = 0;      /* deltatime */
 
   /* dSPACE RTICAN RX Message Block: "B2" Id:418451505 */
-  L4_MABX_B.SFunction1_o3_g3 = 0;      /* processed - flag */
-  L4_MABX_B.SFunction1_o4_n5 = 0;      /* timestamp */
-  L4_MABX_B.SFunction1_o5_dg = 0;      /* deltatime */
+  L4_MABX_B.SFunction1_o3_ot = 0;      /* processed - flag */
+  L4_MABX_B.SFunction1_o4_el = 0;      /* timestamp */
+  L4_MABX_B.SFunction1_o5_bc = 0;      /* deltatime */
 
   /* dSPACE RTICAN RX Message Block: "CCVS1_00" Id:218034432 */
-  L4_MABX_B.SFunction1_o21_j = 0;      /* processed - flag */
-  L4_MABX_B.SFunction1_o22_g = 0;      /* timestamp */
+  L4_MABX_B.SFunction1_o21_bo = 0;     /* processed - flag */
+  L4_MABX_B.SFunction1_o22_nv = 0;     /* timestamp */
   L4_MABX_B.SFunction1_o23_d = 0;      /* deltatime */
 
   /* dSPACE RTICAN RX Message Block: "CCVS1_31" Id:419361073 */
-  L4_MABX_B.SFunction1_o21_d = 0;      /* processed - flag */
-  L4_MABX_B.SFunction1_o22_pp = 0;     /* timestamp */
-  L4_MABX_B.SFunction1_o23_m = 0;      /* deltatime */
+  L4_MABX_B.SFunction1_o21_m = 0;      /* processed - flag */
+  L4_MABX_B.SFunction1_o22_lf = 0;     /* timestamp */
+  L4_MABX_B.SFunction1_o23_o = 0;      /* deltatime */
 
   /* dSPACE RTICAN RX Message Block: "CVW_0B" Id:419328011 */
-  L4_MABX_B.SFunction1_o2_lt = 0;      /* processed - flag */
-  L4_MABX_B.SFunction1_o3_a1 = 0;      /* timestamp */
-  L4_MABX_B.SFunction1_o4_aq = 0;      /* deltatime */
+  L4_MABX_B.SFunction1_o2_hd = 0;      /* processed - flag */
+  L4_MABX_B.SFunction1_o3_ac = 0;      /* timestamp */
+  L4_MABX_B.SFunction1_o4_ev = 0;      /* deltatime */
 
   /* dSPACE RTICAN RX Message Block: "EBC1_0B" Id:418382091 */
-  L4_MABX_B.SFunction1_o23_l = 0;      /* processed - flag */
-  L4_MABX_B.SFunction1_o24_l = 0;      /* timestamp */
-  L4_MABX_B.SFunction1_o25_fk = 0;     /* deltatime */
+  L4_MABX_B.SFunction1_o23_j = 0;      /* processed - flag */
+  L4_MABX_B.SFunction1_o24_b = 0;      /* timestamp */
+  L4_MABX_B.SFunction1_o25_cl = 0;     /* deltatime */
 
   /* dSPACE RTICAN RX Message Block: "EBC2_0B" Id:419348235 */
-  L4_MABX_B.SFunction1_o8_nz = 0;      /* processed - flag */
-  L4_MABX_B.SFunction1_o9_p2 = 0;      /* timestamp */
-  L4_MABX_B.SFunction1_o10_k = 0;      /* deltatime */
+  L4_MABX_B.SFunction1_o8_nv = 0;      /* processed - flag */
+  L4_MABX_B.SFunction1_o9_a2 = 0;      /* timestamp */
+  L4_MABX_B.SFunction1_o10_a = 0;      /* deltatime */
 
   /* dSPACE RTICAN RX Message Block: "EEC1_00" Id:217056256 */
-  L4_MABX_B.SFunction1_o9_kn = 0;      /* processed - flag */
-  L4_MABX_B.SFunction1_o10_m4 = 0;     /* timestamp */
-  L4_MABX_B.SFunction1_o11_h = 0;      /* deltatime */
+  L4_MABX_B.SFunction1_o9_c = 0;       /* processed - flag */
+  L4_MABX_B.SFunction1_o10_e = 0;      /* timestamp */
+  L4_MABX_B.SFunction1_o11_n1 = 0;     /* deltatime */
 
   /* dSPACE RTICAN RX Message Block: "EEC3_00" Id:419356416 */
-  L4_MABX_B.SFunction1_o3_mg = 0;      /* processed - flag */
-  L4_MABX_B.SFunction1_o4_l3 = 0;      /* timestamp */
-  L4_MABX_B.SFunction1_o5_dw = 0;      /* deltatime */
+  L4_MABX_B.SFunction1_o3_ex = 0;      /* processed - flag */
+  L4_MABX_B.SFunction1_o4_mu = 0;      /* timestamp */
+  L4_MABX_B.SFunction1_o5_m = 0;       /* deltatime */
 
   /* dSPACE RTICAN RX Message Block: "ETC2_03" Id:418383107 */
-  L4_MABX_B.SFunction1_o4_o4 = 0;      /* processed - flag */
-  L4_MABX_B.SFunction1_o5_e = 0;       /* timestamp */
-  L4_MABX_B.SFunction1_o6_io = 0;      /* deltatime */
+  L4_MABX_B.SFunction1_o4_m2 = 0;      /* processed - flag */
+  L4_MABX_B.SFunction1_o5_ks = 0;      /* timestamp */
+  L4_MABX_B.SFunction1_o6_dg = 0;      /* deltatime */
 
   /* dSPACE RTICAN RX Message Block: "HRW_0B" Id:150892043 */
-  L4_MABX_B.SFunction1_o5_i1 = 0;      /* processed - flag */
-  L4_MABX_B.SFunction1_o6_a = 0;       /* timestamp */
-  L4_MABX_B.SFunction1_o7_dc = 0;      /* deltatime */
+  L4_MABX_B.SFunction1_o5_lx = 0;      /* processed - flag */
+  L4_MABX_B.SFunction1_o6_om3 = 0;     /* timestamp */
+  L4_MABX_B.SFunction1_o7_k = 0;       /* deltatime */
 
   /* dSPACE RTICAN RX Message Block: "PropB_REAX_3_13" Id:419426579 */
-  L4_MABX_B.SFunction1_o9_mi = 0;      /* processed - flag */
-  L4_MABX_B.SFunction1_o10_fd = 0;     /* timestamp */
-  L4_MABX_B.SFunction1_o11_p4 = 0;     /* deltatime */
+  L4_MABX_B.SFunction1_o9_bp = 0;      /* processed - flag */
+  L4_MABX_B.SFunction1_o10_dd = 0;     /* timestamp */
+  L4_MABX_B.SFunction1_o11_gh = 0;     /* deltatime */
 
   /* dSPACE RTICAN RX Message Block: "PropB_REAX_4_13" Id:419428115 */
-  L4_MABX_B.SFunction1_o9_p = 0;       /* processed - flag */
-  L4_MABX_B.SFunction1_o10_m = 0;      /* timestamp */
-  L4_MABX_B.SFunction1_o11_d = 0;      /* deltatime */
+  L4_MABX_B.SFunction1_o9_n = 0;       /* processed - flag */
+  L4_MABX_B.SFunction1_o10_c = 0;      /* timestamp */
+  L4_MABX_B.SFunction1_o11_e = 0;      /* deltatime */
 
   /* dSPACE RTICAN RX Message Block: "PropB_XPR_1" Id:419387472 */
-  L4_MABX_B.SFunction1_o3_le = 0;      /* processed - flag */
-  L4_MABX_B.SFunction1_o4_i = 0;       /* timestamp */
-  L4_MABX_B.SFunction1_o5_ir = 0;      /* deltatime */
+  L4_MABX_B.SFunction1_o3_or = 0;      /* processed - flag */
+  L4_MABX_B.SFunction1_o4_dd = 0;      /* timestamp */
+  L4_MABX_B.SFunction1_o5_lp = 0;      /* deltatime */
 
   /* dSPACE RTICAN RX Message Block: "SSI2_03" Id:217065731 */
-  L4_MABX_B.SFunction1_o8_iv = 0;      /* processed - flag */
-  L4_MABX_B.SFunction1_o9_n = 0;       /* timestamp */
-  L4_MABX_B.SFunction1_o10_d = 0;      /* deltatime */
+  L4_MABX_B.SFunction1_o8_nr = 0;      /* processed - flag */
+  L4_MABX_B.SFunction1_o9_k = 0;       /* timestamp */
+  L4_MABX_B.SFunction1_o10_k = 0;      /* deltatime */
 
   /* dSPACE RTICAN RX Message Block: "VDC1_0B" Id:419319563 */
-  L4_MABX_B.SFunction1_o8_p = 0;       /* processed - flag */
-  L4_MABX_B.SFunction1_o9_k = 0;       /* timestamp */
+  L4_MABX_B.SFunction1_o8_i = 0;       /* processed - flag */
+  L4_MABX_B.SFunction1_o9_i = 0;       /* timestamp */
   L4_MABX_B.SFunction1_o10 = 0;        /* deltatime */
 
   /* dSPACE RTICAN RX Message Block: "VDC2_0B" Id:418384139 */
-  L4_MABX_B.SFunction1_o7_a = 0;       /* processed - flag */
-  L4_MABX_B.SFunction1_o8_b = 0;       /* timestamp */
+  L4_MABX_B.SFunction1_o7_i = 0;       /* processed - flag */
+  L4_MABX_B.SFunction1_o8_l = 0;       /* timestamp */
   L4_MABX_B.SFunction1_o9 = 0;         /* deltatime */
 
   /* dSPACE RTICAN RX Message Block: "VEP1" Id:419362563 */
@@ -1067,32 +1068,32 @@ static void rti_mdl_initialize_io_boards(void)
   /* dSPACE RTICAN RX Message Block: "EBC1_0B" Id:418382219 */
   L4_MABX_B.SFunction1_o23_n = 0;      /* processed - flag */
   L4_MABX_B.SFunction1_o24_p = 0;      /* timestamp */
-  L4_MABX_B.SFunction1_o25_f = 0;      /* deltatime */
+  L4_MABX_B.SFunction1_o25_c = 0;      /* deltatime */
 
   /* dSPACE RTICAN RX Message Block: "EEC2_00" Id:217056000 */
-  L4_MABX_B.SFunction1_o15_c = 0;      /* processed - flag */
-  L4_MABX_B.SFunction1_o16_e = 0;      /* timestamp */
-  L4_MABX_B.SFunction1_o17_b = 0;      /* deltatime */
+  L4_MABX_B.SFunction1_o15_b = 0;      /* processed - flag */
+  L4_MABX_B.SFunction1_o16_b = 0;      /* timestamp */
+  L4_MABX_B.SFunction1_o17_g = 0;      /* deltatime */
 
   /* dSPACE RTICAN RX Message Block: "PropB_REAX_2_13" Id:419426323 */
-  L4_MABX_B.SFunction1_o3_c15 = 0;     /* processed - flag */
-  L4_MABX_B.SFunction1_o4_nq = 0;      /* timestamp */
-  L4_MABX_B.SFunction1_o5_b = 0;       /* deltatime */
+  L4_MABX_B.SFunction1_o3_ds = 0;      /* processed - flag */
+  L4_MABX_B.SFunction1_o4_cn = 0;      /* timestamp */
+  L4_MABX_B.SFunction1_o5_ju = 0;      /* deltatime */
 
   /* dSPACE RTICAN RX Message Block: "PropB_REAX_3_13" Id:419426579 */
-  L4_MABX_B.SFunction1_o9_e = 0;       /* processed - flag */
-  L4_MABX_B.SFunction1_o10_ni = 0;     /* timestamp */
-  L4_MABX_B.SFunction1_o11_pw = 0;     /* deltatime */
-
-  /* dSPACE RTICAN RX Message Block: "PropB_REAX_4_13" Id:419428115 */
-  L4_MABX_B.SFunction1_o9_fr = 0;      /* processed - flag */
-  L4_MABX_B.SFunction1_o10_a = 0;      /* timestamp */
+  L4_MABX_B.SFunction1_o9_bh = 0;      /* processed - flag */
+  L4_MABX_B.SFunction1_o10_j = 0;      /* timestamp */
   L4_MABX_B.SFunction1_o11_n = 0;      /* deltatime */
 
+  /* dSPACE RTICAN RX Message Block: "PropB_REAX_4_13" Id:419428115 */
+  L4_MABX_B.SFunction1_o9_j = 0;       /* processed - flag */
+  L4_MABX_B.SFunction1_o10_p = 0;      /* timestamp */
+  L4_MABX_B.SFunction1_o11_d = 0;      /* deltatime */
+
   /* dSPACE RTICAN RX Message Block: "PropB_XPR_1" Id:419387472 */
-  L4_MABX_B.SFunction1_o3_cs = 0;      /* processed - flag */
-  L4_MABX_B.SFunction1_o4_e0 = 0;      /* timestamp */
-  L4_MABX_B.SFunction1_o5_c5 = 0;      /* deltatime */
+  L4_MABX_B.SFunction1_o3_g1 = 0;      /* processed - flag */
+  L4_MABX_B.SFunction1_o4_ae = 0;      /* timestamp */
+  L4_MABX_B.SFunction1_o5_e = 0;       /* deltatime */
 
   /* dSPACE I/O Board DS1_RTICAN #2 */
   /* Initialization of DS1501 board */
@@ -1365,49 +1366,49 @@ static void rti_mdl_initialize_io_boards(void)
   L4_MABX_B.SFunction1_o74 = 0;        /* deltatime */
 
   /* dSPACE RTICAN RX Message Block: "PropB_XPR_1" Id:419387472 */
-  L4_MABX_B.SFunction1_o3_ii = 0;      /* processed - flag */
-  L4_MABX_B.SFunction1_o4_jn = 0;      /* timestamp */
-  L4_MABX_B.SFunction1_o5_o = 0;       /* deltatime */
+  L4_MABX_B.SFunction1_o3_c = 0;       /* processed - flag */
+  L4_MABX_B.SFunction1_o4_dp = 0;      /* timestamp */
+  L4_MABX_B.SFunction1_o5_ku = 0;      /* deltatime */
 
   /* dSPACE RTICAN RX Message Block: "Prop2C2_Status_30" Id:419382064 */
-  L4_MABX_B.SFunction1_o11_e = 0;      /* processed - flag */
-  L4_MABX_B.SFunction1_o12_g = 0;      /* timestamp */
+  L4_MABX_B.SFunction1_o11_g = 0;      /* processed - flag */
+  L4_MABX_B.SFunction1_o12_o = 0;      /* timestamp */
   L4_MABX_B.SFunction1_o13_d = 0;      /* deltatime */
 
   /* dSPACE RTICAN RX Message Block: "COGSOGRapidUpdate_00" Id:167248384 */
-  L4_MABX_B.SFunction1_o5_a = 0;       /* processed - flag */
-  L4_MABX_B.SFunction1_o6_m0 = 0;      /* timestamp */
-  L4_MABX_B.SFunction1_o7_dv = 0;      /* deltatime */
+  L4_MABX_B.SFunction1_o5_ns = 0;      /* processed - flag */
+  L4_MABX_B.SFunction1_o6_kl = 0;      /* timestamp */
+  L4_MABX_B.SFunction1_o7_ct = 0;      /* deltatime */
 
   /* dSPACE RTICAN RX Message Block: "COGSOGRapidUpdate_00" Id:167248385 */
-  L4_MABX_B.SFunction1_o5_jr = 0;      /* processed - flag */
-  L4_MABX_B.SFunction1_o6_h2 = 0;      /* timestamp */
-  L4_MABX_B.SFunction1_o7_ka = 0;      /* deltatime */
+  L4_MABX_B.SFunction1_o5_juk = 0;     /* processed - flag */
+  L4_MABX_B.SFunction1_o6_fvx = 0;     /* timestamp */
+  L4_MABX_B.SFunction1_o7_jc = 0;      /* deltatime */
 
   /* dSPACE RTICAN RX Message Block: "GNSSDOPs_01" Id:435815168 */
-  L4_MABX_B.SFunction1_o7_j = 0;       /* processed - flag */
-  L4_MABX_B.SFunction1_o8_l = 0;       /* timestamp */
-  L4_MABX_B.SFunction1_o9_bi = 0;      /* deltatime */
+  L4_MABX_B.SFunction1_o7_l = 0;       /* processed - flag */
+  L4_MABX_B.SFunction1_o8_k = 0;       /* timestamp */
+  L4_MABX_B.SFunction1_o9_lf = 0;      /* deltatime */
 
   /* dSPACE RTICAN RX Message Block: "GNSSDOPs_01" Id:435815169 */
-  L4_MABX_B.SFunction1_o7_hx = 0;      /* processed - flag */
-  L4_MABX_B.SFunction1_o8_br = 0;      /* timestamp */
-  L4_MABX_B.SFunction1_o9_ny = 0;      /* deltatime */
+  L4_MABX_B.SFunction1_o7_m = 0;       /* processed - flag */
+  L4_MABX_B.SFunction1_o8_ik = 0;      /* timestamp */
+  L4_MABX_B.SFunction1_o9_hf = 0;      /* deltatime */
 
   /* dSPACE RTICAN RX Message Block: "PosRapidUpdate_01" Id:167248128 */
-  L4_MABX_B.SFunction1_o3_p2 = 0;      /* processed - flag */
-  L4_MABX_B.SFunction1_o4_jw = 0;      /* timestamp */
-  L4_MABX_B.SFunction1_o5_c = 0;       /* deltatime */
+  L4_MABX_B.SFunction1_o3_ol = 0;      /* processed - flag */
+  L4_MABX_B.SFunction1_o4_i = 0;       /* timestamp */
+  L4_MABX_B.SFunction1_o5_go = 0;      /* deltatime */
 
   /* dSPACE RTICAN RX Message Block: "PosRapidUpdate_01" Id:167248129 */
-  L4_MABX_B.SFunction1_o3_ah = 0;      /* processed - flag */
-  L4_MABX_B.SFunction1_o4_l4 = 0;      /* timestamp */
-  L4_MABX_B.SFunction1_o5_ic = 0;      /* deltatime */
+  L4_MABX_B.SFunction1_o3_aw = 0;      /* processed - flag */
+  L4_MABX_B.SFunction1_o4_e1 = 0;      /* timestamp */
+  L4_MABX_B.SFunction1_o5_p = 0;       /* deltatime */
 
   /* dSPACE RTICAN RX Message Block: "SystemTime_01" Id:233836544 */
-  L4_MABX_B.SFunction1_o5_k = 0;       /* processed - flag */
-  L4_MABX_B.SFunction1_o6_d = 0;       /* timestamp */
-  L4_MABX_B.SFunction1_o7_o = 0;       /* deltatime */
+  L4_MABX_B.SFunction1_o5_l = 0;       /* processed - flag */
+  L4_MABX_B.SFunction1_o6_o = 0;       /* timestamp */
+  L4_MABX_B.SFunction1_o7_c = 0;       /* deltatime */
 
   /* dSPACE I/O Board DS1_RTICAN #3 */
   /* Initialization of DS1501 board */
@@ -1748,49 +1749,49 @@ static void rti_mdl_initialize_io_boards(void)
   L4_MABX_B.SFunction1_o28 = 0;        /* deltatime */
 
   /* dSPACE RTICAN RX Message Block: "PropB_REAX_2_13" Id:486535187 */
-  L4_MABX_B.SFunction1_o3_og = 0;      /* processed - flag */
-  L4_MABX_B.SFunction1_o4_cp = 0;      /* timestamp */
-  L4_MABX_B.SFunction1_o5_g1 = 0;      /* deltatime */
+  L4_MABX_B.SFunction1_o3_cb = 0;      /* processed - flag */
+  L4_MABX_B.SFunction1_o4_ei = 0;      /* timestamp */
+  L4_MABX_B.SFunction1_o5_dl = 0;      /* deltatime */
 
   /* dSPACE RTICAN RX Message Block: "PropB_REAX_3_13" Id:486535443 */
-  L4_MABX_B.SFunction1_o9_kc = 0;      /* processed - flag */
-  L4_MABX_B.SFunction1_o10_l = 0;      /* timestamp */
-  L4_MABX_B.SFunction1_o11_p = 0;      /* deltatime */
+  L4_MABX_B.SFunction1_o9_hy = 0;      /* processed - flag */
+  L4_MABX_B.SFunction1_o10_n = 0;      /* timestamp */
+  L4_MABX_B.SFunction1_o11_a = 0;      /* deltatime */
 
   /* dSPACE RTICAN RX Message Block: "PropB_REAX_4_13" Id:486536979 */
-  L4_MABX_B.SFunction1_o9_k1 = 0;      /* processed - flag */
-  L4_MABX_B.SFunction1_o10_f5 = 0;     /* timestamp */
-  L4_MABX_B.SFunction1_o11_m = 0;      /* deltatime */
+  L4_MABX_B.SFunction1_o9_f = 0;       /* processed - flag */
+  L4_MABX_B.SFunction1_o10_m = 0;      /* timestamp */
+  L4_MABX_B.SFunction1_o11_f = 0;      /* deltatime */
 
   /* dSPACE RTICAN RX Message Block: "PX2_LaneEdgeLeft" Id:770 */
-  L4_MABX_B.SFunction1_o4_o = 0;       /* processed - flag */
-  L4_MABX_B.SFunction1_o5_g5 = 0;      /* timestamp */
-  L4_MABX_B.SFunction1_o6_n = 0;       /* deltatime */
+  L4_MABX_B.SFunction1_o4_aw = 0;      /* processed - flag */
+  L4_MABX_B.SFunction1_o5_hs = 0;      /* timestamp */
+  L4_MABX_B.SFunction1_o6_fp = 0;      /* deltatime */
 
   /* dSPACE RTICAN RX Message Block: "PX2_LaneEdgeRight" Id:771 */
-  L4_MABX_B.SFunction1_o4_fc = 0;      /* processed - flag */
-  L4_MABX_B.SFunction1_o5_dq = 0;      /* timestamp */
-  L4_MABX_B.SFunction1_o6_g = 0;       /* deltatime */
+  L4_MABX_B.SFunction1_o4_oj = 0;      /* processed - flag */
+  L4_MABX_B.SFunction1_o5_a = 0;       /* timestamp */
+  L4_MABX_B.SFunction1_o6_p = 0;       /* deltatime */
 
   /* dSPACE RTICAN RX Message Block: "PX2_LanePosEst" Id:769 */
-  L4_MABX_B.SFunction1_o5_dn = 0;      /* processed - flag */
-  L4_MABX_B.SFunction1_o6_dd = 0;      /* timestamp */
-  L4_MABX_B.SFunction1_o7_i = 0;       /* deltatime */
+  L4_MABX_B.SFunction1_o5_k = 0;       /* processed - flag */
+  L4_MABX_B.SFunction1_o6_d = 0;       /* timestamp */
+  L4_MABX_B.SFunction1_o7_j = 0;       /* deltatime */
 
   /* dSPACE RTICAN RX Message Block: "PX2_MapLaneEgoLeft" Id:1542 */
-  L4_MABX_B.SFunction1_o7_d = 0;       /* processed - flag */
-  L4_MABX_B.SFunction1_o8_io = 0;      /* timestamp */
-  L4_MABX_B.SFunction1_o9_b = 0;       /* deltatime */
+  L4_MABX_B.SFunction1_o7_im = 0;      /* processed - flag */
+  L4_MABX_B.SFunction1_o8_b = 0;       /* timestamp */
+  L4_MABX_B.SFunction1_o9_am = 0;      /* deltatime */
 
   /* dSPACE RTICAN RX Message Block: "PX2_MapLaneEgoRight" Id:1541 */
-  L4_MABX_B.SFunction1_o7_n = 0;       /* processed - flag */
-  L4_MABX_B.SFunction1_o8_j = 0;       /* timestamp */
-  L4_MABX_B.SFunction1_o9_fb = 0;      /* deltatime */
+  L4_MABX_B.SFunction1_o7_df = 0;      /* processed - flag */
+  L4_MABX_B.SFunction1_o8_n = 0;       /* timestamp */
+  L4_MABX_B.SFunction1_o9_b = 0;       /* deltatime */
 
   /* dSPACE RTICAN RX Message Block: "PX2_EgoLanePos" Id:1540 */
-  L4_MABX_B.SFunction1_o7_c = 0;       /* processed - flag */
-  L4_MABX_B.SFunction1_o8_i = 0;       /* timestamp */
-  L4_MABX_B.SFunction1_o9_m = 0;       /* deltatime */
+  L4_MABX_B.SFunction1_o7_n = 0;       /* processed - flag */
+  L4_MABX_B.SFunction1_o8_e = 0;       /* timestamp */
+  L4_MABX_B.SFunction1_o9_a = 0;       /* deltatime */
 
   /* dSPACE I/O Board RTICAN_GLOBAL #0 */
 
@@ -2523,28 +2524,35 @@ __INLINE void rti_mdl_sample_input(void)
     /* get digital signal state on channel 3 on port 1 */
     UInt16 inputValue = dio_tp4_digin_read(DIO_TP4_1_MODULE_ADDR, 1,
       DIO_TP4_MASK_CH3);
-    L4_MABX_B.SFunction1_m = (boolean_T) (inputValue >> (3 - 1));
+    L4_MABX_B.SFunction1_g = (boolean_T) (inputValue >> (3 - 1));
   }
 
   {
     /* get digital signal state on channel 1 on port 1 */
     UInt16 inputValue = dio_tp4_digin_read(DIO_TP4_1_MODULE_ADDR, 1,
       DIO_TP4_MASK_CH1);
-    L4_MABX_B.SFunction1_i = (boolean_T) (inputValue >> (1 - 1));
+    L4_MABX_B.SFunction1_k = (boolean_T) (inputValue >> (1 - 1));
   }
 
   {
     /* get digital signal state on channel 4 on port 1 */
     UInt16 inputValue = dio_tp4_digin_read(DIO_TP4_1_MODULE_ADDR, 1,
       DIO_TP4_MASK_CH4);
-    L4_MABX_B.SFunction1_ix = (boolean_T) (inputValue >> (4 - 1));
+    L4_MABX_B.SFunction1_f = (boolean_T) (inputValue >> (4 - 1));
   }
 
   {
     /* get digital signal state on channel 5 on port 1 */
     UInt16 inputValue = dio_tp4_digin_read(DIO_TP4_1_MODULE_ADDR, 1,
       DIO_TP4_MASK_CH5);
-    L4_MABX_B.SFunction1_h = (boolean_T) (inputValue >> (5 - 1));
+    L4_MABX_B.SFunction1_d = (boolean_T) (inputValue >> (5 - 1));
+  }
+
+  {
+    /* get digital signal state on channel 6 on port 1 */
+    UInt16 inputValue = dio_tp4_digin_read(DIO_TP4_1_MODULE_ADDR, 1,
+      DIO_TP4_MASK_CH6);
+    L4_MABX_B.SFunction1_e = (boolean_T) (inputValue >> (6 - 1));
   }
 
   /* dSPACE I/O Board DS1401STDDIOT4 #1 Unit:PWM2D */
@@ -2558,15 +2566,15 @@ __INLINE void rti_mdl_sample_input(void)
   {
     /* get PWM data frequency and duty cycle from channel 2 on port 2 */
     dio_tp4_pwm2d_read (DIO_TP4_1_MODULE_ADDR, 2, 2, (real_T*)
-                        &L4_MABX_B.SFunction1_o1_l, (real_T*)
-                        &L4_MABX_B.SFunction1_o2_j);
+                        &L4_MABX_B.SFunction1_o1_j, (real_T*)
+                        &L4_MABX_B.SFunction1_o2_n);
   }
 
   {
     /* get PWM data frequency and duty cycle from channel 2 on port 1 */
     dio_tp4_pwm2d_read (DIO_TP4_1_MODULE_ADDR, 1, 2, (real_T*)
-                        &L4_MABX_B.SFunction1_o1_c, (real_T*)
-                        &L4_MABX_B.SFunction1_o2_f);
+                        &L4_MABX_B.SFunction1_o1_b, (real_T*)
+                        &L4_MABX_B.SFunction1_o2_e);
   }
 
   /* dSPACE I/O Board DS1401STDADCT4 #1 Unit:ADC */

@@ -22,6 +22,7 @@ typedef struct {
     boolean_T EStop;
     boolean_T EnableSW;
     boolean_T EngagePB;
+    boolean_T LogEventPB;
     boolean_T AutonomousEnabled;
     uint8_T MABX_Mode;
 } RTMapsTX;

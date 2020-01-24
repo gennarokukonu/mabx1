@@ -2,7 +2,7 @@
 #  Make include file L4_MABX_rti.mk:
 #
 #   RTI1401 7.10 (02-May-2018)
-#   Fri Dec  6 11:54:14 2019
+#   Thu Jan 23 10:37:49 2020
 #
 #   Copyright 2018, dSPACE GmbH. All rights reserved.
 # =============================================================================

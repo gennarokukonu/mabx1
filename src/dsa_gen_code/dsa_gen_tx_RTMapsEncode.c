@@ -23,7 +23,7 @@
 #else
     #define DSA_USE_RTC       0
 #endif
-#define DSA_STRUCTURE_SIZE    (6)
+#define DSA_STRUCTURE_SIZE    (7)
 #define DSA_BUS_SIZE          (DSA_STRUCTURE_SIZE + DSA_HEADER_PAYLOAD_OFFSET)
 
 /*-----------------------------------------------------------------------*/
@@ -134,6 +134,9 @@ void Update_Tx_RTMapsEncode(RTMapsTX* in, uint8_T* result, uint32_T* size)
     result_ptr += 1;
 
     *result_ptr = *((uint8_T*)&(in->EngagePB));
+    result_ptr += 1;
+
+    *result_ptr = *((uint8_T*)&(in->LogEventPB));
     result_ptr += 1;
 
     *result_ptr = *((uint8_T*)&(in->AutonomousEnabled));

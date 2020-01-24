@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MF0 version="1.1">
-  <ModelRefInfoRepo.ModelRefInfoRoot type="ModelRefInfoRepo.ModelRefInfoRoot" uuid="1b3231b4-decf-4d28-962c-eec7c79b2ca0">
+  <ModelRefInfoRepo.ModelRefInfoRoot type="ModelRefInfoRepo.ModelRefInfoRoot" uuid="63941998-d73c-4136-8e3c-3df3f7424911">
     <dataTransferInfos>AAFJTQAAAAAOAAAAOAAAAAYAAAAIAAAAAgAAAAAAAAAFAAAACAAAAAAAAAABAAAAAQAAAAAAAAAFAAQAAQAAAAEAAAAAAAAA</dataTransferInfos>
     <hasBwsAccessed>true</hasBwsAccessed>
     <hasBwsAccessedByAnyModel>true</hasBwsAccessedByAnyModel>
@@ -9,19 +9,19 @@
     <needAbsoluteTimeForNonLoggingPurpose>true</needAbsoluteTimeForNonLoggingPurpose>
     <outportSignalObjects>AAFJTQAAAAAOAAAAKAAAAAYAAAAIAAAAAQAAAAAAAAAFAAAACAAAAAEAAAAAAAAAAQAAAAAAAAA=</outportSignalObjects>
     <timingAndTaskingRegistry></timingAndTaskingRegistry>
-    <FMUBlockMap type="ModelRefInfoRepo.FMUBlockInfo" uuid="142eaaaa-40f9-4dee-845d-b36ec30821ae"/>
-    <periodicEventPortUnsupportedBlockInfo type="ModelRefInfoRepo.PeriodicEventPortUnsupportedBlockInfo" uuid="fd3ad7f2-7fd9-4c77-9d72-8a99b974113d">
+    <FMUBlockMap type="ModelRefInfoRepo.FMUBlockInfo" uuid="050ccd3f-0059-4f19-bb6c-85bdd59ea0d1"/>
+    <periodicEventPortUnsupportedBlockInfo type="ModelRefInfoRepo.PeriodicEventPortUnsupportedBlockInfo" uuid="16483a02-980e-403f-ba7a-6964b32582e1">
       <hasHiddenDeterministicRTB>true</hasHiddenDeterministicRTB>
       <multiRateBlocks>L4_MABX/ETHERNET/TCPIP_Setup/Background/S-Function1</multiRateBlocks>
       <multiRateBlocks>L4_MABX/ETHERNET/TCPIP_Setup/Interrupt_Task/Tcp Input Processing/S-Function1</multiRateBlocks>
       <multiRateBlocks>L4_MABX/ETHERNET/TCPIP_Setup/TCPIP_Interrupt_Block/Common Hardware Interrupt Interface/S-Function1</multiRateBlocks>
       <multiRateBlocks>L4_MABX/INPUTS_PIC_KW/Timer_Access/Timer Interrupt/S-Function1</multiRateBlocks>
     </periodicEventPortUnsupportedBlockInfo>
-    <simulinkFunctions type="ModelRefInfoRepo.SimulinkFunctions" uuid="75775865-793d-4c4e-8e26-d29900c18b35">
+    <simulinkFunctions type="ModelRefInfoRepo.SimulinkFunctions" uuid="8aa46019-c689-4e52-b273-3068f2d7e841">
       <compSimulinkFunctionCatalog>AAFJTQAAAAAOAAAA0AAAAAYAAAAIAAAAAgAAAAAAAAAFAAAACAAAAAEAAAABAAAAAQAAAAAAAAAFAAQAEQAAAAEAAAAiAAAAQ29tcEZ1bmN0aW9ucwAAAABDb21wU2VydmljZVBvcnRzAAAAAAAAAA4AAAAwAAAABgAAAAgAAAAGAAAAAAAAAAUAAAAIAAAAAAAAAAAAAAABAAAAAAAAAAkAAAAAAAAADgAAADAAAAAGAAAACAAAAAYAAAAAAAAABQAAAAgAAAAAAAAAAAAAAAEAAAAAAAAACQAAAAAAAAA=</compSimulinkFunctionCatalog>
-      <variantSimulinkFunctions type="ModelRefInfoRepo.VariantSimulinkFunctions" uuid="9aa0c372-b4c7-4d95-bfad-4fc6338670f6"/>
+      <variantSimulinkFunctions type="ModelRefInfoRepo.VariantSimulinkFunctions" uuid="3c34567d-3f05-4924-9084-4ea13adbc8bd"/>
     </simulinkFunctions>
-    <stateWriterToOwnerMap type="ModelRefInfoRepo.StateWriterInfo" uuid="d9e6ed65-27c4-433a-bc79-5ace6a3fd3f7"/>
-    <unionTsContainedTs type="ModelRefInfoRepo.UnionTsContainedTsInfo" uuid="c4725b35-02c4-40a8-ad33-3c7eb4f2ef5d"/>
+    <stateWriterToOwnerMap type="ModelRefInfoRepo.StateWriterInfo" uuid="003efad8-31b1-46cf-b09c-d1f675da3be0"/>
+    <unionTsContainedTs type="ModelRefInfoRepo.UnionTsContainedTsInfo" uuid="bdc46de1-9eab-41ee-a658-30c894d1002a"/>
   </ModelRefInfoRepo.ModelRefInfoRoot>
 </MF0>

@@ -1087,6 +1087,24 @@ group "Labels"
 	 desc:    "Autonomous Mode Enable Switch"
 	 flags:   READONLY
 	}
+	MABX_Heartbeat
+	{
+	 type:    uint(8)
+	 alias:   "MABX_Heartbeat"
+	 bitmask: 0x01
+	 range:   < 0 ; 1 >
+	 desc:    "MicroAutobox heartbeat"
+	 flags:   READONLY
+	}
+	EngageRequest
+	{
+	 type:    uint(8)
+	 alias:   "EngageRequest"
+	 bitmask: 0x01
+	 range:   < 0 ; 1 >
+	 desc:    "Engage request signal"
+	 flags:   READONLY
+	}
 	Heartbeat_Ok
 	{
 	 type:    uint(8)
@@ -1105,13 +1123,22 @@ group "Labels"
 	 desc:    "RTMaps Ok signal"
 	 flags:   READONLY
 	}
+	LogEventPB
+	{
+	 type:    uint(8)
+	 alias:   "LogEventPB"
+	 bitmask: 0x01
+	 range:   < 0 ; 1 >
+	 desc:    "Log event momentary push button"
+	 flags:   READONLY
+	}
 	EngagePB
 	{
 	 type:    uint(8)
 	 alias:   "EngagePB"
 	 bitmask: 0x01
 	 range:   < 0 ; 1 >
-	 desc:    "Start momentary button to engage autonomous mode"
+	 desc:    "Momentary push button to engage autonomous mode"
 	 flags:   READONLY
 	}
 	AutonomousEnabled
