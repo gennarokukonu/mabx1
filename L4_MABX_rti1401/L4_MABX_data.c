@@ -3,9 +3,9 @@
  *
  * Code generation for model "L4_MABX".
  *
- * Model version              : 1.879
+ * Model version              : 1.891
  * Simulink Coder version : 8.14 (R2018a) 06-Feb-2018
- * C source code generated on : Thu Jan 23 10:37:49 2020
+ * C source code generated on : Tue Jan 28 12:27:43 2020
  *
  * Target selection: rti1401.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -49,6 +49,7 @@ P_L4_MABX_T L4_MABX_P = {
   0.001,
   0.001,
   0.001,
+  -5.0,
   1.0,
   1.0,
   1.0,
@@ -56,7 +57,6 @@ P_L4_MABX_T L4_MABX_P = {
   1.0,
   1.0,
   0.0,
-  -5.0,
   0.0,
   0.0,
   0.0,
@@ -102,7 +102,11 @@ P_L4_MABX_T L4_MABX_P = {
   0,
   0,
   0,
-  1,
+  0,
+  0,
+  0,
+  0,
+  0,
   8U,
   1U,
   2U,
@@ -165,6 +169,8 @@ P_L4_MABX_T L4_MABX_P = {
   { 0U, 1U, 2U, 3U, 4U, 5U, 6U, 7U, 8U, 9U, 10U, 11U, 12U, 13U, 14U, 15U },
 
   { 0U, 1U, 2U, 3U, 4U, 5U, 6U, 7U, 8U, 9U, 10U, 11U, 12U, 13U, 14U, 15U },
+  0.0,
+  1.0,
   0.0,
   7.0,
   0.0,
@@ -335,6 +341,8 @@ P_L4_MABX_T L4_MABX_P = {
   0.0,
   255.0,
   255.0,
+  0.0,
+  0.0,
   0.0,
   0.0,
   0.0,
@@ -1252,6 +1260,10 @@ P_L4_MABX_T L4_MABX_P = {
   0.0,
   1.0,
   0.0,
+  1.0,
+  0.0,
+  1.0,
+  0.0,
   0.0,
   1.0,
   0.0,
@@ -1401,6 +1413,14 @@ P_L4_MABX_T L4_MABX_P = {
   0.0,
   0.0,
   0.0,
+  0.0,
+  0.0,
+  0.0,
+  500.0,
+  0.1,
+  0.0,
+  2000.0,
+  0.1,
   180.0,
   220.0,
   -5.0,
@@ -1494,8 +1514,6 @@ P_L4_MABX_T L4_MABX_P = {
   10.0,
   5.0,
   0.0,
-  0.0,
-  0.0,
 
   { 1.0, 1.0 },
   50000.0,
@@ -1510,7 +1528,7 @@ P_L4_MABX_T L4_MABX_P = {
   128.0,
 
   { 1.0, 1.0 },
-  23.0,
+  24.0,
 
   { 1.0, 1.0 },
   0.0,
@@ -1666,6 +1684,8 @@ P_L4_MABX_T L4_MABX_P = {
   0.0,
   0.0,
   0.0,
+  0.0,
+  0.0,
   0.125,
   -125.0,
   0.125,
@@ -1694,8 +1714,6 @@ P_L4_MABX_T L4_MABX_P = {
   0.0439453125,
   1000.0,
   2000.0,
-  0.0,
-  1.0,
   0.0,
   0.0,
   0.1,
@@ -1856,6 +1874,8 @@ P_L4_MABX_T L4_MABX_P = {
   65251U,
   65260U,
   512,
+  52429U,
+  2000U,
   255U,
   65280U,
   1,
@@ -1917,40 +1937,6 @@ P_L4_MABX_T L4_MABX_P = {
   0,
   0,
   0,
-  1,
-  1,
-  1,
-  1,
-  0,
-  0,
-  1,
-  0,
-  1,
-  1,
-  0,
-  0,
-  0,
-  0,
-  0,
-  1,
-  1,
-  0,
-  1,
-  0,
-  0,
-  0,
-  0,
-  0,
-  0,
-  0,
-  1,
-  0,
-  0,
-  0,
-  0,
-  1,
-  1,
-  0,
   0,
   0,
   0,
@@ -1959,71 +1945,6 @@ P_L4_MABX_T L4_MABX_P = {
   1,
   1,
   1,
-  1,
-  0,
-  0,
-  0,
-  1,
-  0,
-  0,
-  0,
-  0,
-  0,
-  0,
-  1,
-  1,
-  1,
-  0,
-  0,
-  1,
-  1,
-  1,
-  1,
-  1,
-  1,
-  1,
-  1,
-  1,
-  1,
-  1,
-  1,
-  1,
-  1,
-  1,
-  1,
-  1,
-  1,
-  1,
-  1,
-  0,
-  0,
-  1,
-  0,
-  0,
-  0,
-  0,
-  0,
-  0,
-  1,
-  0,
-  1,
-  1,
-  1,
-  0,
-  0,
-  1,
-  0,
-  0,
-  0,
-  0,
-  0,
-  0,
-  0,
-  0,
-  0,
-  0,
-  0,
-  0,
   0,
   0,
   1,
@@ -2037,6 +1958,117 @@ P_L4_MABX_T L4_MABX_P = {
   0,
   1,
   1,
+  0,
+  1,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  1,
+  0,
+  0,
+  0,
+  0,
+  1,
+  1,
+  0,
+  0,
+  0,
+  0,
+  0,
+  1,
+  1,
+  1,
+  1,
+  1,
+  0,
+  0,
+  0,
+  1,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  1,
+  1,
+  1,
+  0,
+  0,
+  1,
+  1,
+  0,
+  0,
+  0,
+  0,
+  0,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  0,
+  0,
+  1,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  1,
+  0,
+  1,
+  1,
+  1,
+  0,
+  0,
+  1,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  1,
+  0,
+  1,
+  1,
+  0,
+  0,
+  0,
+  0,
+  0,
+  1,
+  1,
+  0,
   0,
   0,
   0,
@@ -2065,7 +2097,6 @@ P_L4_MABX_T L4_MABX_P = {
   3U,
   1U,
   0U,
-  2U,
   1U,
   1U,
   1U,
@@ -2151,6 +2182,7 @@ P_L4_MABX_T L4_MABX_P = {
     53U, 50U },
   0U,
   0U,
+  2U,
   32U,
   13U,
   0U,
@@ -2180,47 +2212,47 @@ P_L4_MABX_T L4_MABX_P = {
   0U,
   0U,
 
-  /* Start of '<S962>/EXT_TRQ_CTRL_MODE_C' */
+  /* Start of '<S979>/EXT_TRQ_CTRL_MODE_C' */
   {
     -1
   }
   ,
 
-  /* End of '<S962>/EXT_TRQ_CTRL_MODE_C' */
+  /* End of '<S979>/EXT_TRQ_CTRL_MODE_C' */
 
-  /* Start of '<S962>/EXT_TRQ_CTRL_MODE_B' */
+  /* Start of '<S979>/EXT_TRQ_CTRL_MODE_B' */
   {
     -1
   }
   ,
 
-  /* End of '<S962>/EXT_TRQ_CTRL_MODE_B' */
+  /* End of '<S979>/EXT_TRQ_CTRL_MODE_B' */
 
-  /* Start of '<S962>/EXT_TRQ_CTRL_MODE_A' */
+  /* Start of '<S979>/EXT_TRQ_CTRL_MODE_A' */
   {
     -1
   }
   ,
 
-  /* End of '<S962>/EXT_TRQ_CTRL_MODE_A' */
+  /* End of '<S979>/EXT_TRQ_CTRL_MODE_A' */
 
-  /* Start of '<S962>/DEFAULT_TRQ_CTRL_MODE' */
+  /* Start of '<S979>/DEFAULT_TRQ_CTRL_MODE' */
   {
     -1
   }
   ,
 
-  /* End of '<S962>/DEFAULT_TRQ_CTRL_MODE' */
+  /* End of '<S979>/DEFAULT_TRQ_CTRL_MODE' */
 
-  /* Start of '<S962>/ALL_CTRL_DISABLED' */
+  /* Start of '<S979>/ALL_CTRL_DISABLED' */
   {
     -1
   }
   ,
 
-  /* End of '<S962>/ALL_CTRL_DISABLED' */
+  /* End of '<S979>/ALL_CTRL_DISABLED' */
 
-  /* Start of '<S238>/Calculate_I_term' */
+  /* Start of '<S246>/Calculate_I_term' */
   {
     0.0,
     0.0,
@@ -2235,9 +2267,9 @@ P_L4_MABX_T L4_MABX_P = {
   }
   ,
 
-  /* End of '<S238>/Calculate_I_term' */
+  /* End of '<S246>/Calculate_I_term' */
 
-  /* Start of '<S238>/Calculate_D_term' */
+  /* Start of '<S246>/Calculate_D_term' */
   {
     0.0,
     0.0,
@@ -2252,9 +2284,9 @@ P_L4_MABX_T L4_MABX_P = {
   }
   ,
 
-  /* End of '<S238>/Calculate_D_term' */
+  /* End of '<S246>/Calculate_D_term' */
 
-  /* Start of '<S144>/Calculate_I_term' */
+  /* Start of '<S152>/Calculate_I_term' */
   {
     0.0,
     0.0,
@@ -2269,9 +2301,9 @@ P_L4_MABX_T L4_MABX_P = {
   }
   ,
 
-  /* End of '<S144>/Calculate_I_term' */
+  /* End of '<S152>/Calculate_I_term' */
 
-  /* Start of '<S144>/Calculate_D_term' */
+  /* Start of '<S152>/Calculate_D_term' */
   {
     0.0,
     0.0,
@@ -2286,9 +2318,9 @@ P_L4_MABX_T L4_MABX_P = {
   }
   ,
 
-  /* End of '<S144>/Calculate_D_term' */
+  /* End of '<S152>/Calculate_D_term' */
 
-  /* Start of '<S106>/Calculate_I_term' */
+  /* Start of '<S114>/Calculate_I_term' */
   {
     0.0,
     0.0,
@@ -2303,9 +2335,9 @@ P_L4_MABX_T L4_MABX_P = {
   }
   ,
 
-  /* End of '<S106>/Calculate_I_term' */
+  /* End of '<S114>/Calculate_I_term' */
 
-  /* Start of '<S106>/Calculate_D_term' */
+  /* Start of '<S114>/Calculate_D_term' */
   {
     0.0,
     0.0,
@@ -2318,5 +2350,5 @@ P_L4_MABX_T L4_MABX_P = {
     1U,
     0U
   }
-  /* End of '<S106>/Calculate_D_term' */
+  /* End of '<S114>/Calculate_D_term' */
 };

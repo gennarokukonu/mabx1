@@ -21,10 +21,11 @@ typedef struct {
     boolean_T Heartbeat;
     boolean_T EStop;
     boolean_T EnableSW;
-    boolean_T EngagePB;
+    boolean_T EngageReq;
     boolean_T LogEventPB;
     boolean_T AutonomousEnabled;
     uint8_T MABX_Mode;
+    boolean_T BrakeSW;
 } RTMapsTX;
 #ifdef DSA_PACK_STRUCTURES
 #pragma pack(pop)

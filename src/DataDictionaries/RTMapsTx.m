@@ -40,7 +40,7 @@ elems(3).DocUnits = '';
 elems(3).Description = sprintf('Enable Autonomous Switch\n0 = OFF\n1 = ON');
 
 elems(4) = Simulink.BusElement;
-elems(4).Name = 'EngagePB';
+elems(4).Name = 'EngageReq';
 elems(4).Dimensions = 1;
 elems(4).DimensionsMode = 'Fixed';
 elems(4).DataType = 'boolean';
@@ -49,7 +49,7 @@ elems(4).Complexity = 'real';
 elems(4).Min = [];
 elems(4).Max = [];
 elems(4).DocUnits = '';
-elems(4).Description = sprintf('Engage Autonomous Push Button\n0 = OFF\n1 = ON');
+elems(4).Description = sprintf('Engage Request\n0 = OFF\n1 = ON');
 
 elems(5) = Simulink.BusElement;
 elems(5).Name = 'LogEventPB';
@@ -86,6 +86,18 @@ elems(7).Min = [];
 elems(7).Max = [];
 elems(7).DocUnits = '';
 elems(7).Description = sprintf('Controller mode for feedback to Supervisor\n0 = No mode\n1 = Running Manual Mode\n2 = Autonomos Mode\n3 = Fault');
+
+elems(8) = Simulink.BusElement;
+elems(8).Name = 'BrakeSW';
+elems(8).Dimensions = 1;
+elems(8).DimensionsMode = 'Fixed';
+elems(8).DataType = 'boolean';
+elems(8).SampleTime = -1;
+elems(8).Complexity = 'real';
+elems(8).Min = [];
+elems(8).Max = [];
+elems(8).DocUnits = '';
+elems(8).Description = sprintf('Brake Pedal Switch\n0 = Not Pressed\n1 = Pressed');
 
 RTMapsTX = Simulink.Bus;
 RTMapsTX.HeaderFile = 'dsa_gen_RTMapsTX.h';

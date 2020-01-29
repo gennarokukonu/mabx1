@@ -61,7 +61,7 @@
 <tr name="25" id="25">
 <td><a id="l25" class='ln'>25</a></td><td><span class="pp">#endif</span></td></tr>
 <tr name="26" id="26">
-<td><a id="l26" class='ln'>26</a></td><td><span class="pp">#define</span> <a id="26c9" class="tk">DSA_STRUCTURE_SIZE</a>    (7)</td></tr>
+<td><a id="l26" class='ln'>26</a></td><td><span class="pp">#define</span> <a id="26c9" class="tk">DSA_STRUCTURE_SIZE</a>    (8)</td></tr>
 <tr name="27" id="27">
 <td><a id="l27" class='ln'>27</a></td><td><span class="pp">#define</span> <a id="27c9" class="tk">DSA_BUS_SIZE</a>          (<a id="27c32" class="tk">DSA_STRUCTURE_SIZE</a> <a id="27c51" class="tk">+</a> <a id="27c53" class="tk">DSA_HEADER_PAYLOAD_OFFSET</a>)</td></tr>
 <tr name="28" id="28">
@@ -281,7 +281,7 @@
 <tr name="135" id="135">
 <td><a id="l135" class='ln'>135</a></td><td></td></tr>
 <tr name="136" id="136">
-<td><a id="l136" class='ln'>136</a></td><td>    <a id="136c5" class="tk">*</a><a id="136c6" class="tk">result_ptr</a> = <a id="136c19" class="tk">*</a>((<a id="136c22" class="tk">uint8_T</a><a id="136c29" class="tk">*</a>)<a id="136c31" class="tk">&amp;</a>(<a id="136c33" class="tk">in</a>-&gt;<a id="136c37" class="tk">EngagePB</a>));</td></tr>
+<td><a id="l136" class='ln'>136</a></td><td>    <a id="136c5" class="tk">*</a><a id="136c6" class="tk">result_ptr</a> = <a id="136c19" class="tk">*</a>((<a id="136c22" class="tk">uint8_T</a><a id="136c29" class="tk">*</a>)<a id="136c31" class="tk">&amp;</a>(<a id="136c33" class="tk">in</a>-&gt;<a id="136c37" class="tk">EngageReq</a>));</td></tr>
 <tr name="137" id="137">
 <td><a id="l137" class='ln'>137</a></td><td>    <a id="137c5" class="tk">result_ptr</a> <a id="137c16" class="tk">+=</a> 1;</td></tr>
 <tr name="138" id="138">
@@ -305,17 +305,23 @@
 <tr name="147" id="147">
 <td><a id="l147" class='ln'>147</a></td><td></td></tr>
 <tr name="148" id="148">
-<td><a id="l148" class='ln'>148</a></td><td></td></tr>
+<td><a id="l148" class='ln'>148</a></td><td>    <a id="148c5" class="tk">*</a><a id="148c6" class="tk">result_ptr</a> = <a id="148c19" class="tk">*</a>((<a id="148c22" class="tk">uint8_T</a><a id="148c29" class="tk">*</a>)<a id="148c31" class="tk">&amp;</a>(<a id="148c33" class="tk">in</a>-&gt;<a id="148c37" class="tk">BrakeSW</a>));</td></tr>
 <tr name="149" id="149">
-<td><a id="l149" class='ln'>149</a></td><td>    <span class="ct">/* Set the buffer size to the total bus size */</span></td></tr>
+<td><a id="l149" class='ln'>149</a></td><td>    <a id="149c5" class="tk">result_ptr</a> <a id="149c16" class="tk">+=</a> 1;</td></tr>
 <tr name="150" id="150">
-<td><a id="l150" class='ln'>150</a></td><td>    <a id="150c5" class="tk">*</a><a id="150c6" class="tk">size</a> = <a id="150c13" class="tk">DSA_BUS_SIZE</a>;</td></tr>
+<td><a id="l150" class='ln'>150</a></td><td></td></tr>
 <tr name="151" id="151">
-<td><a id="l151" class='ln'>151</a></td><td><span class="br">}</span></td></tr>
+<td><a id="l151" class='ln'>151</a></td><td></td></tr>
 <tr name="152" id="152">
-<td><a id="l152" class='ln'>152</a></td><td></td></tr>
+<td><a id="l152" class='ln'>152</a></td><td>    <span class="ct">/* Set the buffer size to the total bus size */</span></td></tr>
 <tr name="153" id="153">
-<td><a id="l153" class='ln'>153</a></td><td></td></tr>
+<td><a id="l153" class='ln'>153</a></td><td>    <a id="153c5" class="tk">*</a><a id="153c6" class="tk">size</a> = <a id="153c13" class="tk">DSA_BUS_SIZE</a>;</td></tr>
+<tr name="154" id="154">
+<td><a id="l154" class='ln'>154</a></td><td><span class="br">}</span></td></tr>
+<tr name="155" id="155">
+<td><a id="l155" class='ln'>155</a></td><td></td></tr>
+<tr name="156" id="156">
+<td><a id="l156" class='ln'>156</a></td><td></td></tr>
 </table>
 </pre>
 </body>
