@@ -3,9 +3,9 @@
  *
  * Code generation for model "L4_MABX".
  *
- * Model version              : 1.891
+ * Model version              : 1.893
  * Simulink Coder version : 8.14 (R2018a) 06-Feb-2018
- * C source code generated on : Tue Jan 28 12:27:43 2020
+ * C source code generated on : Wed Jan 29 15:34:41 2020
  *
  * Target selection: rti1401.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping

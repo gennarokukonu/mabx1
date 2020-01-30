@@ -3,9 +3,9 @@
  *
  * Code generation for model "L4_MABX".
  *
- * Model version              : 1.891
+ * Model version              : 1.893
  * Simulink Coder version : 8.14 (R2018a) 06-Feb-2018
- * C source code generated on : Tue Jan 28 12:27:43 2020
+ * C source code generated on : Wed Jan 29 15:34:41 2020
  *
  * Target selection: rti1401.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -48,13 +48,13 @@ typedef struct {
 
 #endif
 
-/* Parameters for system: '<S114>/Calculate_D_term' */
+/* Parameters for system: '<S112>/Calculate_D_term' */
 typedef struct P_Calculate_D_term_L4_MABX_T_ P_Calculate_D_term_L4_MABX_T;
 
-/* Parameters for system: '<S114>/Calculate_I_term' */
+/* Parameters for system: '<S112>/Calculate_I_term' */
 typedef struct P_Calculate_I_term_L4_MABX_T_ P_Calculate_I_term_L4_MABX_T;
 
-/* Parameters for system: '<S979>/ALL_CTRL_DISABLED' */
+/* Parameters for system: '<S977>/ALL_CTRL_DISABLED' */
 typedef struct P_ALL_CTRL_DISABLED_L4_MABX_T_ P_ALL_CTRL_DISABLED_L4_MABX_T;
 
 /* Parameters (default storage) */

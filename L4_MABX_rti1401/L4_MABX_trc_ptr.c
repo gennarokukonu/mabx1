@@ -5,7 +5,7 @@
    Definition of function that initializes the global TRC pointers
 
    RTI1401 7.10 (02-May-2018)
-   Tue Jan 28 12:27:43 2020
+   Wed Jan 29 15:34:41 2020
 
    Copyright 2020, dSPACE GmbH. All rights reserved.
 
@@ -315,50 +315,50 @@ static void rti_init_trc_pointers_0(void)
   p_0_L4_MABX_ENUM_J1939_SWITCH_T_12 = &L4_MABX_B.BrkPedArbBrakeSwitch;
   p_0_L4_MABX_ENUM_AUTO_CTRL_VEHICLE_STATE_T_13 = &L4_MABX_B.VehCtrlState;
   p_0_L4_MABX_ENUM_AUTO_CTRL_STATE_T_14 = &L4_MABX_B.CtrlState;
-  p_0_L4_MABX_uint16_T_15 = &L4_MABX_B.DataTypeConversion_m4;
-  p_0_L4_MABX_int16_T_16 = &L4_MABX_B.DataTypeConversion3_e;
+  p_0_L4_MABX_uint16_T_15 = &L4_MABX_B.DataTypeConversion_jj;
+  p_0_L4_MABX_int16_T_16 = &L4_MABX_B.DataTypeConversion3_k;
   p_0_L4_MABX_uint8_T_17 = &L4_MABX_B.FixPtUnitDelay2;
-  p_0_L4_MABX_int8_T_18 = &L4_MABX_B.DataTypeConversion4_go;
-  p_0_L4_MABX_boolean_T_19 = &L4_MABX_B.SFunction1_b;
-  p_0_L4_MABX_boolean_T_20 = &L4_MABX_B.If_Then_Else_nhu.Switch;
+  p_0_L4_MABX_int8_T_18 = &L4_MABX_B.DataTypeConversion4_ku;
+  p_0_L4_MABX_boolean_T_19 = &L4_MABX_B.SFunction1_as;
+  p_0_L4_MABX_boolean_T_20 = &L4_MABX_B.If_Then_Else_ey.Switch;
   p_0_L4_MABX_real_T_21 = &L4_MABX_B.If_Then_Else5.Switch;
   p_0_L4_MABX_real_T_22 = &L4_MABX_B.If_Then_Else4.Switch;
-  p_0_L4_MABX_real_T_23 = &L4_MABX_B.If_Then_Else2_b.Switch;
-  p_0_L4_MABX_real_T_24 = &L4_MABX_B.If_Then_Else1_g.Switch;
-  p_0_L4_MABX_real_T_25 = &L4_MABX_B.If_Then_Else_pl.XBRExternalAccelDemand;
-  p_0_L4_MABX_ENUM_XBR_PRIORITY_T_26 = &L4_MABX_B.If_Then_Else_pl.XBRPriority;
+  p_0_L4_MABX_real_T_23 = &L4_MABX_B.If_Then_Else2_p.Switch;
+  p_0_L4_MABX_real_T_24 = &L4_MABX_B.If_Then_Else1_c.Switch;
+  p_0_L4_MABX_real_T_25 = &L4_MABX_B.If_Then_Else_ob.XBRExternalAccelDemand;
+  p_0_L4_MABX_ENUM_XBR_PRIORITY_T_26 = &L4_MABX_B.If_Then_Else_ob.XBRPriority;
   p_0_L4_MABX_ENUM_XBR_PASS_THROUGH_ACTIVE_T_27 =
-    &L4_MABX_B.If_Then_Else_pl.XBRPassThroughActive;
+    &L4_MABX_B.If_Then_Else_ob.XBRPassThroughActive;
   p_0_L4_MABX_ENUM_XBR_EBI_MODE_T_28 =
-    &L4_MABX_B.If_Then_Else_pl.XBREnduranceBrakeIntegrationMod;
+    &L4_MABX_B.If_Then_Else_ob.XBREnduranceBrakeIntegrationMod;
   p_0_L4_MABX_ENUM_XBR_CONTROL_MODE_T_29 =
-    &L4_MABX_B.If_Then_Else_pl.XBRControlMode;
-  p_0_L4_MABX_real_T_30 = &L4_MABX_B.If_Then_Else1_a.Switch;
-  p_0_L4_MABX_real_T_31 = &L4_MABX_B.If_Then_Else_gq.Switch;
-  p_0_L4_MABX_real_T_32 = &L4_MABX_B.If_Then_Else_nh.Switch;
-  p_0_L4_MABX_real_T_33 = &L4_MABX_B.If_Then_Else_b.Switch;
-  p_0_L4_MABX_real_T_34 = &L4_MABX_B.If_Then_Else3_dy.Switch;
-  p_0_L4_MABX_real_T_35 = &L4_MABX_B.If_Then_Else2_i.Switch;
-  p_0_L4_MABX_real_T_36 = &L4_MABX_B.If_Then_Else1_j0.Switch;
-  p_0_L4_MABX_real_T_37 = &L4_MABX_B.If_Then_Else_he.Switch;
-  p_0_L4_MABX_real_T_38 = &L4_MABX_B.If_Then_Else3_d.Switch;
-  p_0_L4_MABX_real_T_39 = &L4_MABX_B.If_Then_Else1_j.Switch;
-  p_0_L4_MABX_real_T_40 = &L4_MABX_B.If_Then_Else_d.Switch;
-  p_0_L4_MABX_real_T_41 = &L4_MABX_B.If_Then_Else3_lr.Switch;
-  p_0_L4_MABX_real_T_42 = &L4_MABX_B.If_Then_Else1_kj.Switch;
-  p_0_L4_MABX_real_T_43 = &L4_MABX_B.If_Then_Else_n.Switch;
-  p_0_L4_MABX_real_T_44 = &L4_MABX_B.If_Then_Else3_f.Switch;
-  p_0_L4_MABX_real_T_45 = &L4_MABX_B.If_Then_Else1_k.Switch;
-  p_0_L4_MABX_real_T_46 = &L4_MABX_B.If_Then_Else_h.Switch;
-  p_0_L4_MABX_real_T_47 = &L4_MABX_B.If_Then_Else3_l.Switch;
-  p_0_L4_MABX_real_T_48 = &L4_MABX_B.If_Then_Else1_ef.Switch;
-  p_0_L4_MABX_real_T_49 = &L4_MABX_B.If_Then_Else_pu.Switch;
+    &L4_MABX_B.If_Then_Else_ob.XBRControlMode;
+  p_0_L4_MABX_real_T_30 = &L4_MABX_B.If_Then_Else1_g0.Switch;
+  p_0_L4_MABX_real_T_31 = &L4_MABX_B.If_Then_Else_is.Switch;
+  p_0_L4_MABX_real_T_32 = &L4_MABX_B.If_Then_Else_ex.Switch;
+  p_0_L4_MABX_real_T_33 = &L4_MABX_B.If_Then_Else_e.Switch;
+  p_0_L4_MABX_real_T_34 = &L4_MABX_B.If_Then_Else3_l.Switch;
+  p_0_L4_MABX_real_T_35 = &L4_MABX_B.If_Then_Else2_n.Switch;
+  p_0_L4_MABX_real_T_36 = &L4_MABX_B.If_Then_Else1_kz.Switch;
+  p_0_L4_MABX_real_T_37 = &L4_MABX_B.If_Then_Else_p.Switch;
+  p_0_L4_MABX_real_T_38 = &L4_MABX_B.If_Then_Else3_c.Switch;
+  p_0_L4_MABX_real_T_39 = &L4_MABX_B.If_Then_Else1_ky.Switch;
+  p_0_L4_MABX_real_T_40 = &L4_MABX_B.If_Then_Else_k2.Switch;
+  p_0_L4_MABX_real_T_41 = &L4_MABX_B.If_Then_Else3_m.Switch;
+  p_0_L4_MABX_real_T_42 = &L4_MABX_B.If_Then_Else1_g.Switch;
+  p_0_L4_MABX_real_T_43 = &L4_MABX_B.If_Then_Else_b.Switch;
+  p_0_L4_MABX_real_T_44 = &L4_MABX_B.If_Then_Else3_g.Switch;
+  p_0_L4_MABX_real_T_45 = &L4_MABX_B.If_Then_Else1_fs.Switch;
+  p_0_L4_MABX_real_T_46 = &L4_MABX_B.If_Then_Else_a.Switch;
+  p_0_L4_MABX_real_T_47 = &L4_MABX_B.If_Then_Else3_o.Switch;
+  p_0_L4_MABX_real_T_48 = &L4_MABX_B.If_Then_Else1_k.Switch;
+  p_0_L4_MABX_real_T_49 = &L4_MABX_B.If_Then_Else_m.Switch;
   p_0_L4_MABX_real_T_50 = &L4_MABX_B.If_Then_Else3.Switch;
-  p_0_L4_MABX_real_T_51 = &L4_MABX_B.If_Then_Else1_e.Switch;
-  p_0_L4_MABX_real_T_52 = &L4_MABX_B.If_Then_Else_c.Switch;
+  p_0_L4_MABX_real_T_51 = &L4_MABX_B.If_Then_Else1_f.Switch;
+  p_0_L4_MABX_real_T_52 = &L4_MABX_B.If_Then_Else_g.Switch;
   p_0_L4_MABX_real_T_53 = &L4_MABX_B.If_Then_Else2.Switch;
   p_0_L4_MABX_real_T_54 = &L4_MABX_B.If_Then_Else1.Switch;
-  p_0_L4_MABX_real_T_55 = &L4_MABX_B.If_Then_Else_p.Switch;
+  p_0_L4_MABX_real_T_55 = &L4_MABX_B.If_Then_Else_k.Switch;
   p_0_L4_MABX_boolean_T_56 = &L4_MABX_B.If_Then_Else.Switch;
   p_0_L4_MABX_real_T_57 = &L4_MABX_B.If_Then_Else_m4.Switch;
   p_0_L4_MABX_real_T_58 = &L4_MABX_B.If_Then_Else4_h.Switch;
@@ -366,7 +366,7 @@ static void rti_init_trc_pointers_0(void)
   p_0_L4_MABX_real_T_60 = &L4_MABX_B.If_Then_Else_bf.Switch;
   p_0_L4_MABX_real_T_61 = &L4_MABX_B.If_Then_Else4_e.Switch;
   p_0_L4_MABX_real_T_62 = &L4_MABX_B.If_Then_Else_gf.Switch;
-  p_0_L4_MABX_real_T_63 = &L4_MABX_B.If_Then_Else_j.Switch;
+  p_0_L4_MABX_real_T_63 = &L4_MABX_B.If_Then_Else_jh.Switch;
   p_0_L4_MABX_real_T_64 = &L4_MABX_B.If_Then_Else_og.Switch;
   p_0_L4_MABX_real_T_65 = &L4_MABX_B.If_Then_Else_pz.Switch;
   p_0_L4_MABX_real_T_66 = &L4_MABX_B.If_Then_Else_mm.Vehicle_speed_target;
@@ -375,19 +375,19 @@ static void rti_init_trc_pointers_0(void)
   p_0_L4_MABX_real_T_69 = &L4_MABX_B.If_Then_Else_mk.Switch;
   p_0_L4_MABX_real_T_70 = &L4_MABX_B.If_Then_Else_b3.Switch;
   p_0_L4_MABX_real_T_71 = &L4_MABX_B.If_Then_Else1_o.Switch;
-  p_0_L4_MABX_real_T_72 = &L4_MABX_B.If_Then_Else_m.Switch;
-  p_0_L4_MABX_real_T_73 = &L4_MABX_B.If_Then_Else_co.Switch;
+  p_0_L4_MABX_real_T_72 = &L4_MABX_B.If_Then_Else_m0.Switch;
+  p_0_L4_MABX_real_T_73 = &L4_MABX_B.If_Then_Else_c.Switch;
   p_0_L4_MABX_real_T_74 = &L4_MABX_B.If_Then_Else1_m.Switch;
   p_0_L4_MABX_real_T_75 = &L4_MABX_B.If_Then_Else1_km.Switch;
   p_0_L4_MABX_real_T_76 = &L4_MABX_B.If_Then_Else_pn.Switch;
   p_0_L4_MABX_real_T_77 = &L4_MABX_B.If_Then_Else1_d.Switch;
   p_0_L4_MABX_real_T_78 = &L4_MABX_B.If_Then_Else_pe.Switch;
   p_0_L4_MABX_real_T_79 = &L4_MABX_B.If_Then_Else_m1.Switch;
-  p_0_L4_MABX_real_T_80 = &L4_MABX_B.If_Then_Else_nhw.Switch;
+  p_0_L4_MABX_real_T_80 = &L4_MABX_B.If_Then_Else_nh.Switch;
   p_0_L4_MABX_real_T_81 = &L4_MABX_B.If_Then_Else1_h3.Switch;
   p_0_L4_MABX_real_T_82 = &L4_MABX_B.If_Then_Else_pi.Switch;
   p_0_L4_MABX_real_T_83 = &L4_MABX_B.If_Then_Else_cp.Switch;
-  p_0_L4_MABX_real_T_84 = &L4_MABX_B.If_Then_Else_k.Switch;
+  p_0_L4_MABX_real_T_84 = &L4_MABX_B.If_Then_Else_k2t.Switch;
   p_0_L4_MABX_real_T_85 = &L4_MABX_B.Calculate_I_term_n.Xold;
   p_0_L4_MABX_uint8_T_86 = &L4_MABX_B.Calculate_I_term_n.FixPtUnitDelay2;
   p_0_L4_MABX_boolean_T_87 = &L4_MABX_B.Calculate_I_term_n.Compare;
@@ -400,7 +400,7 @@ static void rti_init_trc_pointers_0(void)
   p_0_L4_MABX_uint8_T_94 = &L4_MABX_B.Calculate_D_term_h.FixPtUnitDelay2;
   p_0_L4_MABX_boolean_T_95 = &L4_MABX_B.Calculate_D_term_h.Unit_Delay1;
   p_0_L4_MABX_real_T_96 = &L4_MABX_B.Calculate_D_term_h.If_Then_Else.Switch;
-  p_0_L4_MABX_real_T_97 = &L4_MABX_B.If_Then_Else_a.Switch;
+  p_0_L4_MABX_real_T_97 = &L4_MABX_B.If_Then_Else_as.Switch;
   p_0_L4_MABX_real_T_98 = &L4_MABX_B.If_Then_Else1_dz.Switch;
   p_0_L4_MABX_real_T_99 = &L4_MABX_B.If_Then_Else_br.Switch;
   p_0_L4_MABX_real_T_100 = &L4_MABX_B.If_Then_Else1_kg.Switch;
@@ -408,7 +408,7 @@ static void rti_init_trc_pointers_0(void)
   p_0_L4_MABX_real_T_102 = &L4_MABX_B.If_Then_Else1_h.Switch;
   p_0_L4_MABX_real_T_103 = &L4_MABX_B.If_Then_Else_ct.Switch;
   p_0_L4_MABX_real_T_104 = &L4_MABX_B.If_Then_Else_nr.Switch;
-  p_0_L4_MABX_real_T_105 = &L4_MABX_B.If_Then_Else_g.Switch;
+  p_0_L4_MABX_real_T_105 = &L4_MABX_B.If_Then_Else_ga.Switch;
   p_0_L4_MABX_real_T_106 = &L4_MABX_B.If_Then_Else_ep.Switch;
   p_0_L4_MABX_real_T_107 = &L4_MABX_B.If_Then_Else1_o5.Switch;
   p_0_L4_MABX_real_T_108 = &L4_MABX_B.If_Then_Else_il.Switch;
@@ -433,7 +433,7 @@ static void rti_init_trc_pointers_0(void)
   p_0_L4_MABX_boolean_T_127 = &L4_MABX_B.Calculate_D_term_p.Unit_Delay1;
   p_0_L4_MABX_real_T_128 = &L4_MABX_B.Calculate_D_term_p.If_Then_Else.Switch;
   p_0_L4_MABX_real_T_129 = &L4_MABX_B.If_Then_Else1_b.Switch;
-  p_0_L4_MABX_real_T_130 = &L4_MABX_B.If_Then_Else_nj.Switch;
+  p_0_L4_MABX_real_T_130 = &L4_MABX_B.If_Then_Else_n.Switch;
   p_0_L4_MABX_real_T_131 = &L4_MABX_B.If_Then_Else_bg.Switch;
   p_0_L4_MABX_real_T_132 = &L4_MABX_B.If_Then_Else_ly.Switch;
   p_0_L4_MABX_real_T_133 = &L4_MABX_B.Calculate_I_term.Xold;
@@ -459,26 +459,26 @@ static void rti_init_trc_pointers_0(void)
   p_2_L4_MABX_uint8_T_0 = &L4_MABX_P.GLB_SWVERSION_CPV[0];
   p_2_L4_MABX_real_T_1 = &L4_MABX_P.TransferFcnLeadorLag_ICPrevInpu;
   p_2_L4_MABX_ENUM_J1939_SWITCH_T_2 = &L4_MABX_P.CompareToConstant2_const;
-  p_2_L4_MABX_ENUM_SIGNAL_HEALTH_T_3 = &L4_MABX_P.CompareToConstant_const_cr;
+  p_2_L4_MABX_ENUM_SIGNAL_HEALTH_T_3 = &L4_MABX_P.CompareToConstant_const_j;
   p_2_L4_MABX_ENUM_XBR_PASS_THROUGH_ACTIVE_T_4 =
-    &L4_MABX_P.CompareToConstant_const_f;
+    &L4_MABX_P.CompareToConstant_const_p;
   p_2_L4_MABX_real32_T_5 = &L4_MABX_P.IntervalTest_lowlimit;
   p_2_L4_MABX_uint32_T_6 = &L4_MABX_P.Repeating_Sequence_Stair_OutVal[0];
   p_2_L4_MABX_boolean_T_7 = &L4_MABX_P.Repeating_Sequence_Stair_OutV_l[0];
   p_2_L4_MABX_uint8_T_8 = &L4_MABX_P.Operator_BitMask;
   p_2_L4_MABX_real_T_9 = &L4_MABX_P.Constant0_Value;
-  p_2_L4_MABX_ENUM_CAN_RX_T_10 = &L4_MABX_P.Constant_Value_cu;
+  p_2_L4_MABX_ENUM_CAN_RX_T_10 = &L4_MABX_P.Constant_Value_nw;
   p_2_L4_MABX_ENUM_CAN_STATUS_DIAG_T_11 = &L4_MABX_P.Constant_Value_cq;
-  p_2_L4_MABX_ENUM_CAN_TX_T_12 = &L4_MABX_P.Constant2_Value_njy;
+  p_2_L4_MABX_ENUM_CAN_TX_T_12 = &L4_MABX_P.Constant2_Value_ki;
   p_2_L4_MABX_ENUM_J1939_SWITCH_T_13 = &L4_MABX_P.Unit_Delay_34_InitialCondition;
   p_2_L4_MABX_ENUM_PEDAL_POS_SIGNAL_SOURCE_T_14 =
     &L4_MABX_P.APTC_PEDAL_POS_SIG_SOURCE_APV_V;
-  p_2_L4_MABX_ENUM_REAX_OPERATION_MODE_T_15 = &L4_MABX_P.Constant_Value_pn;
+  p_2_L4_MABX_ENUM_REAX_OPERATION_MODE_T_15 = &L4_MABX_P.Constant_Value_ey;
   p_2_L4_MABX_ENUM_SWITCH_T_16 = &L4_MABX_P.CPV3_Value_p;
   p_2_L4_MABX_ENUM_XBR_CONTROL_MODE_T_17 = &L4_MABX_P.XBRControlModeOVR_Value;
   p_2_L4_MABX_ENUM_XBR_EBI_MODE_T_18 =
     &L4_MABX_P.XBREnduranceBrakeIntegrationMod;
-  p_2_L4_MABX_ENUM_XBR_PASS_THROUGH_ACTIVE_T_19 = &L4_MABX_P.Constant9_Value_b;
+  p_2_L4_MABX_ENUM_XBR_PASS_THROUGH_ACTIVE_T_19 = &L4_MABX_P.Constant9_Value_d;
   p_2_L4_MABX_ENUM_XBR_PRIORITY_T_20 = &L4_MABX_P.XBRPriorityOVR_Value;
   p_2_L4_MABX_ENUM_XPR_CONTROL_MODE_T_21 = &L4_MABX_P.CPV_Value_e;
   p_2_L4_MABX_ENUM_XPR_ERROR_STATE_T_22 = &L4_MABX_P.CPV1_Value_i5;
@@ -492,8 +492,8 @@ static void rti_init_trc_pointers_0(void)
     &L4_MABX_P.PROPB_XPR_UNPARK_MANUAL_APV_Val;
   p_2_L4_MABX_int32_T_27 = &L4_MABX_P.Merge_InitialOutput;
   p_2_L4_MABX_real32_T_28 = &L4_MABX_P.UnitDelay_InitialCondition_c;
-  p_2_L4_MABX_uint32_T_29 = &L4_MABX_P.Constant_Value_jc;
-  p_2_L4_MABX_int16_T_30 = &L4_MABX_P.Constant_Value_eh;
+  p_2_L4_MABX_uint32_T_29 = &L4_MABX_P.Constant_Value_jc3;
+  p_2_L4_MABX_int16_T_30 = &L4_MABX_P.Constant_Value_ge;
   p_2_L4_MABX_uint16_T_31 = &L4_MABX_P.Gain_Gain_bn;
   p_2_L4_MABX_boolean_T_32 = &L4_MABX_P.E_Value;
   p_2_L4_MABX_int8_T_33 = &L4_MABX_P.Failure_Value;
@@ -531,8 +531,8 @@ static void rti_init_trc_pointers_0(void)
   p_2_L4_MABX_uint8_T_57 =
     &L4_MABX_P.Calculate_D_term.FixPtUnitDelay2_InitialConditio;
   p_3_L4_MABX_real_T_0 = &L4_MABX_DW.UnitDelay_DSTATE;
-  p_3_L4_MABX_real32_T_2 = &L4_MABX_DW.UnitDelay_DSTATE_d;
-  p_3_L4_MABX_uint32_T_3 = &L4_MABX_DW.UnitDelay_DSTATE_a;
+  p_3_L4_MABX_real32_T_2 = &L4_MABX_DW.UnitDelay_DSTATE_dj;
+  p_3_L4_MABX_uint32_T_3 = &L4_MABX_DW.UnitDelay_DSTATE_b;
   p_3_L4_MABX_ENUM_J1939_SWITCH_T_4 = &L4_MABX_DW.Unit_Delay_34_DSTATE;
   p_3_L4_MABX_ENUM_XPR_CONTROL_MODE_T_5 = &L4_MABX_DW.Unit_Delay_128_DSTATE;
   p_3_L4_MABX_ENUM_XPR_ERROR_STATE_T_6 = &L4_MABX_DW.Unit_Delay_129_DSTATE;
@@ -540,7 +540,7 @@ static void rti_init_trc_pointers_0(void)
   p_3_L4_MABX_uint32_T_8 = &L4_MABX_DW.Add_DWORK1;
   p_3_L4_MABX_int_T_9 = &L4_MABX_DW.dsa_tcpip_setup_IWORK;
   p_3_L4_MABX_uint8_T_10 = &L4_MABX_DW.FixPtUnitDelay2_DSTATE;
-  p_3_L4_MABX_boolean_T_11 = &L4_MABX_DW.DelayInput1_DSTATE_p;
+  p_3_L4_MABX_boolean_T_11 = &L4_MABX_DW.DelayInput1_DSTATE_g;
   p_3_L4_MABX_int8_T_12 = &L4_MABX_DW.RateTransition_write_buf;
   p_3_L4_MABX_uint8_T_13 = &L4_MABX_DW.is_active_c4_SUB_ECU_L4_MABX_HW;
   p_3_L4_MABX_boolean_T_14 = &L4_MABX_DW.AlternateMethod;
