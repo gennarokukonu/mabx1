@@ -3,9 +3,9 @@
  *
  * Code generation for model "L4_MABX".
  *
- * Model version              : 1.893
+ * Model version              : 1.894
  * Simulink Coder version : 8.14 (R2018a) 06-Feb-2018
- * C source code generated on : Wed Jan 29 15:34:41 2020
+ * C source code generated on : Mon Feb  3 15:07:24 2020
  *
  * Target selection: rti1401.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -2191,8 +2191,8 @@ P_L4_MABX_T L4_MABX_P = {
   0U,
   1U,
   2U,
+  1U,
   2U,
-  0U,
   0U,
 
   { 49U, 88U, 75U, 89U, 68U, 80U, 57U, 88U, 49U, 69U, 74U, 51U, 56U, 56U, 57U,
