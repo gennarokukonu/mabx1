@@ -272,7 +272,7 @@ group "Tunable Parameters"
 	 type:    flt(64,IEEE)
 	 alias:   "STANLEY_GAIN_APV"
 	 desc:    "Stanley Controller Gain"
-	 value:   320.0
+	 value:   0.05
 	 flags:   PARAM
 	}
 	STEERCTRL_WHEEL_ANGLE_DATA_MPV
@@ -1087,6 +1087,24 @@ group "Labels"
 	 desc:    "Autonomous Mode Enable Switch"
 	 flags:   READONLY
 	}
+	EngagePB
+	{
+	 type:    uint(8)
+	 alias:   "EngagePB"
+	 bitmask: 0x01
+	 range:   < 0 ; 1 >
+	 desc:    "Momentary push button to engage autonomous mode"
+	 flags:   READONLY
+	}
+	BrakeSW
+	{
+	 type:    uint(8)
+	 alias:   "BrakeSW"
+	 bitmask: 0x01
+	 range:   < 0 ; 1 >
+	 desc:    "Brake switch - pedal pressed"
+	 flags:   READONLY
+	}
 	MABX_Heartbeat
 	{
 	 type:    uint(8)
@@ -1094,15 +1112,6 @@ group "Labels"
 	 bitmask: 0x01
 	 range:   < 0 ; 1 >
 	 desc:    "MicroAutobox heartbeat"
-	 flags:   READONLY
-	}
-	EngageRequest
-	{
-	 type:    uint(8)
-	 alias:   "EngageRequest"
-	 bitmask: 0x01
-	 range:   < 0 ; 1 >
-	 desc:    "Engage request signal"
 	 flags:   READONLY
 	}
 	Heartbeat_Ok
@@ -1130,24 +1139,6 @@ group "Labels"
 	 bitmask: 0x01
 	 range:   < 0 ; 1 >
 	 desc:    "Log event momentary push button"
-	 flags:   READONLY
-	}
-	EngagePB
-	{
-	 type:    uint(8)
-	 alias:   "EngagePB"
-	 bitmask: 0x01
-	 range:   < 0 ; 1 >
-	 desc:    "Momentary push button to engage autonomous mode"
-	 flags:   READONLY
-	}
-	AutonomousEnabled
-	{
-	 type:    uint(8)
-	 alias:   "AutonomousEnabled"
-	 bitmask: 0x01
-	 range:   < 0 ; 1 >
-	 desc:    "Autonomous System Engaged"
 	 flags:   READONLY
 	}
 	AutonomousOutputEnabled

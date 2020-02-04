@@ -3,7 +3,7 @@
 --  Trace file: L4_MABX.trc
 --
 --  RTI1401 7.10 (02-May-2018)
---  Thu Jan 23 10:37:49 2020
+--  Mon Feb  3 15:07:24 2020
 --
 --  Copyright 2020, dSPACE GmbH. All rights reserved.
 --
@@ -30,7 +30,7 @@
 
 _genname     "RTI"
 _genversion  "7.10"
-_gendate     "01/23/2020 10:38:55"
+_gendate     "02/03/2020 15:08:18"
 _description ""
 _author      "RTI1401 7.10 (02-May-2018)"
 _model       "L4_MABX"
@@ -556,12 +556,12 @@ struct L4_MABX_RTMapsTX
     }
     structField3 
     {
-      alias:   "EngagePB"
+      alias:   "EngageReq"
       type:    uint(8)
       offs:    -1
       range:   < 0 ; 1 >
       bitmask: 0x01
-      desc:    "Engage Autonomous Push Button\n0 = OFF\n1 = ON"
+      desc:    "Engage Request\n0 = OFF\n1 = ON"
     }
     structField4 
     {
@@ -587,6 +587,15 @@ struct L4_MABX_RTMapsTX
       type:    uint(8)
       offs:    -1
       desc:    "Controller mode for feedback to Supervisor\n0 = No mode\n1 = Running Manual Mode\n2 = Autonomos Mode\n3 = Fault"
+    }
+    structField7 
+    {
+      alias:   "BrakeSW"
+      type:    uint(8)
+      offs:    -1
+      range:   < 0 ; 1 >
+      bitmask: 0x01
+      desc:    "Brake Pedal Switch\n0 = Not Pressed\n1 = Pressed"
     }
 endstruct
 
@@ -639,7 +648,7 @@ typedef L4_MABX_ArrayDT7_3 uint(32)[3]
 typedef L4_MABX_ArrayDT7_8 uint(32)[8]
 typedef L4_MABX_ArrayDT3_8 uint(8)[8]
 typedef L4_MABX_ArrayDT3_39 uint(8)[39]
-typedef L4_MABX_ArrayDT3_23 uint(8)[23]
+typedef L4_MABX_ArrayDT3_24 uint(8)[24]
 typedef L4_MABX_ArrayDT3_128 uint(8)[128]
 typedef L4_MABX_ArrayDT3_16 uint(8)[16]
 typedef L4_MABX_ArrayDT3_17 uint(8)[17]
@@ -654,8 +663,8 @@ typedef L4_MABX_ArrayDT0_17 flt(64,IEEE)[17]
 typedef L4_MABX_ArrayDT0_10 flt(64,IEEE)[10]
 typedef L4_MABX_ArrayDT0_9 flt(64,IEEE)[9]
 typedef L4_MABX_ArrayDT7_2 uint(32)[2]
-typedef L4_MABX_ArrayDT45_39 uint(8)[39]
-typedef L4_MABX_ArrayDT45_17 uint(8)[17]
+typedef L4_MABX_ArrayDT47_39 uint(8)[39]
+typedef L4_MABX_ArrayDT47_17 uint(8)[17]
 typedef L4_MABX_ArrayDT0_83_16_Col col flt(64,IEEE)[83][16]
 typedef L4_MABX_ArrayDT0_83 flt(64,IEEE)[83]
 typedef L4_MABX_ArrayDT0_8_16_Col col flt(64,IEEE)[8][16]
@@ -1724,7 +1733,7 @@ group "Tunable Parameters"
 	 type:    flt(64,IEEE)
 	 alias:   "STANLEY_GAIN_APV"
 	 desc:    "Stanley Controller Gain"
-	 value:   320.0
+	 value:   0.05
 	 flags:   PARAM
 	}
 	STEERCTRL_WHEEL_ANGLE_DATA_MPV
@@ -2539,6 +2548,24 @@ group "Labels"
 	 desc:    "Autonomous Mode Enable Switch"
 	 flags:   READONLY
 	}
+	EngagePB
+	{
+	 type:    uint(8)
+	 alias:   "EngagePB"
+	 bitmask: 0x01
+	 range:   < 0 ; 1 >
+	 desc:    "Momentary push button to engage autonomous mode"
+	 flags:   READONLY
+	}
+	BrakeSW
+	{
+	 type:    uint(8)
+	 alias:   "BrakeSW"
+	 bitmask: 0x01
+	 range:   < 0 ; 1 >
+	 desc:    "Brake switch - pedal pressed"
+	 flags:   READONLY
+	}
 	MABX_Heartbeat
 	{
 	 type:    uint(8)
@@ -2546,15 +2573,6 @@ group "Labels"
 	 bitmask: 0x01
 	 range:   < 0 ; 1 >
 	 desc:    "MicroAutobox heartbeat"
-	 flags:   READONLY
-	}
-	EngageRequest
-	{
-	 type:    uint(8)
-	 alias:   "EngageRequest"
-	 bitmask: 0x01
-	 range:   < 0 ; 1 >
-	 desc:    "Engage request signal"
 	 flags:   READONLY
 	}
 	Heartbeat_Ok
@@ -2582,24 +2600,6 @@ group "Labels"
 	 bitmask: 0x01
 	 range:   < 0 ; 1 >
 	 desc:    "Log event momentary push button"
-	 flags:   READONLY
-	}
-	EngagePB
-	{
-	 type:    uint(8)
-	 alias:   "EngagePB"
-	 bitmask: 0x01
-	 range:   < 0 ; 1 >
-	 desc:    "Momentary push button to engage autonomous mode"
-	 flags:   READONLY
-	}
-	AutonomousEnabled
-	{
-	 type:    uint(8)
-	 alias:   "AutonomousEnabled"
-	 bitmask: 0x01
-	 range:   < 0 ; 1 >
-	 desc:    "Autonomous System Engaged"
 	 flags:   READONLY
 	}
 	AutonomousOutputEnabled

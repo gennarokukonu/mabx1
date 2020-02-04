@@ -35,10 +35,11 @@
             <Member name="Heartbeat" dimensions="1" datatype="boolean"/>
             <Member name="EStop" dimensions="1" datatype="boolean"/>
             <Member name="EnableSW" dimensions="1" datatype="boolean"/>
-            <Member name="EngagePB" dimensions="1" datatype="boolean"/>
+            <Member name="EngageReq" dimensions="1" datatype="boolean"/>
             <Member name="LogEventPB" dimensions="1" datatype="boolean"/>
             <Member name="AutonomousEnabled" dimensions="1" datatype="boolean"/>
             <Member name="MABX_Mode" dimensions="1" datatype="uint8"/>
+            <Member name="BrakeSW" dimensions="1" datatype="boolean"/>
         </Struct>
     </Structs>
     <Blocks>

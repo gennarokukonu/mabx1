@@ -66,6 +66,9 @@ EnableSw = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Autonomous Mode Enable
 %% EngagePB
 EngagePB = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Momentary push button to engage autonomous mode');
 
+%% EngageReq
+EngageReq = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Engage request');
+
 %% EngageRequest
 EngageRequest = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Engage request signal');
 
@@ -109,8 +112,8 @@ Heartbeat_Ok = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Heartbeat Ok');
 %% Speed_Check_Ok
 Speed_Check_Ok = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Speed Difference Check Ok, within 5 km/h');
 
-%% Brake_Pedal_Not_Pressed
-Brake_Pedal_Not_Pressed = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Brake pedal not pressed');
+%% BrakeSW
+BrakeSW = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Brake switch - pedal pressed');
 
 %% SteeringWheelAngle
 SteeringWheelAngle = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'SPN1807 Steering Wheel Angle', ...
