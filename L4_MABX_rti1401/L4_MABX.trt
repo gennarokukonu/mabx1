@@ -3,7 +3,7 @@
 --  Trace file: L4_MABX.trc
 --
 --  RTI1401 7.10 (02-May-2018)
---  Mon Feb  3 15:07:24 2020
+--  Thu Feb 27 17:58:03 2020
 --
 --  Copyright 2020, dSPACE GmbH. All rights reserved.
 --
@@ -30,7 +30,7 @@
 
 _genname     "RTI"
 _genversion  "7.10"
-_gendate     "02/03/2020 15:08:18"
+_gendate     "02/27/2020 17:58:48"
 _description ""
 _author      "RTI1401 7.10 (02-May-2018)"
 _model       "L4_MABX"
@@ -179,6 +179,7 @@ enum L4_MABX_ENUM_LAT_STEER_SOURCE_T
       1:    "ENUM_LAT_STEER_SOURCE_T_OVERRIDE"
       2:    "ENUM_LAT_STEER_SOURCE_T_PIC_HARIS"
       3:    "ENUM_LAT_STEER_SOURCE_T_PIC_STANLEY"
+      4:    "ENUM_LAT_STEER_SOURCE_T_PIC_SPEED_SELECT"
     }
 }
 
@@ -657,11 +658,11 @@ typedef L4_MABX_ArrayDT8_2 uint(8)[2]
 typedef L4_MABX_ArrayDT8_33 uint(8)[33]
 typedef L4_MABX_ArrayDT3_100 uint(8)[100]
 typedef L4_MABX_ArrayDT0_3 flt(64,IEEE)[3]
-typedef L4_MABX_ArrayDT0_72 flt(64,IEEE)[72]
 typedef L4_MABX_ArrayDT0_5 flt(64,IEEE)[5]
 typedef L4_MABX_ArrayDT0_17 flt(64,IEEE)[17]
 typedef L4_MABX_ArrayDT0_10 flt(64,IEEE)[10]
 typedef L4_MABX_ArrayDT0_9 flt(64,IEEE)[9]
+typedef L4_MABX_ArrayDT0_72 flt(64,IEEE)[72]
 typedef L4_MABX_ArrayDT7_2 uint(32)[2]
 typedef L4_MABX_ArrayDT47_39 uint(8)[39]
 typedef L4_MABX_ArrayDT47_17 uint(8)[17]
@@ -1601,15 +1602,6 @@ group "Tunable Parameters"
 	 value:   [0.0, 69.0, 138.0, 207.0, 276.0, 345.0, 414.0, 483.0, 552.0, 621.0, 689.0, 758.0, 827.0, 896.0, 965.0, 1034.0]
 	 flags:   PARAM
 	}
-	Curvature_FF_Gain
-	{
-	 type:    flt(64,IEEE)
-	 alias:   "Curvature_FF_Gain"
-	 range:   < 0.0 ; 10.0 >
-	 desc:    "Curvature feed forward gain"
-	 value:   5.7
-	 flags:   PARAM
-	}
 	DISTANCE_M
 	{
 	 type:    flt(64,IEEE)
@@ -1633,9 +1625,9 @@ group "Tunable Parameters"
 	{
 	 type:    flt(64,IEEE)
 	 alias:   "Lateral_Control_D"
-	 range:   < 0.0 ; 100.0 >
+	 range:   < 0.0 ; 10.0 >
 	 desc:    "Lateral Controller Devivative Value"
-	 value:   0.1
+	 value:   0.07
 	 flags:   PARAM
 	}
 	Lateral_Control_Error_Limit
@@ -1653,14 +1645,14 @@ group "Tunable Parameters"
 	 alias:   "Lateral_Control_Error_Rate_Limit"
 	 range:   < 0.0001 ; 0.2 >
 	 desc:    "Lateral Control Error Rate Limit"
-	 value:   0.05
+	 value:   0.04
 	 flags:   PARAM
 	}
 	Lateral_Control_I
 	{
 	 type:    flt(64,IEEE)
 	 alias:   "Lateral_Control_I"
-	 range:   < 0.0 ; 100.0 >
+	 range:   < 0.0 ; 10.0 >
 	 desc:    "Lateral controller intergral value (I)"
 	 value:   0.0
 	 flags:   PARAM
@@ -1669,9 +1661,9 @@ group "Tunable Parameters"
 	{
 	 type:    flt(64,IEEE)
 	 alias:   "Lateral_Control_P"
-	 range:   < 0.0 ; 100.0 >
+	 range:   < 0.0 ; 10.0 >
 	 desc:    "Lateral controller proportional value (P)"
-	 value:   0.5
+	 value:   0.6
 	 flags:   PARAM
 	}
 	Lateral_Control_Pole
@@ -1689,7 +1681,7 @@ group "Tunable Parameters"
 	 alias:   "Lateral_Control_Rate_Limit_APV"
 	 range:   < 0.0001 ; 0.5 >
 	 desc:    "Lateral Control Rate Limit"
-	 value:   0.05
+	 value:   0.04
 	 flags:   PARAM
 	}
 	Lateral_Control_YawRate_Limit
@@ -1732,8 +1724,36 @@ group "Tunable Parameters"
 	{
 	 type:    flt(64,IEEE)
 	 alias:   "STANLEY_GAIN_APV"
-	 desc:    "Stanley Controller Gain"
-	 value:   0.05
+	 range:   < 0.0 ; 1.0 >
+	 desc:    "Stanley Controller Gain K"
+	 value:   0.55
+	 flags:   PARAM
+	}
+	STANLEY_GAIN_KDSTEER_APV
+	{
+	 type:    flt(64,IEEE)
+	 alias:   "STANLEY_GAIN_KDSTEER_APV"
+	 range:   < -1.0 ; 1.0 >
+	 desc:    "Stanley Controller Gain Kd,steer"
+	 value:   0.18
+	 flags:   PARAM
+	}
+	STANLEY_GAIN_KDYAW_APV
+	{
+	 type:    flt(64,IEEE)
+	 alias:   "STANLEY_GAIN_KDYAW_APV"
+	 range:   < -1.0 ; 1.0 >
+	 desc:    "Stanley Controller Gain Kd,yaw"
+	 value:   -0.35
+	 flags:   PARAM
+	}
+	STANLEY_GAIN_KSOFT_APV
+	{
+	 type:    flt(64,IEEE)
+	 alias:   "STANLEY_GAIN_KSOFT_APV"
+	 range:   < 0.0 ; 10.0 >
+	 desc:    "Stanley Controller Gain Ksoft"
+	 value:   0.0
 	 flags:   PARAM
 	}
 	STEERCTRL_WHEEL_ANGLE_DATA_MPV
@@ -1807,7 +1827,7 @@ group "Tunable Parameters"
 	 alias:   "UndersteerCorection"
 	 range:   < 0.0 ; 2.5 >
 	 desc:    "The Haris Fudge Factor"
-	 value:   0.5
+	 value:   0.18
 	 flags:   PARAM
 	}
 	VSPD_TARGET_KPH_APV
@@ -1835,7 +1855,7 @@ group "Tunable Parameters"
 	 alias:   "Yaw_Rate_FF_Gain"
 	 range:   < 0.0 ; 10.0 >
 	 desc:    "Yaw rate feed forward gain"
-	 value:   0.1
+	 value:   0.2
 	 flags:   PARAM
 	}
 	AUTONOMOUS_MODE_SELECTOR_APV
@@ -1867,7 +1887,7 @@ group "Tunable Parameters"
 	 type:    enum L4_MABX_ENUM_LAT_STEER_SOURCE_T
 	 alias:   "LAT_STEER_SRC_SELECTOR_APV"
 	 desc:    "Selector for lateral control source"
-	 value:   2
+	 value:   3
 	 flags:   PARAM
 	}
 	LONG_SPEED_SRC_SELECTOR_APV
@@ -1892,6 +1912,14 @@ group "Tunable Parameters"
 	 alias:   "PROPB_REAX_1_E4_DES_POS_SIG_SRC_APV"
 	 desc:    "Signal source for desired steering angle position in PropB_REAX_1"
 	 value:   3
+	 flags:   PARAM
+	}
+	LATERAL_GAIN_SCHEDULE_APV
+	{
+	 type:    enum L4_MABX_ENUM_SWITCH_T
+	 alias:   "LATERAL_GAIN_SCHEDULE_APV"
+	 desc:    "Enable Understeer Correction Schedule"
+	 value:   1
 	 flags:   PARAM
 	}
 	RATE_LIMITER_ENABLE_APV
@@ -2063,7 +2091,7 @@ group "Labels"
 	 type:    flt(64,IEEE)
 	 alias:   "Lateral_Control_Rate_Limit"
 	 unit:    "rad"
-	 desc:    "Lateral Control Rate Upper Limit"
+	 desc:    "Lateral Control Rate Limit Output"
 	 flags:   READONLY
 	}
 	Lateral_Control_Output
@@ -2080,6 +2108,44 @@ group "Labels"
 	 alias:   "Lateral_Control_Rate_Limiter_Output"
 	 unit:    "rad"
 	 desc:    "Lateral Control Rate Upper Limit"
+	 flags:   READONLY
+	}
+	Stanley_Rate_Limit
+	{
+	 type:    flt(64,IEEE)
+	 alias:   "Stanley_Rate_Limit"
+	 unit:    "rad"
+	 desc:    "Stanley Rate Limit"
+	 flags:   READONLY
+	}
+	Stanley_Set_Gain
+	{
+	 type:    flt(64,IEEE)
+	 alias:   "Stanley_Set_Gain"
+	 desc:    "Stanley Rate Limiter Output"
+	 flags:   READONLY
+	}
+	Understeer_Correction_Output
+	{
+	 type:    flt(64,IEEE)
+	 alias:   "Understeer_Correction_Output"
+	 desc:    "UndersteerCorrection Output"
+	 flags:   READONLY
+	}
+	Stanley_Output
+	{
+	 type:    flt(64,IEEE)
+	 alias:   "Stanley_Output"
+	 unit:    "rad"
+	 desc:    "Stanley Output"
+	 flags:   READONLY
+	}
+	Stanley_Rate_Limiter_Output
+	{
+	 type:    flt(64,IEEE)
+	 alias:   "Stanley_Rate_Limiter_Output"
+	 unit:    "rad"
+	 desc:    "Stanley Rate Limiter Output"
 	 flags:   READONLY
 	}
 	SteerCommandDeg
@@ -2609,6 +2675,15 @@ group "Labels"
 	 bitmask: 0x01
 	 range:   < 0 ; 1 >
 	 desc:    "Autonomous System Engaged and Outputs Enabled"
+	 flags:   READONLY
+	}
+	Stanley_Limiter_Active
+	{
+	 type:    uint(8)
+	 alias:   "Stanley_Limiter_Active"
+	 bitmask: 0x01
+	 range:   < 0 ; 1 >
+	 desc:    "Stanley Rate Limiter Active"
 	 flags:   READONLY
 	}
 	RateLimiterActive

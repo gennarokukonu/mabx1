@@ -2,7 +2,7 @@ function makeInfo = rtwmakecfg()
 %RTWMAKECFG adds include and source directories to the make files.
 %    makeInfo=
 %    Simulink version    : 9.1 (R2018a) 06-Feb-2018
-%    MATLAB file generated on : 03-Feb-2020 13:31:04
+%    MATLAB file generated on : 27-Feb-2020 12:28:06
 
 % Verify the Simulink version
 verify_simulink_version();

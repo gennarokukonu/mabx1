@@ -4,6 +4,7 @@ classdef ENUM_LAT_STEER_SOURCE_T < Simulink.IntEnumType
        OVERRIDE(1)
        PIC_HARIS(2)
        PIC_STANLEY(3)
+       PIC_SPEED_SELECT(4)
     end
     methods (Static = true)
         function retVal = getDataScope()

@@ -23,10 +23,6 @@
     %generatefile "machineSource" "SUB_ECU_L4_MABX_HW_Interface_PIC_KW_rtw.tlc"
     %<GENERATE_TYPE(block,"DumpMachineInitializer","machineSource")>\
   %endif
-  %if FILE_EXISTS("SUB_ECU_L4_MABX_rtw.tlc")
-    %generatefile "machineSource" "SUB_ECU_L4_MABX_rtw.tlc"
-    %<GENERATE_TYPE(block,"DumpMachineInitializer","machineSource")>\
-  %endif
   %if FILE_EXISTS("SUB_L4_Task_10ms_SUB_STATE_CONTROL_rtw.tlc")
     %generatefile "machineSource" "SUB_L4_Task_10ms_SUB_STATE_CONTROL_rtw.tlc"
     %<GENERATE_TYPE(block,"DumpMachineInitializer","machineSource")>\
@@ -53,8 +49,6 @@
   %openfile tmpFcnBuf
   %<DumpMachineTerminator(block)>\
   %generatefile "machineSource" "SUB_ECU_L4_MABX_HW_Interface_PIC_KW_rtw.tlc"
-  %<GENERATE_TYPE(block,"DumpMachineTerminator","machineSource")>\
-  %generatefile "machineSource" "SUB_ECU_L4_MABX_rtw.tlc"
   %<GENERATE_TYPE(block,"DumpMachineTerminator","machineSource")>\
   %generatefile "machineSource" "SUB_L4_Task_10ms_SUB_STATE_CONTROL_rtw.tlc"
   %<GENERATE_TYPE(block,"DumpMachineTerminator","machineSource")>\

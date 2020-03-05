@@ -3,9 +3,9 @@
  *
  * Code generation for model "L4_MABX".
  *
- * Model version              : 1.894
+ * Model version              : 1.898
  * Simulink Coder version : 8.14 (R2018a) 06-Feb-2018
- * C source code generated on : Mon Feb  3 15:07:24 2020
+ * C source code generated on : Thu Feb 27 17:58:03 2020
  *
  * Target selection: rti1401.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -792,22 +792,22 @@ extern void L4_MABX_If_Then_Else_l(boolean_T rtu_If, boolean_T rtu_Then,
   boolean_T rtu_Else, B_If_Then_Else_L4_MABX_m_T *localB);
 extern void L4_MABX_If_Then_Else_g(boolean_T rtu_If, real_T rtu_Then, real_T
   rtu_Else, B_If_Then_Else_L4_MABX_k_T *localB);
-extern void L4_MABX_If_Then_Else_c(real_T rtu_If, real_T rtu_Then, real_T
-  rtu_Else, B_If_Then_Else_L4_MABX_mf_T *localB);
+extern void L4_MABX_If_Then_Else_k(real_T rtu_If, real_T rtu_Then, real_T
+  rtu_Else, B_If_Then_Else_L4_MABX_n_T *localB);
 extern void L4_MABX_If_Then_Else_m(boolean_T rtu_If, real_T rtu_Then, real_T
   rtu_Then_l, real_T rtu_Then_f, real_T rtu_Else, real_T rtu_Else_i, real_T
   rtu_Else_k, B_If_Then_Else_L4_MABX_h_T *localB);
-extern void L4_MABX_If_Then_Else_b(boolean_T rtu_If, real_T rtu_Then, real_T
+extern void L4_MABX_If_Then_Else_kn(boolean_T rtu_If, real_T rtu_Then, real_T
   rtu_Else);
 extern void L4_MABX_ALL_CTRL_DISABLED(boolean_T rtu_Enable, int32_T *rty_Out1,
   P_ALL_CTRL_DISABLED_L4_MABX_T *localP);
-extern void L4_MABX_If_Then_Else_d(boolean_T rtu_If, real_T rtu_Then,
-  ENUM_XBR_EBI_MODE_T rtu_Then_i, ENUM_XBR_PRIORITY_T rtu_Then_b,
-  ENUM_XBR_CONTROL_MODE_T rtu_Then_f, ENUM_XBR_PASS_THROUGH_ACTIVE_T rtu_Then_bv,
-  real_T rtu_Then_o, real_T rtu_Then_j, real_T rtu_Else, ENUM_XBR_EBI_MODE_T
-  rtu_Else_g, ENUM_XBR_PRIORITY_T rtu_Else_h, ENUM_XBR_CONTROL_MODE_T rtu_Else_i,
-  ENUM_XBR_PASS_THROUGH_ACTIVE_T rtu_Else_b, real_T rtu_Else_m, real_T
-  rtu_Else_f, B_If_Then_Else_L4_MABX_b_T *localB);
+extern void L4_MABX_If_Then_Else_b(boolean_T rtu_If, real_T rtu_Then,
+  ENUM_XBR_EBI_MODE_T rtu_Then_i, ENUM_XBR_PRIORITY_T rtu_Then_a,
+  ENUM_XBR_CONTROL_MODE_T rtu_Then_h, ENUM_XBR_PASS_THROUGH_ACTIVE_T rtu_Then_j,
+  real_T rtu_Then_c, real_T rtu_Then_o, real_T rtu_Else, ENUM_XBR_EBI_MODE_T
+  rtu_Else_a, ENUM_XBR_PRIORITY_T rtu_Else_d, ENUM_XBR_CONTROL_MODE_T
+  rtu_Else_do, ENUM_XBR_PASS_THROUGH_ACTIVE_T rtu_Else_b, real_T rtu_Else_k,
+  real_T rtu_Else_bk, B_If_Then_Else_L4_MABX_p_T *localB);
 extern void L4_MAB_Background_Task_Init(void);
 extern void L4_MA_Background_Task_Reset(void);
 extern void L4_MA_Background_Task_Start(void);

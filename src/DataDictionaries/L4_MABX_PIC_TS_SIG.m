@@ -3,86 +3,85 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% INPUTS
 
-%% ReAX_ActualHandwheelPos
+% ReAX_ActualHandwheelPos
 ReAX_ActualHandwheelPos = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'ReAX feedback of actual steering wheel position');
 
-%% ReAX_EchoedSteerWheelPos
+% ReAX_EchoedSteerWheelPos
 ReAX_EchoedSteerWheelPos = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'ReAX echoed commanded steering wheel position');
 
 %% From RTMaps
 
-%% RTMapsOk
+% RTMapsOk
 RTMapsOk = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'RTMaps Ok signal');
 
-%% SupervisorMode
+% SupervisorMode
 SupervisorMode = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Supervisor Mode');
 
-%% CurrentAzimuth_rad
+% CurrentAzimuth_rad
 CurrentAzimuth_rad = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Current Azimuth', ...
 	'Unit', 'rad');
 
-%% TargetAzimuth_rad
+% TargetAzimuth_rad
 TargetAzimuth_rad = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Target Azimuth', ...
 	'Unit', 'rad');
 
-%% CurrentVelocity_kph
+% CurrentVelocity_kph
 CurrentVelocity_kph = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Current Velocity', ...
 	'Unit', 'km/h');
 
-%% TargetVelocity_kph
+% TargetVelocity_kph
 TargetVelocity_kph = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Target Velocity', ...
 	'Unit', 'km/h');
 
-%% Curvature
+% Curvature
 Curvature = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Curvature at target waypoint');
 
-%% CrosstrackError
+% CrosstrackError
 CrosstrackError = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Crosstrack error of target waypoint', ...
 	'Unit', 'm');
 
-%% GPS_X
+% GPS_X
 GPS_X = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'GPS Position X', ...
     'Unit', 'm');
 
-%% GPS_Y
+% GPS_Y
 GPS_Y = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'GPS Position Y', ...
     'Unit', 'm');
 
-%% GPS_Time
+% GPS_Time
 GPS_Time = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'GPS Time', ...
     'Unit', 's');
 
 %% To RTMaps
 
-%% MABX_Heartbeat
+% MABX_Heartbeat
 MABX_Heartbeat = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'MicroAutobox heartbeat');
 
-%% EStop
+% EStop
 EStop = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'E-Stop Pressed');
 
-%% EnableSw
+% EnableSw
 EnableSw = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Autonomous Mode Enable Switch');
 
-%% EngagePB
+% EngagePB
 EngagePB = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Momentary push button to engage autonomous mode');
 
-%% EngageReq
+% EngageReq
 EngageReq = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Engage request');
 
-%% EngageRequest
+% EngageRequest
 EngageRequest = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Engage request signal');
 
-%% LogEventPB
+% LogEventPB
 LogEventPB = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Log event momentary push button');
 
-%% AutonomousEnabled
+% AutonomousEnabled
 AutonomousEnabled = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Autonomous System Engaged');
 
-
-%% MABX_Mode
+% MABX_Mode
 MABX_Mode = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'MicroAutobox mode');
 
-%% AutonomousOutputEnabled
+% AutonomousOutputEnabled
 AutonomousOutputEnabled = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Autonomous System Engaged and Outputs Enabled');
 
 %% Pedal_pwm_position
@@ -119,22 +118,26 @@ BrakeSW = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Brake switch - pedal pr
 SteeringWheelAngle = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'SPN1807 Steering Wheel Angle', ...
     'Unit', 'deg');
 
-%% Steering_PID_Output
+%% Haris Controller
+
+% Steering_PID_Output
 Steering_PID_Output = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Steering Controller PID Output', ...
     'Unit', 'rad');
 
-%% Lateral_Control_Heading_Error
+% Lateral_Control_Heading_Error
 Lateral_Control_Heading_Error = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Lateral Control Heading Error', ...
     'Unit', 'rad');
 
-%% Lateral_Control_Output
+% Lateral_Control_Output
 Lateral_Control_Output = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Lateral Control Output', ...
     'Unit', 'rad');
 
-%% Lead_Controller_Output
+% Lead_Controller_Output
 Lead_Controller_Output = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Lead Controller Output', ...
     'Unit', 'rad');
 
+% Understeer_Correction_Output
+Understeer_Correction_Output = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'UndersteerCorrection Output');
 
 %% Lateral_Control_Rate_Limiter_Output
 Lateral_Control_Rate_Limiter_Output = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Lateral Control Rate Upper Limit', ...
@@ -144,8 +147,28 @@ Lateral_Control_Rate_Limiter_Output = ptc_matlab_lib.PTC_MBDS_Signal('Descriptio
 RateLimiterActive = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Lateral Control Rate Limiter Active');
 
 %% Lateral_Control_Rate_Limit
-Lateral_Control_Rate_Limit = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Lateral Control Rate Upper Limit', ...
+Lateral_Control_Rate_Limit = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Lateral Control Rate Limit Output', ...
     'Unit', 'rad');
+
+%% Stanley Lateral Controller
+
+% Stanley_Output
+Stanley_Output = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Stanley Output', ...
+    'Unit', 'rad');
+
+% Stanley_Rate_Limit
+Stanley_Rate_Limit = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Stanley Rate Limit', ...
+    'Unit', 'rad');
+
+% Stanley_Limiter_Active
+Stanley_Limiter_Active = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Stanley Rate Limiter Active');
+
+% Stanley_Rate_Limiter_Output
+Stanley_Rate_Limiter_Output = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Stanley Rate Limiter Output', ...
+    'Unit', 'rad');
+
+% Stanley_Set_Gain
+Stanley_Set_Gain = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'Stanley Rate Limiter Output');
 
 %% SteerWheelAngle
 SteerWheelAngle = ptc_matlab_lib.PTC_MBDS_Signal('Description', 'VDC2_0B Steer Wheel Angle ', ...
