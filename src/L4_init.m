@@ -28,7 +28,7 @@ addpath(fullfile(ROOT, 'Utilities')); paths_to_remove{end+1, 1} = fullfile(ROOT,
 pairs = {'Variant', ''};
 ARGS = ptc_matlab_lib.parseargs(varargin, pairs);
 
-VARIANTLIST = {'MABX_PTC_166';'MABX_PTC_1571';'MABX_PIC_KW'; 'SIM'};
+VARIANTLIST = {'MABX_PTC_166';'MABX_PTC_1571';'MABX_PIC_KW';'MABX_PIC_PB';'SIM'};
 VARIANTLIST = unique(VARIANTLIST);
 if ~ismember(ARGS.Variant, VARIANTLIST)
     [selection, ok] = listdlg('ListString', VARIANTLIST, 'PromptString', 'Select variant', 'SelectionMode', 'single');
